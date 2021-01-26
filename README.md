@@ -1,2 +1,2 @@
 # auto-reddit-recommendations
-Automatically ranks products by Reddit recommendations
+Automatically returns and ranks products based on Reddit recommendations
