@@ -2,7 +2,9 @@ name: auto-reddit-recommendations
 channels:
   - defaults
 dependencies:
-  - python
   - pylint
+  - python
   - black
-prefix: /usr/local/anaconda3/envs/auto-reddit-recommendations
+  - google-api-python-client
+  - python-dotenv
+prefix: C:\Users\jason\anaconda3\envs\auto-reddit-recommendations
