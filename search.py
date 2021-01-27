@@ -3,8 +3,8 @@ from apiclient.discovery import build
 
 #the hide api key bs
 import os
-from dotenv import loan_dotenv
-loan_dotenv('.env')
+from dotenv import load_dotenv
+load_dotenv('.env')
 my_api_key = os.getenv('SEARCH_PY_API_KEY')
 cx_key = os.getenv('CX_KEY')
 ################################################################
@@ -21,4 +21,7 @@ def returnlinks(searchstring):
     for item in result['items']:
         linkarray.append(item['link'])
     return linkarray
+
+#just to make sure it works
+print(returnlinks('best videogames'))
 
