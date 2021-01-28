@@ -1,5 +1,6 @@
-google_api_python_client==1.12.8
 nltk==3.5
 praw==7.1.0
-python-dotenv==0.15.0
 truecase==0.0.12
+google_api_python_client==1.12.8
+python-dotenv==0.15.0
+vaderSentiment==3.3.2
