@@ -76,6 +76,6 @@ def keyword_extractor_total(data):
     
     return total
 
-print(keyword_extractor(['This error is caused because we try to convert “7.4: to an integer.']))
+#print(keyword_extractor(['This error is caused because we try to convert “7.4: to an integer.']))
 
 
