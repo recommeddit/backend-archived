@@ -62,7 +62,20 @@ def keyword_extractor(data):
     array_of_keywords = []
     #total is the extractions
     total = result.body[0]['extractions']
-    for i in range(len(total)):
+    #appends the top value because I think it automatically sorts by relevance
+    for i in range(len(total)):   
         array_of_keywords.append(total[i]['parsed_value'])
     return array_of_keywords
+
+def keyword_extractor_total(data):
+    model_id = 'ex_YCya9nrn'
+    result = ml.extractors.extract(model_id, data)
+    array_of_keywords = []
+    #total is the extractions
+    total = result.body[0]['extractions']
+    
+    return total
+
+print(keyword_extractor(['This error is caused because we try to convert “7.4: to an integer.']))
+
 
