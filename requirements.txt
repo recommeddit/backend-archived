@@ -1,7 +1,7 @@
-nltk==3.5
-praw==7.1.0
-truecase==0.0.12
-en_core_web_md==2.3.1
+nltk==3.4.5
 google_api_python_client==1.12.8
+monkeylearn==3.5.2
+praw==7.1.0
 python-dotenv==0.15.0
+truecase==0.0.12
 vaderSentiment==3.3.2
