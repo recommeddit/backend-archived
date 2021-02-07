@@ -16,7 +16,7 @@ post = get_post("https://www.reddit.com/r/learnpython/comments/ktjtl5/best_ide_f
 #print(post.keys)
 #separated_strings = seperate_into_strings(post[)
 #print(post.keys())
-'''
+
 entities = []
 for comment in post.keys():
     doc = seperate_into_strings([comment])
@@ -26,5 +26,11 @@ for comment in post.keys():
 array = []
 for a in entities:
     array.append(keyword_extractor(a))
-print(array)
-'''
+new_array = []
+for i in array:
+    if (len(array[i] >= 2)):
+        new_array.append(array[i][0])
+
+print(new_array)
+
+
