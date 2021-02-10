@@ -3,14 +3,15 @@ import logging
 import os
 from dotenv import load_dotenv
 
-load_dotenv('.env')
-CLIENT_ID = os.getenv('CLIENT_ID')
-CLIENT_SECRET = os.getenv('CLIENT_SECRET')
-REDIRECT_URI = os.getenv('REDIRECT_URI')
-USER_AGENT = os.getenv('USER_AGENT')
+load_dotenv(".env")
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+REDIRECT_URI = os.getenv("REDIRECT_URI")
+USER_AGENT = os.getenv("USER_AGENT")
 
 
 # from praw.models import MoreComments
+
 
 def enable_praw_log():
     """
@@ -31,11 +32,12 @@ def connect() -> praw.Reddit:
     Code flow: connect to reddit api without an account
     :return: bool
     """
-    reddit = praw.Reddit(client_id=CLIENT_ID,
-                         client_secret=CLIENT_SECRET,
-                         redirect_uri=REDIRECT_URI,
-                         user_agent=USER_AGENT,
-                         )
+    reddit = praw.Reddit(
+        client_id=CLIENT_ID,
+        client_secret=CLIENT_SECRET,
+        redirect_uri=REDIRECT_URI,
+        user_agent=USER_AGENT,
+    )
     # print(reddit.auth.url(["identity"], "...", "permanent"))
     print("User:", reddit.user.me())
     # print("Access to:", reddit.auth.scopes())
@@ -51,7 +53,9 @@ def get_comments(reddit, url: str) -> dict:
     :param url:
     """
     submission = reddit.submission(url=url)
-    submission.comments.replace_more(limit=None)  # removes limit=x amount of MoreComments
+    submission.comments.replace_more(
+        limit=None
+    )  # removes limit=x amount of MoreComments
 
     comments = {}
 
@@ -62,6 +66,7 @@ def get_comments(reddit, url: str) -> dict:
         comments[comment.body] = comment.score
 
     return comments
+
 
 # enable_praw_log()
 # reddit = connect()

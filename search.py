@@ -21,9 +21,7 @@ def returnlinks(searchstring):
     result = resource.list(q=searchstring + " reddit", cx=cx_key).execute()
     linkarray = []
     for item in result["items"]:
-        linkarray.append(item["link"])
+        domain = item["displayLink"]
+        if domain.endswith("reddit.com"):
+            linkarray.append(item["link"])
     return linkarray
-
-
-# just to make sure it works
-print(returnlinks("best videogames"))
