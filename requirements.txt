@@ -1,9 +1,9 @@
-truecase==0.0.12
+requests==2.25.1
+praw==7.1.0
 spacy==2.3.5
 en_core_web_md==2.3.1
-requests==2.25.1
 nltk==3.5
-praw==7.1.0
+truecase==0.0.12
 google_api_python_client==1.12.8
 monkeylearn==3.5.2
 python-dotenv==0.15.0
