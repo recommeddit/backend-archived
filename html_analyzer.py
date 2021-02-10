@@ -1,8 +1,7 @@
 #imports
 import url_to_html as urlEx
-import json
-import nltk
-import truecase
+from nltk import ne_chunk, pos_tag, word_tokenize
+from nltk.tree import Tree
 
 ##############################################################
 
@@ -11,12 +10,27 @@ commentUrl = urlEx.get_url(redditComment)
 resolvedUrl = urlEx.check_url(commentUrl)
 parsedHtml = urlEx.html_to_text(resolvedUrl)
 
+def get_continuous_chunks(text):
+	chunked = ne_chunk(pos_tag(word_tokenize(text)))
+	continuous_chunk = []
+	current_chunk = []
+	for i in chunked:
+		if type(i) == Tree:
+			current_chunk.append(" ".join([token for token, pos in i.leaves()]))
+		if current_chunk:
+			named_entity = " ".join(current_chunk)
+			if named_entity not in continuous_chunk:
+				continuous_chunk.append(named_entity)
+				current_chunk = []
+			else:
+				continue
+	return continuous_chunk
+
 keywords = []
 for par in range(0,len(parsedHtml)):
 	data = parsedHtml[par]
-	text_to_tag = nltk.word_tokenize(truecase.get_true_case(data))
-	tagged = nltk.pos_tag(text_to_tag)
-	for ell in range(0, len(tagged)):
-		keywords.append(tagged[ell])
+	entities = get_continuous_chunks(data)
+	for ell in range(0, len(entities)):
+		keywords.append(entities[ell])
 
-#get rid of nltk test and implement spaCy ner
+print(keywords)
