@@ -18,7 +18,7 @@ resource = build("customsearch", "v1", developerKey=my_api_key).cse()
 
 
 def returnlinks(searchstring):
-    result = resource.list(q=searchstring + " reddit", cx=cx_key).execute()
+    result = resource.list(q="best " + searchstring + " reddit", cx=cx_key).execute()
     linkarray = []
     for item in result["items"]:
         domain = item["displayLink"]
