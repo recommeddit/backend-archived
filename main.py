@@ -4,6 +4,7 @@ import sys
 import search
 import comments
 import markdown_to_plaintext
+import MonkeyLearnProductSentiment
 
 
 def main():
@@ -12,7 +13,6 @@ def main():
 
     # search google reddit.com CSE for "best <query name>"
     reddit_urls = search.returnlinks(query)
-    print(reddit_urls)
 
     # resolve reddit URLs to comments
     reddit = comments.connect()
@@ -29,7 +29,14 @@ def main():
     # convert from markdown to plaintext
     all_comments = [markdown_to_plaintext.unmark(comment) for comment in all_comments]
 
-    print(all_comments)
+    results = dict(
+        sorted(
+            MonkeyLearnProductSentiment.keyword_extractor_total(all_comments).items(),
+            key=lambda item: item[1],
+        )
+    )
+
+    print(results)
 
 
 if __name__ == "__main__":
