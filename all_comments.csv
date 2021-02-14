@@ -1,0 +1,538 @@
+,comments
+0,"Meld is my favourite. I'm sure there are some tutorials out there, but it's easy to use from the start, and there are some keyboard shortcuts that make life easier."
+1,I'm a fan of beyond compare - mainly as it's cross platform so I can use it on Lin/Mac/Win
+2,https://www.sublimemerge.com/
+3,TIL ppl use something other than “git fetch; git merge origin/master”
+4,"p4merge - https://www.perforce.com/downloads/visual-merge-tool
+The user guide for it: https://www.perforce.com/manuals/p4merge/Content/P4Merge/Home-p4merge.html
+A video tutorial (with transcript) for it - (well, actually p4v, but it gets into the merge tool) https://www.perforce.com/video-tutorials/vcs/resolving-conflicts-p4v
+A video of someone using git and p4merge: https://youtu.be/xDs-LkmQBjI"
+5,p4merge
+6,There has never been a better tool than Kdiff3
+7,"No love for VSCode as mergetool? I know there is this hate to M, but Vscode is a good product, and works really nice as difftool and mergetool"
+8,"I really like SemanticMerge, which should have a package for CentOS"
+9,You can shorten that to just git pull origin master :)
+10,What makes it better than the others?
+11,"I haven't used a dedicated merge tool in years (I just use my text editor) but back when I did, kdiff3 was my jam."
+12,I don’t think kdiff3 has gotten an update in 6+ years. How’s it holding up?
+13,Happy Cake Day!
+14,Thanks!
+15,[deleted]
+16,Beyond Compare. It's not free but from trying many tools I like its feature set the best.
+17,Kaleidoscope
+18,p4merge. Got used to it when perforce was our version control.
+19,Pure command line for me.
+20,There's a nice package for Atom called merge-conflicts that I usually use.
+21,meld works for me
+22,deleted
+23,Diffuse and WinMerge.
+24,"I use opendiff.  
+No specific reason besides it is what I have been using since I started working with xcode."
+25,"I usually wind up on diffchecker. So far I haven't needed that much functionality in a diff tool, so I just google it real quick."
+26,There is a diff plugin for sublime text that works well (can be found through package control)
+27,I prefer the command line but source tree is nice
+28,"Guy I work with wrote this, and it's nice. https://github.com/scottgonzalez/pretty-diff"
+29,"For git merge conflicts, I usually give up and just edit the file manually."
+30,"Vim + Fugitive.
+I used to use kdiff and then Kaleidoscope. Vim isn't as pretty, but it's nice to do everything in the editor now."
+31,"Yeahhh! The Jetbrains IDEs come with the most fabulous diff tool ever devised. The differences are really clear, and when you're comparing two files you can make direct edits to both. I've told them they should sell it as a separate product but they want to focus on IDEs. Download a free trial and give it a whirl!"
+32,Beyond Compare is amazing.
+33,"Beyond Compare is a great tool, but I don't really use it for diffs.
+I work at a place which still does manual deployments for a specific product (lame), and Beyond Compare comes in really handy for them. But the diff tool in Webstorm is just too convenient."
+34,"Same here - Perforce was the first version control I ever used, and I just got used to the way p4diff lays out the versions."
+35,Same here. I use git diffwith colors configured for git. I didn't even realize that there were other tools for handling diffs. I'm not opposed to trying something new; I just haven't. I could see something more guided than git's output being useful for files that undergo heavy parallel churn.
+36,This. I swear by it and on it's own it has converted many a co-worker to using JetBrains IDEs themselves.
+37,"git merge works pretty well. 
+But seriously, its not terribly hard to resolve conflicts and probably worth learning. I tried to find tools before and never found one I super enjoyed."
+38,Maybe this could be: http://meldmerge.org
+39,"[merge]
+tool = vimdiff"
+40,Perforce merge is very nice.  It is packaged together with their other stuff but it really is a standalone tool.
+41,Kdiff is my preferred tool. You don't need much with a merge tool just an A vs B vs C view and the ability to select and edit in the tool.
+42,Beyond Compare is a good tool for merging. It provides a graphical user inetrface for merging. I don't know whether its free though.
+43,Install VS Code and install Git Lens extension. You'll never look back!
+44,"I use PowerShell with Git Posh, and P4Merge - I think it's easy better than Git Bash. 
+A made a script that will install it with an SSH login (if you want). You can run it from here."
+45,You need to look for a tool supporting 3-way merge. This will automatically solve you like 80% of your merge conflicts. I use Kdiff3 http://kdiff3.sourceforge.net/
+46,I just wish git could easily merge and diff non-deterministic XML files :(
+47,vimdiff is underrated!
+48,"It's not, but it's what I have at work and I'd recommend it."
+49,"Haha, I'm sure there's something like that out there."
+50,Any idea what's the cost if I want to purchase? It looks like I am in trial period then.
+51,"Looks like $60: https://www.scootersoftware.com/features.php?zz=pricing
+Apparently only the pro edition does 3-way merging. 
+I would probably just use KDiff or something if work didn't pay for BC."
+52,Ohh. Ok. Thanks for info. I will check this link.
+53,Have you looked at Magit at all?
+54,"Good ideas, thanks.
+To the people unable to think beyond magit, note that magit supports only recent versions of git. My day job is in an organisation which still uses a git version unsupported by magit.
+BTW, why don't you think emacsclient when noticing the slow startup problem of your Emacs ? -Q is too much of an overkill. Programming language support is very much required when resolving conflicts in programming language files. How else do you quickly check the usages of functions you just resolved conflicts in ? It also goes against forming habits with your own keybindings, defaults, colours etc. if some of the time you need to use a -Q emacs."
+55,"Thanks, I have to get into using ediff one day, too. Do you know about https://github.com/justbur/emacs-vdiff? I don't use it myself but it looks like you want to achieve something similar with ediff."
+56,This should be the only reply
+57,"See https://magit.vc/manual/magit/Resolving-Conflicts.html magit is using ediff. So the second technique to speed up ediff workflow is still useful.
+In ediff's default UI, you can only trigger ediff commands from bottom panel, my technique makes it possible to trigger ediff comamnds outside of the panel. And you can use any third package like hydra, generel.el, evil to assign new keybindings to ediff commands.
+You could check ediff code by yourself. For example, the first statement of ediff-next-difference is (ediff-barf-if-not-control-buffer).
+The first technique I introduced is for cli git mergetool, it's not for magit. I know people who are unfamiliar with CLI might be confused, so I provided screencasts on using git mergetool with vim&emacs in the article.
+I'm experienced with all the popular merge tools (vim, emacs, p4merge, intellij, meld ...) but running git mergetool in shell is my favorite because it's fastest."
+58,"I used to work on some embedded hardware . So I feel more comfortable using Emacs and Git in shell.
+-Q still loads the programming language's major mode. Just some extra features are disabled. For example, my Debian box always loads some ispell stuff by default which could be disabled by -Q.
+My setup is divided into multiple layers. The key binding layer init-evil.el is always enabled. So I don't lose any key binding setup.
+The key point is I could control my setup when merging.
+I could choose ignore the flag and still enable all the layers.
+I can even enable some extra feature instead. For example, I found my favorite color theme dracula is not fit for merging because major mode's syntax highlight and ediff's hunk highlight mess up in this theme. So I enable deeper-blue theme if and only if I'm merging with git mergetool.
+My ediff setup, https://github.com/redguardtoo/emacs.d/blob/master/lisp/init-ediff.el"
+59,Ediff is fantastic
+60,"One package alone is not enough. This one package could be emacs-vdiff, ediff, or any package.
+I just demostrated how to optimize Emacs so it could be powerful and fast.
+Peformance is the key point of my article. If it's impossible to resolve conflicts MORE efficiently in Emacs, I will keep using vimdiff."
+61,It's kind of confusing to see something that isn't magit.
+62,"For the second bullet point you list all one needs to do is to set git's merge conflict style to diff3. I agree with you about ediff being the best merge tool and having poor defaults. I've been using smerge for a couple of years but recently I took the bullet and set up emerge and for messy large conflicts (which are rare) it is way better than smerge, but for the majority of the cases it's the same as smerge but with more pleasant default key bindings.
+But going through all the trouble to setup ediff to start from the CLI w/o using emacs client seems an unnecessary complication."
+63,Okay that's good. I just wanted to mention emacs-vdiff so you could take a look at it if you weren't aware of it yet.
+64,Use magit which works well with ediff or smerge
+65,"I will have a look at emerge, emerge-files-with-ancestor seems good to integrate into git mergetool. I'm still reading ediff's code, not settled on any specific package yet.
+Currently I have good feeling about ediff because it has some dangerous black magic. like ediff-revert-buffers-then-recompute-diffs, the developer of ediff just comment this command, ;; Not bound to any key---to dangerous.  A user can do it if necessary. ;)
+Besides, there is no limitation that I can use only one package when resolving conflicts. maybe I can run some emerge or magit api inside merged buffer created by ediff."
+66,"After reading its code, I'm still not sure how emacs-vdiff can integrate into https://git-scm.com/docs/git-mergetool
+I only use cli git mergetool to resolve conflicts because cli is more efficient. I use vimdiff as the default text editor triggered by this cli because I believed vimdiff is lightweight. But now I realize Emacs+ediff could be equally lightweight if set up in the right way."
+67,I invented a generic technique to improve ediff/smerge/magit. Please read my article.
+68,I'm not sure either but after skimming your post I thought the UI might be a better option for you.
+69,"Like everything you write, your ""guidance"" tends to be incoherent, boastful,
+and wordy.  Nobody wants to read it, but I do because I have very little going on in my
+life.
+tl;dr your article merely supplies the incantation to invoke ediff when
+running git mergetool.  And you provide some convenience macros to
+facilitate the ediff, which aren't necessary.  That you require gating on a crufty
+flag startup-now in your init.el is a huge non-starter for me, but also
+unnecessary because your already use -Q.
+Nothing about your setup suggests it would be faster than magit-smerge.  In
+particular, you have to run out to the shell.  Stay in magit with all your
+project files already loaded."
+70,At least you're honest.
+71,"99% of the time I use the integrated one of my Netbeans IDE. It works good: I can select left/right change and live edit the code.
+Another tool which I use is Meld"
+72,Whiskey :)
+73,Beyond Compare. You have to pay for 3-way merge though IIRC.
+74,Visual Studio Code has one build in - its quite good. Single click accept/decline HEAD or ref. I found GitKraken to be quite slow.
+75,Kdiff
+76,IIRC P4Merge is available for free. I always thought that was a pretty good tool.
+77,Yeah. HALF my team has Netbeans Licences. But I can't get them for the other half. (And it works exactly the way I'd want it to work.)
+78,Does it come with a nice IDE? ;)
+79,"It's actually really good. It's what the merge ""experience"" should be."
+80,Is it the same tool as Visual Studio's?
+81,Of course!
+82,"I said iDe, not iCe. 
+hahaha."
+83,"Disclosure: self post.
+I've been using a `sed` shell script to do this for several years and decided to make it into a standalone Vim plugin instead. I find it makes identifying and fixing merge conflicts much, much easier than with other Vim tools that try to use the default three-way diff."
+84,"Looks cool. I never really liked the three-way diff, so I'm gonna try this out. You might want to escape the quotes in the git config --global mergetool.diffconflicts.cmd 'vim -c 'DiffConflicts' $MERGED $BASE $LOCAL $REMOTE' command listed in the installation section though."
+85,"I've been using your diffconflicts script for quite some time and I really like it! Thanks for turning it into a plugin, will try it soon."
+86,"I usually end up using meld for conflicts, this looks handy though, good job"
+87,"Is this basically the same as doing the following?
+
+Run git mergetool to open a 3-way vimdiff.
+Run :%diffget LO (from the merged copy) to make the merged copy identical to LOCAL.
+Close (CTRL-w c) LOCAL and BASE, leaving a 2-way diff between the merged copy (identical to LOCAL) and REMOTE.
+Modify the merged copy as necessary, save, and quit.
+
+This is what I often do."
+88,"I used to use this for years! Glad to see it standalone! I even added perforce support, I'll see if I can clean it up and open a PR.
+However, I don't use it anymore because it doesn't work well under Windows subsystem for linux (running Ubuntu in windows). I think because it's lacking cygpath. (Worked well under cygwin.)"
+89,"Looks cool, but how if this any easier than three-way diff and diffput/diffget commands? 
+I take that your mergetool is mainly manual, so for big conflicts it would be very cumbersome to get through all the differences, right?"
+90,"is there a way to bind the keys ""2"" and ""3"" to "":diffget 2<cr>"" and "":diffget 3<cr>"" but only if you are in diff-view?"
+91,does not tell what it does :/
+92,Good call. Thanks.
+93,"That's awesome to hear! :-)  The script hasn't seen much change over the years so I don't expect the plugin will either, but hopefully this is at least easier to install."
+94,"I've been using that script too, thanks for it."
+95,"Very close! LOCAL and REMOTE don't contain the result of anything that Git was automatically able to merge which is why this plugin uses the file with conflict markers instead.
+The goal is to get the benefits of a two-way diff of LOCAL & REMOTE plus the benefits of Git's automatic merge. Sometimes both ways will produce an identical diff but not always. My example script doesn't showcase that difference; I'll think of a way to add it."
+96,"That would be cool to see if you find some time.
+Interesting about WSL. I've been testing those waters recently. It's not quite there but close. I hope they keep pushing it forward."
+97,This is a mergetool like any other -- no more or less manual than usual. And you use :diffput/:diffget in exactly the usual way. The README directly tries to address your question about why three-way merges are hard to work with.
+98,"I'm not sure if there's a more robust way to detect when Vim is in diff mode but in my vimrc I use this:
+if ! &amp;diff
+   ...stuff...
+endif"
+99,"You're right, the README could use a tl;dr. Added, thanks."
+100,/u/whiteinge
+101,\o\ |o| /o/
+102,"|   |   |
+/\  /\   /\"
+103,The Perforce merge tool (p4merge) is free and pretty solid.  I use gitextensions as my git ui and have no issues using this combo for unity
+104,I use Sourcetree it's free. I'm a total noob though and barely know how to use this stuff. I have however set it up correctly and have had other team member collaborate on the same project with it. Using BitBucket.
+105,I personally recommend diff merge. It's a very solid merge tool for windows that you came never go wrong using.
+106,"kdiff3 is the best merge/compare tool I've ever used. It's free, cross platform, has lots of keyboard shortcuts, and supports command line arguments so you can set other apps like Visual Studio to use it by default for all merges."
+107,"Ditto for source tree, merging feels like a magic trick each time we do it!
+Three devs, two on Mac and one on PC all using source tree and bit bucket."
+108,"I could never get the KDE merge tools to work according to my intuition, and instead recommend meld."
+109,"Do you tried?
+git config --global --add merge.tool kdiff3"
+110,"Meld and P4Merge are my favourites. Meld more so for things like inline editing, would be nice if could use Qt file dialog though."
+111,"kdiff3 works, I just don't know how to use it. I am used to meld."
+112,"I’m glad you were able to succinctly explain why every mergetool I’ve used has been a confusing mess. 
+I’m sad that there wasn’t even one that did it right."
+113,"Author here with a shameless self-post. I would very much like to see a more broad discussion on how to make mergetools better and more widely used. I have one opinion, detailed in the post, but I'd also love to hear other ideas.
+Almost none of my coworkers use a mergetool. I think they're usually intimidating with lots of (unnecessary) colors and buttons and features. Plus not one of them (that I know of) interfaces with Git effectively and displays all the hard work that Git puts into resolving conflicts.
+If you agree with my post or not, I hope we can all agree that our common enemy is editing conflict markers manually. ;-)"
+114,"If I understand your post, you want the image's behavior without the window on the downside? If you are looking for it, Emacs + Magit has been supporting this for a long time image  
+Edit added Image"
+115,"If you're using Vim's diff just use :diffoff and :diffthis liberally.
+I find VimDiff to be one of the best tools because it offers the clean diff that the author wants and I can choose which version I'm diffing against. The author's choice to only perform:diffoff in the merged pane and was a bit odd to me - depending on what you're merging the relevant panes to compare change. Sometimes you do want to look at LOCAL vs REMOTE but other times you might care about REMOTE vs MERGED or BASE vs MERGED."
+116,"I don't agree with removing the conflict markers. Personally I resolve conflicts by hand using these markers, all I need from the mergetool is highlighting and folding, which is why I wrote the tool vimdiff3, that you didn't mention.
+However, you have a point about mergetools showing hunks that are already resolved.
+The right place to fix this is in git mergetool itself, so that all the mergetools benefit from this. I already sent a RFC patch to the mailing list. Let's see what they say.
+
+mergetool: use resolved conflicts in all the views
+
+Thanks for bringing this up.
+FWIW this is vimdiff2 with the patch above. I removed the markers to show BASE, but I could have removed the markers to leave LOCAL, which would show basically the same as diffconflicts (plus one pane)."
+117,[deleted]
+118,"just with fewer awful colors
+
+Don't blame vim for your crappy config.
+But yeah, I switched to vimdiff2 early. Three way merge is just way too complicated, and for no reason."
+119,excellent writeup and explanation; thanks
+120,"Thank you for your work on this, I’ve always felt like I was the idiot for not being able to make sense of the standard mergetools.  
+The only one I’ve ever found useful is Tortoise Merge, and would be very interested in seeing your analysis of its strategy."
+121,3 way merges in merge tools are awful eyesores. I've resorted to just having git dump the >>>>> in a text file and doing it myself. Much easier.
+122,Great work. I like the trick of merging both ways and using that to find conflicts. I’m looking forward to git GUIs adding their own version of these features. I really like the realtime changes to conflict highlighting.
+123,"I've been resolving conflicts with kdiff3 for years. It's confusing at first, and actually it remains confusing for me, but once i did it a few times, then i could do it without thinking about it."
+124,"Very interesting read, thanks a million for that great article. I'll need to go into this topic, as I too find the standard tools confusing. Would that even help with rebasing? I sometimes get conflicts during rebasing for my own commits and always find it hard, as I probably think about the end result instead of the commit-by-commit cherry pick when doing rebases.
+I'd be interested in your opinion on SmartGit and maybe Fork. They are both available for mac OS. I like SmartGit a lot, their developers are great and could imagine they'd be open to improving their tool."
+125,"Thank you for this excellent write up!
+I believe vim-mergetool is based upon your diffconflicts plugin and offers some nice features."
+126,How does IntelliJ's merge compare to the others? It isn't listed.
+127,"I have just been using VSCode and delta, but as you say it's close and I still do manual stuff. I life it that way though."
+128,"I'm sorry but the author is wrong. 3 way merges FTW.
+KDiff3 the best.
+BTW Merges does not have to be easy because combining code produced by two programmers is a great responsibility so it's nothing special that it's difficult. It needs understanding the root of conflict that is why 3 way merge is superior."
+129,"I think IntelliJ has a great three way merge tool. It has that ->All<- button that pulls in the non-conflicting changes from the left and right leaving just the unresolved conflicts. I am not sure why it just doesn’t do it automatically but it isn’t too much of a bother to press the button.
+
+including conflicts that Git was able to automatically resolve
+
+Regarding that statement, if git was able to resolve a “conflict” automatically then by definition that isn’t a conflict right? What kind of “conflict” can git resolve on its own?"
+130,!remindme 1 day
+131,"I think the problem is mismatched expectations.
+For me mergetools work perfectly fine, but that's because I expect the conflict markers.
+OP seems to think that's a bug, and apparently you do too.
+It should be possible to introduce a new configuration to git mergetool so markers are automatically removed, which might be useful for beginners, but at least I wouldn't use it."
+132,Give your merge way a name lite “2x2 way merge”. Also maybe list and critique p4merge?
+133,"That was going to be my question.  How does emacs+magit stack up. I am a magit addict, and I've used ediff a lot (not with git), but not magit's merge tools"
+134,"Thanks for the image. Are the left and right panes each ""side"" of MERGED? Or are they LOCAL and REMOTE?
+I'd love to add Emacs to the post but it's a tad more involved to set up. Would you mind running this script to produce a repo with merge conflicts and screenshot the default Emacs + Magit view of that? Then I'll add it and attribute you for the help."
+135,"I agree vimdiff is the best tool of the bunch, and it's the only one I use regularly. I also agree that it's useful to switch between the different windows to compare them individually -- so useful in fact that it's worth adding mappings to easily move which windows are diffed. :D
+But that's only useful to learn the history leading up to the conflict. Because the diff is ultimately between LOCAL and REMOTE it's not helpful when resolving the conflict. The diff includes unnecessary visual noise and forces you to re-resolve conflicts that Git already resolved and placed in MERGED."
+136,"I'd argue one of two reasons for a mergetool is to avoid having to edit conflict markers by hand. But you're very right that highlighting and folding is the other big reason. Being able to identify subtle differences at a glance makes all the difference.
+How do you use vimdiff3? It isn't clear to me from reading the source.
+Thanks for starting the thread. I'll keep an eye on it."
+137,vim-mergetools is a solid tool and the author is a nice person to discuss things with. It took inspiration from diffconflicts (there's an acknowledgement in the README).
+138,"Don't blame vim for your crappy config.
+
+I used the default colors so readers can recognize it more easily. My config uses much more muted colors. :)
+vimdiff2 is better but still has the same problem as all the others. Because it diffs LOCAL against REMOTE you're left re-resolving conflicts that Git has already resolved."
+139,"Thanks for the suggestion. Added Tortoise.
+I used defaults from Git-for-Windows and TortoiseGit but I think something may be misconfigured still. (I'd love to correct the entry if so.)"
+140,"Would that even help with rebasing?
+
+Definitely!
+
+SmartGit and maybe Fork
+
+Ooh, I wasn't familiar with either one. Thanks. I added screenshots for both. You're right -- SmartGit is really, really nice. I'm very much a terminal person but graphical mergetools can do such a better job of showing a lot of complex things."
+141,Thanks. Added.
+142,kdiff3 is cool. I don't want it to go away. I want kdiff3 (and all the other mergetools too) to be even better by first splitting MERGE into halves instead of showing LOCAL and REMOTE.
+143,"I will be messaging you in 1 day on 2020-12-17 05:45:04 UTC to remind you of this link
+4 OTHERS CLICKED THIS LINK to send a PM to also be reminded and to reduce spam.
+^(Parent commenter can ) ^(delete this message to hide from others.)
+
+|^(Info)|^(Custom)|^(Your Reminders)|^(Feedback)|
+|-|-|-|-|"
+144,"None of the tools I’ve used show the markers, they just show a confusing 3 way merge where one of them is already half merged, basically exactly what the OP said."
+145,"Good suggestion! A friendly name would help to get the word out. At the risk of confusion with the Vim plugin of the same name, I think ""diffconflicts"" has a little traction already. I'll try to find a good place to add that to the post.
+Added p4merge."
+146,I don't know if this is from MERGED LOCAL or REMOTE because I have forgotten about Ediff and that way of merging (Thanks for making me check it). I am going to do a little research and answer in the coming days. I will try running the script until the end of the week and report back my findings.
+147,"Ooh, I like those mappings, thanks for suggesting them.
+I do find myself mostly looking at LOCAL and MERGED, so a default that turns off REMOTE and BASE might be handy but I find before I'm ready to commit that I always want to see a diff of each one against MERGED which is why I can't think of removing any from consideration."
+148,"I'd argue one of two reasons for a mergetool is to avoid having to edit conflict markers by hand.
+
+And I disagree. And apparently all git developers do too, since not a single mergetool removes those markers (at least from the git side).
+That's not to say that an option couldn't be introduced to do what you want (if there's enough interest), but I for one wouldn't use it. I want (need?) the markers.
+
+How do you use vimdiff3?
+
+Just like you use vimdiff2: git mergetool -t vimdiff3.
+You probably would not like it, since it's basically just MERGED (with conflict markers)."
+149,"No it doesn't.
+vimdiff2 opens LOCAL MERGED REMOTE."
+150,"One thing to note here, is that intelliJ actually has a button to merge all non-conflicting changes. It is not the same as diffing against MERGED directly, but the option is there to quickly focus on the actual conflicts"
+151,"vimdiff* shows the markers and OP didn't like that, in fact he said:
+
+Mergetools exist because nobody wants to edit conflict markers by hand.
+
+Which I don't agree with. If other tools remove the markers, they should at least give the option to show them (exactly as git presents them).
+Fortunately the vimdiff* ones do. In fact, I wrote vimdiff3, which is basically the file with the markers plus some hints."
+152,"I'm not sure diffconflicts is a name that would allow recognition. So, I'm the guy https://trunkbaseddevelopment.com. Say that and there's a good 50:50 chance the average developer with 10 years experience knows what is being referred to. Say GitHub-Flow, and there's a 90% chance the same 10-yr developer knows what is being referred to. Same for Git-Flow.  
+How about something working in ""Low"" (adjective) - ""Low Diff Conflict"", ""Low Diff Merging"" ""Low Merging"", ""LoMerge"". Or Minimal/Min instead of Low/Lo."
+153,"Found time today so I am posting it now. The image with vanilla Emacs + Magit is here. The left is the local Head, and the right is the local branch. I am not 100% sure about the last sentence so I am going to search a little bit more to understand it."
+154,"That sounds like a solid workflow and a great final step to ensure you didn't miss anything from either side.
+I think my ideal would be a two-way diff between each half of MERGED with LOCAL and REMOTE on either side of that (so four windows total) but that's a lot to fit in a terminal which is why diffconflicts opted to show the latter three in a separate tab page. I think a GUI tool could handle all that nicely though in a single window."
+155,"since not a single mergetool removes those markers (at least from the git side).
+
+My guess is that's just inertia from the default since several mergetools do remove or hide them (outside of the git invocation scripts). It'll be interesting to watch the discussion on the mailing list thread you started.
+
+You probably would not like it
+
+Thanks for the explanation. You're right; I don't like it. :)"
+156,Right. There's a screenshot of what you're describing in the comparison section. You're left with either diffing LOCAL against REMOTE and re-resolving conflicts that Git already resolved or editing conflict markers by hand. Both of which this post is aiming to avoid.
+157,"Ive never seen the markers in my vimdiff, but then I’ve never made heads or tails of the 4 way merge. Ill take a look at vimdiff3."
+158,"Perfect writeup for P4Merge.
+How about Express instead Low/Min ?"
+159,"You're very right about Git-Flow.
+Thanks for the suggestions. What mental image does ""low"" evoke? I'm not sure I see the association. Low like in ""low level"" or something else?
+How about ""split""? Perhaps ""Split Diff Conflict"" or ""Split Conflicts"" or ""Split Merging""?"
+160,Awesome! That looks exactly right. Thank you for making that screenshot; I added it to the post. I don't understand that sentence either but now I want to do some code-diving to see how they're setting this up. This is the first tool aside from mine that I've seen do this. Very cool. Thanks again.
+161,"You are not supposed to diff LOCAL against REMOTE; they are there just for reference.
+You are supposed to edit MERGED, and resolve the conflicts there. Yes, that requires editing conflict markers by hand.
+In all mergetools you are supposed to edit the conflict markers.
+In theory you could configure git mergetool to automatically remove the conflict markers, but you would need to choose which code to leave (local, remote, or base), which in my experience vary on every ""merge"".
+I prefer to choose chunk by chunk."
+162,Weird. The first image in the post shows vimdiff with the markers (bottom pane).
+163,"Examples of low that strike a mental image: ""low effort"", ""Low Fi"", ""low profile"". And yes, even ""low level"". There's a connotation of ""good"" or ""efficient"" there. I'm not sure ""split <something>"" is snappy or attractive, or alluding to good or efficient or better or quicker."
+164,"You are welcome, If this helps you, you can ask in magit's gitter and ask the guys there. They are always happy to help!"
+165,"In all mergetools you are supposed to edit the conflict markers.
+
+Nah, several of the graphical tools don't show them at all. Conflict markers are just one way to visualize differences.
+
+In theory you could configure git mergetool to automatically remove the conflict markers
+
+I did! (or as a shell script.)
+
+you would need to choose which code to leave (local, remote, or base)
+
+I leave those exactly intact because they are very useful as a reference. I instead create two new temporary files (left conflict, and right conflict) and, if the merge is successful, eventually overwrite MERGED with the result.
+
+I prefer to choose chunk by chunk.
+
+That's cool. We can still be friends."
+166,"Nah, several of the graphical tools don't show them at all.
+
+I mean the scripts in ""/usr/lib/git-core/mergetools/"". All of them pass unedited MERGED. What each tool decides to do with that afterwards is a different story.
+
+I did! (or as a shell script.)
+
+No, you created a separate tool. I mean modify git mergetool itself.
+
+I leave those exactly intact because they are very useful as a reference.
+
+Not true. I looked at your code. You have two versions of MERGED, both with markers removed.
+
+The left pane is MERGED with all markers removed, except the equivalent of the ""local"" side.
+The right pane is MERGED with all markers removed, except the equivalent of the ""remote"" side.
+
+
+That's cool. We can still be friends.
+
+Friends don't let friends remove conflict markers :p"
+167,"No, you created a separate tool. I mean modify git mergetool itself.
+
+I feel like we're splitting hairs here. The shell script changes you submitted to the mailing list are almost identical to the shell script in my original implementation, except I don't overwrite LOCAL or REMOTE. But you are right that it would be useful to do this upstream in order to influence the approach downstream mergetools take.
+
+All of them pass unedited MERGED. What each tool decides to do with that afterwards is a different story.
+[...]
+You have two versions of MERGED, both with markers removed.
+
+Look again. Neither one of my implementations modify MERGED, LOCAL, REMOTE, or BASE. They both pass all four of those files, unedited, to vimdiff. The plugin then splits MERGED as two unsaved buffers, and the shell script creates two, new temporary files.
+
+The left pane is MERGED with all markers removed, except the equivalent of the ""local"" side.
+
+Not quite. The ""left"" side of MERGED isn't the same thing as LOCAL. They're not equivalent which is the main point. LOCAL is the state of the file before the merge.
+
+Friends don't let friends remove conflict markers :p
+
+In that case think of it not as removing the conflict markers but rather displaying them in a different way. We're still friends."
+168,"The shell script changes you submitted to the mailing list are almost identical to the shell script in my original implementation, except I don't overwrite LOCAL or REMOTE.
+
+You don't use LOCAL or REMOTE.
+
+But you are right that it would be useful to do this upstream in order to influence the approach downstream mergetools take.
+
+That's the point. This way all other mergetools would benefit.
+
+They both pass all four of those files, unedited, to vimdiff.
+
+It doesn't matter if you modify the file or not; you modify the buffer, so the user is presented with a modified version of MERGED without the markers.
+
+The ""left"" side of MERGED isn't the same thing as LOCAL.
+
+I know they are not, but with my patch they are.
+Do you know how to try my patch?"
+169,"You don't use LOCAL or REMOTE.
+[...]
+Do you know how to try my patch?
+
+Yes I know how. However I do use LOCAL and REMOTE and so your patch is a worse version of what I'm already using and it would be a worse upstream mergetool for everyone.
+The blog post mentions why LOCAL and REMOTE are useful in addition to a split MERGED. The diffconflicts plugin accepts LOCAL and REMOTE as arguments in order to display them in a new tabpage on demand.
+
+with my patch [the] ""left"" side of MERGED [is] the same thing as LOCAL.
+
+That makes things worse because we already have LOCAL and we already have the left side of MERGED. We don't need two copies of the same result. It would be nice to have both a copy of the file before the merge and a copy of the file after the conflict resolution. I'm not advocating for replacing LOCAL; I'm advocating for not including it in the default diff or during the manual resolution step.
+We may be talking past each other a bit so this is probably a good place to pause. We're friends and I owe you a beer at the next non-pandemic'd Vim conference for a deep conversation and for getting a dialog going upstream.
+Cheers."
+170,"However I do use LOCAL and REMOTE
+
+Do you? Your blog post doesn't mention how to view those files.
+
+your patch is a worse version of what I'm already using and it would be a worse upstream mergetool for everyone.
+
+Name one problem.
+
+That makes things worse because we already have LOCAL and we already have the left side of MERGED.
+
+You have the left side of MERGED. The rest of the world doesn't."
+171,"Cool project (and thanks for the props)!
+Question for you (I don't often get to talk to people who think deeply about diffing \^_\^): What is the utility of a three-way diff when resolving conflicts?
+I've always been puzzled by the popularity of those tools. I completely appreciate a three-way diff when trying to understand the history that led up to the conflict, of course -- both authors started from BASE, authorA makes changes in LOCAL, authorB makes changes in REMOTE and seeing all three versions helps to understand the individual intents that lead to the conflict. But that's very much a read-only, data collection step for me. (That's why that opt-in three-way tab in diffconflicts is read-only.) Often the resolution is that I want some combination of LOCAL and REMOTE, or occasionally only LOCAL or REMOTE, but I can't think of a time where I've wanted to disregard both and go back to BASE.
+Three-way diffing tools are certainly popular though so I often wonder if I'm the crazy one or if it's everyone else. :-D  If you made it this far past my wall o' text, I'd be interested to hear what utility you see/use that I might be missing."
+172,How would this be different from vim-fugitive as a merge-tool?
+173,"Out of curiosity, how does it compare to splice?"
+174,"Definitely a lot of configuration, and now I'm hitting an error that I can't find a resolution to:
+""File does not have conflict markers.""
+... when I do indeed have conflict markers. Could my markers be misconfigured? Maybe it's a 2-way/3-way compatibility difference?
+EDIT: but FYI the readme is well formatted, informative & readable. A lot of configuration is sometimes necessary for things like this, especially when wanting it to work ""seamlessly"" in different contexts, like from git with ""git mergetool""."
+175,friendly suggestion: use gifs/video to illustrate the features.
+176,[deleted]
+177,I'll use it next time I hit a merge conflict and let you know what I think :P
+178,"mark, was just thinking to start using vim as mergetool!"
+179,What color scheme are you using in your screenshots?
+180,"Hello, ""whiteinge"". Thank you for your ""diffconflicts"" project, which I've used as an inspiration and a baseline.
+&#x200B;
+Actually, your reasoning about value of 2-way vs 3-way diff was something that makes me stop and think about how I deal with a conflicts. Your idea clicks me - most time we're using either ""ours"" or ""theirs"" side, of mix thereof to resolve a conflict, and occasionally I need to review their common base just to get deeper insight on why two versions diverge. That's it.
+I've been using conventional 3-way diff merge tools for all my professional career, and there were some inconveniences which I had to accept in absence of alternatives.
+- with 3 vertical splits layout, each split becomes too narrow, code piles up, lines get wrapped or horizontal scroll appears.
+- conflict markers, I hade editing them manually.
+&#x200B;
+My personal preference of GUI tool is - https://sourcegear.com/diffmerge/.
+&#x200B;
+It has 3 split layout, with `MERGED` in the middle, `ours` to the left, and `theirs` to the right. `MERGED` file have conflict markers already removed in favour of picking up `base` version.  So its ""ours | base/MERGED | theirs"" layout. Plus, it highlights only merge conflicts, not all diffs. Usually, your active split is the middle one, where you can review base version, and pick either `ours` or `theirs` from the sides. I'm using <Ctrl/Cmd - Up/Down> to jump between conflicts, and <Ctrl/Cmd - Right/Left> to choose resolution side.
+Regarding non sufficient split width, in DiffMerge I have my font size = 10pt as a workaround. Surely, in terminal in Vim, I'm not going to toggle between font sizes as I enter and leave merge mode, but for DiffMerge that works.
+As you can see, DiffMerge is halfway between your ideas and regular tools, which show HEAD, MERGE_HEAD and MERGED file with raw conflict markers.
+These days, I'm in process of switching to Vim from VSCode, so Vim would be my console-based merge tool, whereas DiffMerge would still back me up as a GUI tool.
+From \~/.gitconfig:
+[merge]
+tool = vim_mergetool
+guitool = diffmerge
+&#x200B;
+Both tools are at hand:
+$ git mergetool # launch Vim
+$ git mergetool -g # launch DiffMerge"
+181,"So, what vim-figutive does (and any similar solution):  
+
+It opens 3 vertical splits, with $MERGED file in the middle, and HEAD and MERGE_HEAD revisions to the left and to the right. In Vim, when there're 3 buffers marked with "":diffthis"", it highlights all possible diffs between those files, rather than highlighting only unresolved conflict. Personally, it distracts me, as it shows all diffs between HEAD,MERGE_HEAD and MERGED file, and I want to focus on unresolved conflicts only.
+MERGED file has raw conflict markers unprocessed. If you want to see common-base, you need to parse ""||||||| base"" and ""======"" delimiters manually with your eyes. Also, in all but simple merge conflict scenarios, you would have to edit those conflict markers manually  
+
+This plugin takes another approach. Instead of comparing MERGED file simply to HEAD(LOCAL) and MERGE_HEAD(REMOTE) revisions, it parses conflict markers in $MERGED file and extracts base/ours/theirs conflict side. Then it takes ""ours"" and ""theirs"" versions and do 2-way diff comparison.
+Pros are:
+
+It optimistically picks up ""ours"" side of conflict. You don't have to deal with and edit conflict markers directly.
+Conflict resolution starts where automatic ""git merge-file"" gives up. You have diffs and highlighting present only for merge conflicts, not for any possible diff between HEAD, MERGE_HEAD and MERGED file, as vim-fugitive does.  
+
+So I'd say this approach is similar to what https://github.com/whiteinge/diffconflicts does, rather than what vim-fugitive "":Gdiff"" does. This plugin was inspired by ""whiteinge/diffcoflicts"", but goes farther with extra features (see readme). And indeed, it is flexible enough to replicate either diffconflicts, vim-fugitive, or regular vimdiff, or adapt to your personal habits."
+182,"Seems that I've missed ""splice"" somehow while exploring existing solutions. Would give it a try, if I had time. Vim takes a lot of free time, BTW. It's the endless configuration loop. :-)  
+Quick look at the readme makes me a bit nervous though, since I'm using ""figutive"" a lot.
+&#x200B;
+
+Splice and Fugitive do not play well together. If you try to use Splice as a git mergetool while you have Fugitive installed it may segfault Vim, even if you're not using any Fugitive features.
+
+&#x200B;"
+183,"Hm, regarding configuration, that's not too many. See minimal example in readme, and maybe some key mappings, if you'd like. Plus "".gitconfig"", if you're going to run as ""git mergetool"", but that's optional.
+let g:mergetool_layout = 'mr' 
+let g:mergetool_prefer_revision = 'local'  
+Yes, there are a lot of info/text in readme, describing different scenarios, but all that's optional, you can start with simple configuration as in the snippet above. And then adjust various options, if you need more power/customization.  
+Regarding conflict markers, make sure that they are in the ""diff3"" style, like this. Common base marker ""||||||"" is mandatory.
+"" &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+"" ours/local revision
+"" ||||||| base
+"" common base revision
+"" =======
+"" theirs/remote revision
+"" &gt;&gt;&gt;&gt;&gt;&gt;&gt; feature
+&#x200B;
+If you only have two sides of a conflict - `ours` and `theirs`, make configure GIT to use diff3 for conflict style. Please, read ""Assumptions"" section at the bottom of the readme.  
+[merge]
+conflictStyle = diff3
+If that's not the case, and your conflict markers looks right, could you please share a sample file? I would check from my side. Maybe something wrong with my regular expressions.
+&#x200B;"
+184,"Yeah, thanks, good point. ""Monosnap"" screenshot tool I'm using can record videos/gifs, but I don't like it. Need to find some alternative or maybe use screencast recording app. Will give it a try next time."
+185,"Seems that you want something like this: http://take.ms/WBIz7  
+It's not supported out of the box right now, but it's possible to implement. For now, just navigate to `base` split, and run. Don't use "":diffoff"", so options like ""scrollbind"" and ""cursorbind"" are not reset.  
+set nodiff  
+If you have syntax highlighting off by default for diffs, you can turn it on:
+set syntax=on"
+186,"https://draculatheme.com/vim/ with some minor adjustments.  
+Plus, I have ""set syntax = off"" to disable normal syntax highlighting when window is in diff mode.  
+Also, I changed styles for highlight groups for DiffText and DiffChange. 
+"" Do not highlight changed line, highlight only changed text within a line
+hi! DiffText term=NONE ctermfg=215 ctermbg=233 cterm=NONE guifg=#FFB86C guibg=#14141a gui=NONE
+hi! link DiffChange NONE
+hi! clear DiffChange
+&#x200B;"
+187,Thanks for typing up your thoughts. :-)
+188,"I'm using following regexps.
+let s:markers = { 
+\ 'ours': '^&lt;&lt;&lt;&lt;&lt;&lt;&lt; ', 
+\ 'theirs': '^&gt;&gt;&gt;&gt;&gt;&gt;&gt; ', 
+\ 'base': '^||||||| ', 
+\ 'delimiter': '^=======\r\?$' }  
+And here's the function performing a check.
+https://github.com/samoshkin/vim-mergetool/blob/e5433357577d6292e886b9952cabac91213a07ca/autoload/mergetool.vim#L284-L290"
+189,"Ok, yes, I've got a MWE for you:
+Here is a very important base.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; ours
+variable: XXXXXXXXXXXX
+||||||| base
+variable: base
+=======
+variable: YYYYYYYYYYYYYYY
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; theirs
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+For this, if I run:
+    :MergetoolStart
+I still get the error.
+Quick suggestion: I tend to be able to navigate these sorts of things quite well -- you've done some great documentation, but its entry-point is very difficult. 
+As someone who definitely wants to try out your plugin, I already bring pre-existing knowledge of: diff3-styled markers VS ours/theirs, git to the object db level, vimrc global vars, vim splits, autoload VS plugin dir split, vendor-ing vim plugins, etc. I could just be screwing something simple up, but I think the fact that I go above & beyond to the point where I'm simulating a minimal working example of a git repo w/ a merge-conflict, and still have no idea what the app actually looks like, is indicative of a problem with your README. I think you should have a facepalm-stupid ""Getting Started"" section before you have an Overview breakdown as well-detailed as yours is. I had to go a couple hundred lines down to even get to the point of: Even w/o configuring my git config, how can I just use this in vim on a merge-conflicting file? (i.e. :MergeToolStart) 
+I love that you included all that you did, including the key-binding, but the entry-point is just too side-winding if any issue is encountered, as I have. 
+The lowest hanging fruit to make better use of all the documentation work you put in, in my humble opinion, would be to put a simpler section with the ""this is how it should work for 99% of the users"" before getting into edge cases & optimizations, and then have an ASCII-CAST of that simple workflow.
+I've been interested anyways in better leveraging vim for viewing & resolving merge-conflicts, so I'll eventually figure out the issue, and look forwards to digesting the detailed considerations you've had. But I would imagine most people will give up at first error, even without looking to resolve it, let alone having to dig or talk to the maintainer to resolve it.
+Cheers :)"
+190,"@tlitd, I've covered your use case, and implemented this feature. Thank for interesting idea, I like it.
+See details on how to use https://github.com/samoshkin/vim-mergetool#advanced-layout-customization"
+191,"Thank for your response. I agree that readme has a lot of info, so I will move some sort of ""minimal working example"" section to the top of the readme.   
+Regarding your example, I tried that, and it works fine on my local machine. 
+&#x200B;
+I would ask you to create an issue on github, and attach or share a link to file verbatim as is. I think it might be due to line endings, and when I copy-paste the snippet from reddit comment, I lose them. Please also tell what kind of Vim you are using (terminal, GUI vim) and what are your OS?  
+Could you also try to run vim with this minimal vimrc, so we cut any other stuff possible interfering.  
+set nocompatible
+filetype plugin indent on
+"" or whatever plugin manager you're using
+call plug#begin('~/.vim/plugged')   
+Plug 'samoshkin/vim-mergetool' 
+call plug#end()  
+let g:mergetool_layout = 'mr'
+let g:mergetool_prefer_revision = 'local'  
+Run vim as:
+vim -u &lt;path_to_vimrc&gt; -N  
+Let's continue this discussion inside Github issue."
+192,"@Redstonefreedom
+I've refactored readme. Moved TL;DR section to the top. And introduced separate error message when file includes conflict markers, but not in diff3 style."
