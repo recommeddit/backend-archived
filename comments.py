@@ -68,8 +68,18 @@ def get_comments(reddit, url: str) -> dict:
     return comments
 
 
+def get_post(reddit, url: str):
+    """
+    Get post content and votes
+    :param reddit:
+    :param url:
+    :return: list: post, upvotes
+    """
+    submission = reddit.submission(url=url)
+    return submission.selftext, submission.score
+
 # enable_praw_log()
 # reddit = connect()
-# test_url = "https://www.reddit.com/r/funny/comments/3g1jfi/buttons/"
-# comments = get_comments(reddit, test_url)
-# print(comments)
+# test_url = "https://www.reddit.com/r/cpp/comments/1rml6l/good_books_on_distributedparallel_systems/"
+# post = get_post(reddit, test_url)
+# print(post)

@@ -3,29 +3,40 @@
 import sys
 import search
 import comments
-
-
-def unmark_element(element, stream=None):
-    if stream is None:
-        stream = StringIO()
-    if element.text:
-        stream.write(element.text)
-    for sub in element:
-        unmark_element(sub, stream)
-    if element.tail:
-        stream.write(element.tail)
-    return stream.getvalue()
+import markdown_to_plaintext
+import MonkeyLearnProductSentiment
 
 
 def main():
+    # assume first argument is query
     query = sys.argv[1]
+
+    # search google reddit.com CSE for "best <query name>"
     reddit_urls = search.returnlinks(query)
+
+    # resolve reddit URLs to comments
     reddit = comments.connect()
-    reddit_comments = []
+    reddit_post_comments = []
     for reddit_url in reddit_urls:
-        reddit_comments.append(comments.get_comments(reddit, reddit_url))
-    all_comments = [item for sublist in reddit_comments for item in sublist]
-    print(all_comments)
+        reddit_post_comments.append(comments.get_comments(reddit, reddit_url))
+
+    # flatten list of lists of comments
+    all_comments = [item for sublist in reddit_post_comments for item in sublist]
+
+    # get keys of all_comments
+    all_comments = [*all_comments]
+
+    # convert from markdown to plaintext
+    all_comments = [markdown_to_plaintext.unmark(comment) for comment in all_comments]
+
+    results = dict(
+        sorted(
+            MonkeyLearnProductSentiment.keyword_extractor_total(all_comments).items(),
+            key=lambda item: item[1],
+        )
+    )
+
+    print(results)
 
 
 if __name__ == "__main__":
