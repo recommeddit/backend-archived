@@ -1,103 +1,180 @@
-,comments
-0,"Meld is my favourite. I'm sure there are some tutorials out there, but it's easy to use from the start, and there are some keyboard shortcuts that make life easier."
-1,I'm a fan of beyond compare - mainly as it's cross platform so I can use it on Lin/Mac/Win
-2,https://www.sublimemerge.com/
-3,TIL ppl use something other than “git fetch; git merge origin/master”
+Unnamed: 0,git merge tool,C++ IDE
+0,"Meld is my favourite. I'm sure there are some tutorials out there, but it's easy to use from the start, and there are some keyboard shortcuts that make life easier.","You don't mention what OS you're using, but some general observations:
+
+
+On Windows, Visual Studio is the standard IDE. The ~~Express~~ Community version is free to download and use. Its ""intellisense"" is second to none. The only downside is that the compiler doesn't support the latest standards as well as Clang and GCC.
+
+
+I use a Mac, and I can highly recommend CLion by Jetbrains (it's also available for Windows and Linux). The only downside is that it's a paid product (although they do offer a one month free trial).
+
+
+QtCreator is another multiplatform IDE that is widely used. I've found it to be faster than CLion, though it's missing some handy functions that CLion has. It is free, though.
+
+
+Lastly, if you're using Linux or MacOS then many people swear by Emacs. (Many other people swear at it, though.) It's not an IDE in the traditional sense, but it can be configured to do just about anything, if you're the kind of person who likes tinkering with that sort of thing."
+1,I'm a fan of beyond compare - mainly as it's cross platform so I can use it on Lin/Mac/Win,"A link to a good reference;
+https://m.reddit.com/r/learnprogramming/wiki/tools"
+2,https://www.sublimemerge.com/,"I use Kdevelop  as an ide, fast and lots of useful features. Not sure how easy it is to install on windows though"
+3,TIL ppl use something other than “git fetch; git merge origin/master”,Vim.
 4,"p4merge - https://www.perforce.com/downloads/visual-merge-tool
 The user guide for it: https://www.perforce.com/manuals/p4merge/Content/P4Merge/Home-p4merge.html
 A video tutorial (with transcript) for it - (well, actually p4v, but it gets into the merge tool) https://www.perforce.com/video-tutorials/vcs/resolving-conflicts-p4v
-A video of someone using git and p4merge: https://youtu.be/xDs-LkmQBjI"
-5,p4merge
-6,There has never been a better tool than Kdiff3
-7,"No love for VSCode as mergetool? I know there is this hate to M, but Vscode is a good product, and works really nice as difftool and mergetool"
-8,"I really like SemanticMerge, which should have a package for CentOS"
-9,You can shorten that to just git pull origin master :)
-10,What makes it better than the others?
-11,"I haven't used a dedicated merge tool in years (I just use my text editor) but back when I did, kdiff3 was my jam."
-12,I don’t think kdiff3 has gotten an update in 6+ years. How’s it holding up?
-13,Happy Cake Day!
-14,Thanks!
-15,[deleted]
-16,Beyond Compare. It's not free but from trying many tools I like its feature set the best.
-17,Kaleidoscope
-18,p4merge. Got used to it when perforce was our version control.
-19,Pure command line for me.
-20,There's a nice package for Atom called merge-conflicts that I usually use.
-21,meld works for me
-22,deleted
-23,Diffuse and WinMerge.
+A video of someone using git and p4merge: https://youtu.be/xDs-LkmQBjI","On Linux, eclipse. Better vim emulation than clion and doesn't just work with cmake. Better indexing and features than qtcreator (unless you're actually using Qt, perhaps)."
+5,p4merge,"The ""best""  IDE on windows is probably Visual Studio.
+I do not say that it is perfect.
+There is also free community edition of it."
+6,There has never been a better tool than Kdiff3,I like a simple setup. I'm using Sublime Text (https://www.sublimetext.com/) for writing and Coati (https://www.coati.io/) for navigation and understanding. They both work on Windows.
+7,"No love for VSCode as mergetool? I know there is this hate to M, but Vscode is a good product, and works really nice as difftool and mergetool","It's amazing how under-represented Eclipse is in these comments. I love Eclipse CDT, it has the most complete C++14 support of all the IDEs, it's cross-platform, it's free and it has all the neat features you expect from an IDE."
+8,"I really like SemanticMerge, which should have a package for CentOS","We have at least one thread like this every week, go figure."
+9,You can shorten that to just git pull origin master :),Eclipse has a good code navigation.
+10,What makes it better than the others?,Do not forget http://codelite.org/ I use it for cross-platform software (Linux / Win) successfully. I develop GIS software.
+11,"I haven't used a dedicated merge tool in years (I just use my text editor) but back when I did, kdiff3 was my jam.","I would recommend juCi++: https://github.com/cppit/jucipp due to its tight integration with libclang for best possible C++11/14/17 support. However, debugging through lldb is not yet supported on Windows and Arch Linux."
+12,I don’t think kdiff3 has gotten an update in 6+ years. How’s it holding up?,"Depending on your platform.
+
+Windows: Visual Studio
+OSX: Xcode
+Linux: probably Code::Blocks."
+13,Happy Cake Day!,"Visual Studio is hands down the best, people are making other IDE's to mimic VS but none of them are remotely close.
+For Linux I use Code::Blocks and for OS X I use notepad/sublime because all other ide's are garbage for OS X. Emacs I felt was not fluid in any way and the few months using it I kept finding work around a for all of its quirks and issues rather than coding."
+14,Thanks!,"One important thing to note about Visual Studio is that there is a new edition called Community which is free yet it supports extensions and has almost everything Professional edition has, and VS 2015 update 2 is quite close to full C++17 support
+EDIT: and experimental support for Clang frontend"
+15,[deleted],On Macs xcode is pretty much the standard ide.  Not saying that clion is a bad choice there or anywhere else though.
+16,Beyond Compare. It's not free but from trying many tools I like its feature set the best.,"I forgot to put in my OS, thank you for pointing that out. I'm also glad that you took the time to put in the best IDE to use for each OS."
+17,Kaleidoscope,"I've found it to be faster than CLion, though it's missing some handy functions that CLion has.
+
+Can you elaborate what are those handy functions?"
+18,p4merge. Got used to it when perforce was our version control.,"This comment has been overwritten by an open source script to protect this user&apos;s privacy.  It was created to help protect users from doxing, stalking, harassment, and profiling for the purposes of censorship. 
+If you would also like to protect yourself, add the Chrome extension TamperMonkey, or the Firefox extension GreaseMonkey and add this open source script.   
+Then simply click on your username on Reddit, go to the comments tab, scroll down as far as possible (hint:use RES), and hit the new OVERWRITE button at the top."
+19,Pure command line for me.,Is not a IDE.
+20,There's a nice package for Atom called merge-conflicts that I usually use.,Did You write java?  How does CDT compare to JDT (specifically java EE version)?
+21,meld works for me,can you compare it with any experience of VS? I'm currently deciding between VS and Eclipse
+22,deleted,"I don't know about the IDE as a whole ( I'm not a big IDE fan to begin with), but the VS debugger is the best debugger I have ever seen.  The custom visualizer capability is a game changer."
+23,Diffuse and WinMerge.,"Was it not just C++17's library part, not whole? AFAIK it's not even clear yet what C++17 will have...
+I'm VS user and i really like it, but it bugs me, that they just don't give too much shit about being standard compliant. Example. I'm guessing GCC gets it right.
+So i wouldn't be so hyped about VS' support for supporting standards too much."
 24,"I use opendiff.  
-No specific reason besides it is what I have been using since I started working with xcode."
-25,"I usually wind up on diffchecker. So far I haven't needed that much functionality in a diff tool, so I just google it real quick."
-26,There is a diff plugin for sublime text that works well (can be found through package control)
-27,I prefer the command line but source tree is nice
-28,"Guy I work with wrote this, and it's nice. https://github.com/scottgonzalez/pretty-diff"
-29,"For git merge conflicts, I usually give up and just edit the file manually."
+No specific reason besides it is what I have been using since I started working with xcode.","Xcode drives me mad with its insistence that everything within a namespace must be indented, with no option to change it (or any other formatting settings for that matter). I admit that that's more of a personal gripe, though. I've also found that its autocompletion for C++ isn't as good as CLion or QtCreator."
+25,"I usually wind up on diffchecker. So far I haven't needed that much functionality in a diff tool, so I just google it real quick.","Xcode it standard IDE on OS X but it support for C++ is pretty bad compared with other languages.
+So CLion could be better alternative."
+26,There is a diff plugin for sublime text that works well (can be found through package control),"A few off the top of my head:
+
+
+CLion has a ""quick fix"" feature which is absurdly good at doing What You Want at the right time. For example, if you declare a std::vector in your code, CLion will offer to add #include &lt;vector&gt; at the top of your source file if it's not already there (it even usually puts it in the right place). Another example: if you add a member variable to a class, CLion will offer to add it as an extra parameter to your constructor(s).
+
+
+CLion can automatically generate a skeleton implementation for a member function in a cpp file, given a declaration in a header. This is a massive time-saver. It's even smart enough to provide a reasonable default implementation: a declaration of a bool function will return false, a declaration returning a pointer will have a definition returning nullptr, etc.
+
+
+The current beta version has support for going the other way too: if you write a member function definition in a source file, CLion can add the declaration to the header
+
+
+CLion is just great at code generation generally. Getters and setters (albeit with unchangeable lowerCamelCase Java-y names) for private member variables for example, or a constructor taking all members. It can do these inline or separate source and header, as you choose.
+
+
+If you change the declaration of a function, CLion will offer to change the definition to match (and vice versa). QtCreator can do this too, but when it does it insists on moving * and &amp; so that they're hugging the variable name rather than the type name, which is NOT WHERE THEY GO :-)
+
+
+CLion's autocomplete can ""see through"" macros, whereas QtCreator's can't. For example, I use an OpenGL wrapper (Glad) which uses macros to wrap the GL function pointers. QtCreator won't even tell me how many parameters the macro/function takes, whereas CLion tells me their names and types, like a regular function call.
+
+
+QtCreator seems to have more difficulty in working out which header corresponds to which source file, if the two are in different directories of a CMake project. My typical CMake project layout has public headers in an include/ directory, and source files in src/. QtCreator won't associate a source and header unless you specifically add the header files to your CMake project, which is not recommended CMake practice.
+
+
+On which note, QtCreator defaults to a project view which won't even show header files unless you add them to the project (which again, CMake recommends against as it detects used headers automatically). CLion defaults to a filesystem view instead, which shows all your files. QtCreator has a filesystem view of course, but with an annoying ""feature"" that if you double-click to edit a nested CMakeLists.txt from the filesystem view, QtCreator will try to open it as a new project(!).
+
+
+N.B. I don't mean to sound overly critical of QtCreator -- I used to use it every day, I think it's a fantastic product, and I'd have no hesitation in recommending it to people who don't want or can't afford CLion. I could write a similar list of little features QtCreator has that I wish CLion would implement (responsiveness being the main one -- I don't know whether it's C++ vs Java or what, but QtCreator is much faster than CLion for me). It's entirely possible I'm now biased towards CLion simply because I stumped up money for it..."
+27,I prefer the command line but source tree is nice,Vim + ctrl-P + youcompleteme  + ... is actually a pretty good setup.
+28,"Guy I work with wrote this, and it's nice. https://github.com/scottgonzalez/pretty-diff",What about emacs + projectile + cmake-ide + rtags + company-irony?
+29,"For git merge conflicts, I usually give up and just edit the file manually.","I barely write Java. From cursory examination and talking to Java devs, what I can basically say is this:
+
+In Java, the language is easy to parse. Indexing is fast and accurate. In C++, the language is very hard to parse, particularly because of macros and turing complete templates. So indexing can be quite slow depending on your scale; a 1 million line project might take a couple of minutes to index from scratch (though typically you don't need to index from scratch all the time). And it will never be perfectly accurate; if go-to definition brings you to the right place more than 99% of the time you're generally quite happy.
+Related to the above, Java IDE's (including Eclipse) can do very sophisticated refactorings very reliably. The ""latest and greatest"" in CDT is being able to refactor a class name; this means changing the name of the class at all points of usage, changing the file names, and changing the #includes. This very simple refactoring is already quite hard.
+In Java, it's practical even with large projects to continuously build; each time you save you rebuild. When you hit a shortcut key in Eclipse your unit tests run instantly because your project is already built. This isn't really practical in C++; so you hit a key, and wait while your project builds and then the tests run."
 30,"Vim + Fugitive.
-I used to use kdiff and then Kaleidoscope. Vim isn't as pretty, but it's nice to do everything in the editor now."
-31,"Yeahhh! The Jetbrains IDEs come with the most fabulous diff tool ever devised. The differences are really clear, and when you're comparing two files you can make direct edits to both. I've told them they should sell it as a separate product but they want to focus on IDEs. Download a free trial and give it a whirl!"
-32,Beyond Compare is amazing.
+I used to use kdiff and then Kaleidoscope. Vim isn't as pretty, but it's nice to do everything in the editor now.","It's hard for me to compare the two, I do most of my programming on Linux, and when I occasionally have to code on Windows using C++, I always use the free versions of VS. This means I can't say what's not available in VS. These are some certain pros for Eclipse though:
+ *  The most complete support for the most current C++ standard. Right now that would be C++14, but if the past is any indication, Eclipse will probably always be the first to support them, half a decade before VS.
+ *  Cross-platform, Free (duh)
+ *  Feels lighter, you don't have to install a massive multi-GB editor, you don't have to remember your accounts in various MS systems and renew your license periodically.
+Some nice things to mention about Eclipse, without any comparison to VS (since I have no idea about the counterparts):
+  * A very nice git integration, especially for staging chunks. Other features are nice too, like seeing line-by-line what code introduced when in the repo history.
+  * Very powerful content assist. I really abuse my compiler with metaprogramming, using the latest features, but Eclipse can still give me content assist. It also sees through macros. Like, when a macro defines a new type with an argument as the name, eclipse realizes that and highlights that argument as a type. Eclipse's comprehension of the code also helps a lot with navigation, like jumping to definitions or call sites.
+  * Decent refactoring and source generation support. Not stellar, but good considering how messy these things are in C++, like when a macro's argument is a new type name, if you rename the type somewhere in the codebase, that macro's argument is also updated.
+Cons:
+  * Cmake editor is available as an external plugin, which is somewhat annoying to install.
+  * The editor can be unstable sometimes. You can see visual glitches, or the indexer can silently crash and content assist stops working. In some rare extreme cases, while trying to get content assist for deeply nested sections of code using a combination of advanced features (like a generic lambda capturing multiple variadic template argument packs) the editor can outright crash."
+31,"Yeahhh! The Jetbrains IDEs come with the most fabulous diff tool ever devised. The differences are really clear, and when you're comparing two files you can make direct edits to both. I've told them they should sell it as a separate product but they want to focus on IDEs. Download a free trial and give it a whirl!","Was it not just C++17's library part, not whole?
+
+Yes, ever since C++11, Microsoft has been playing this little game of announcing their compiler became feature-complete* (and the fine-print is that it's library feature-complete, which sometimes isn't even possible without the missing language features)."
+32,Beyond Compare is amazing.,"I guess you are right, even C11 is not fully supported. But it appears that they have started to up their game lately"
 33,"Beyond Compare is a great tool, but I don't really use it for diffs.
-I work at a place which still does manual deployments for a specific product (lame), and Beyond Compare comes in really handy for them. But the diff tool in Webstorm is just too convenient."
-34,"Same here - Perforce was the first version control I ever used, and I just got used to the way p4diff lays out the versions."
-35,Same here. I use git diffwith colors configured for git. I didn't even realize that there were other tools for handling diffs. I'm not opposed to trying something new; I just haven't. I could see something more guided than git's output being useful for files that undergo heavy parallel churn.
-36,This. I swear by it and on it's own it has converted many a co-worker to using JetBrains IDEs themselves.
-37,"git merge works pretty well. 
-But seriously, its not terribly hard to resolve conflicts and probably worth learning. I tried to find tools before and never found one I super enjoyed."
-38,Maybe this could be: http://meldmerge.org
-39,"[merge]
-tool = vimdiff"
-40,Perforce merge is very nice.  It is packaged together with their other stuff but it really is a standalone tool.
-41,Kdiff is my preferred tool. You don't need much with a merge tool just an A vs B vs C view and the ability to select and edit in the tool.
-42,Beyond Compare is a good tool for merging. It provides a graphical user inetrface for merging. I don't know whether its free though.
-43,Install VS Code and install Git Lens extension. You'll never look back!
-44,"I use PowerShell with Git Posh, and P4Merge - I think it's easy better than Git Bash. 
-A made a script that will install it with an SSH login (if you want). You can run it from here."
-45,You need to look for a tool supporting 3-way merge. This will automatically solve you like 80% of your merge conflicts. I use Kdiff3 http://kdiff3.sourceforge.net/
-46,I just wish git could easily merge and diff non-deterministic XML files :(
-47,vimdiff is underrated!
-48,"It's not, but it's what I have at work and I'd recommend it."
-49,"Haha, I'm sure there's something like that out there."
-50,Any idea what's the cost if I want to purchase? It looks like I am in trial period then.
-51,"Looks like $60: https://www.scootersoftware.com/features.php?zz=pricing
-Apparently only the pro edition does 3-way merging. 
-I would probably just use KDiff or something if work didn't pay for BC."
-52,Ohh. Ok. Thanks for info. I will check this link.
-53,Have you looked at Magit at all?
-54,"Good ideas, thanks.
+I work at a place which still does manual deployments for a specific product (lame), and Beyond Compare comes in really handy for them. But the diff tool in Webstorm is just too convenient.",That example actually works just fine on VS 2015 update 2.
+34,"Same here - Perforce was the first version control I ever used, and I just got used to the way p4diff lays out the versions.","I have never used xcode personally, I just see a lot of people using it.  I'm surprised it would have bad completion though, isn't it clang based like QtCreator?"
+35,Same here. I use git diffwith colors configured for git. I didn't even realize that there were other tools for handling diffs. I'm not opposed to trying something new; I just haven't. I could see something more guided than git's output being useful for files that undergo heavy parallel churn.,"CLion will offer to add #include <vector> at the top of your source file if it's not already there 
+
+QtCreator does this too (but in a more manual way) : if you use a type which isn't included and right-click on the type it will propose to include the file defining this type.
+
+CLion can automatically generate a skeleton implementation for a member function in a cpp file, given a declaration in a header.
+
+QtCreator does this too : write the prototype of the function, right-click on it and it will generate its body in either your header or a matching .cpp. However it won't intelligently add the return nullptr;.
+Also you can write your code inline in the header and by right clicking in the class name you can refactor to move all the definitions to the .cpp.
+
+The current beta version has support for going the other way too: if you write a member function definition in a source file, CLion can add the declaration to the header
+
+QtCreator does this too.
+
+CLion is just great at code generation generally. Getters and setters (albeit with unchangeable lowerCamelCase Java-y names) for private member variables for example, or a constructor taking all members. It can do these inline or separate source and header, as you choose.
+
+QtCreator does this too (add a Q_PROPERTY, right-click, ""generate missing member functions"").
+The others are indeed concerns :)"
+36,This. I swear by it and on it's own it has converted many a co-worker to using JetBrains IDEs themselves.,"These are indeed some handy features, i might have to give a proper try to CLion in the future."
+37,Have you looked at Magit at all?,Still not an IDE.
+38,"Good ideas, thanks.
 To the people unable to think beyond magit, note that magit supports only recent versions of git. My day job is in an organisation which still uses a git version unsupported by magit.
-BTW, why don't you think emacsclient when noticing the slow startup problem of your Emacs ? -Q is too much of an overkill. Programming language support is very much required when resolving conflicts in programming language files. How else do you quickly check the usages of functions you just resolved conflicts in ? It also goes against forming habits with your own keybindings, defaults, colours etc. if some of the time you need to use a -Q emacs."
-55,"Thanks, I have to get into using ediff one day, too. Do you know about https://github.com/justbur/emacs-vdiff? I don't use it myself but it looks like you want to achieve something similar with ediff."
-56,This should be the only reply
-57,"See https://magit.vc/manual/magit/Resolving-Conflicts.html magit is using ediff. So the second technique to speed up ediff workflow is still useful.
+BTW, why don't you think emacsclient when noticing the slow startup problem of your Emacs ? -Q is too much of an overkill. Programming language support is very much required when resolving conflicts in programming language files. How else do you quickly check the usages of functions you just resolved conflicts in ? It also goes against forming habits with your own keybindings, defaults, colours etc. if some of the time you need to use a -Q emacs.",[deleted]
+39,"Thanks, I have to get into using ediff one day, too. Do you know about https://github.com/justbur/emacs-vdiff? I don't use it myself but it looks like you want to achieve something similar with ediff.","The reason why I even ask. For Java eclipse is so inconsistent, that it quickly becomes an unusable mess. Take one of the most popular builders - maven. What would you expect from an IDE that claims to support it? I expected two things: That it knew where is the generated code and that IDE tools would integrate it. None of that. Even better: Most people would advise ditching maven integration and building outside of IDE. Why would I use an IDe then?"
+40,This should be the only reply,"/u/sztomi, the announcement that /u/undefinedusername was referring to is here: https://blogs.msdn.microsoft.com/vcblog/2016/01/22/vs-2015-update-2s-stl-is-c17-so-far-feature-complete/
+Note that Stephan (/u/STL) was very careful about pointing out that this post refers to the STL being C++17 so-far complete. In fact, the first three questions in the FAQ at the end of the blog post discuss how this is not talking about the compiler. The first question mentions that the compiler isn't yet C++11 feature-complete.
+That said, I'm sorry that our message wasn't clear to you. We certainly aren't trying to play a ""little game"" with our developer community. We are committed to making improvements to MSVC standards conformance--I can provide citations if you like. But I don't think we're hiding the fact that we've still got a ways to go."
+41,"See https://magit.vc/manual/magit/Resolving-Conflicts.html magit is using ediff. So the second technique to speed up ediff workflow is still useful.
 In ediff's default UI, you can only trigger ediff commands from bottom panel, my technique makes it possible to trigger ediff comamnds outside of the panel. And you can use any third package like hydra, generel.el, evil to assign new keybindings to ediff commands.
 You could check ediff code by yourself. For example, the first statement of ediff-next-difference is (ediff-barf-if-not-control-buffer).
 The first technique I introduced is for cli git mergetool, it's not for magit. I know people who are unfamiliar with CLI might be confused, so I provided screencasts on using git mergetool with vim&emacs in the article.
-I'm experienced with all the popular merge tools (vim, emacs, p4merge, intellij, meld ...) but running git mergetool in shell is my favorite because it's fastest."
-58,"I used to work on some embedded hardware . So I feel more comfortable using Emacs and Git in shell.
+I'm experienced with all the popular merge tools (vim, emacs, p4merge, intellij, meld ...) but running git mergetool in shell is my favorite because it's fastest.",Independently verified.
+42,"I used to work on some embedded hardware . So I feel more comfortable using Emacs and Git in shell.
 -Q still loads the programming language's major mode. Just some extra features are disabled. For example, my Debian box always loads some ispell stuff by default which could be disabled by -Q.
 My setup is divided into multiple layers. The key binding layer init-evil.el is always enabled. So I don't lose any key binding setup.
 The key point is I could control my setup when merging.
 I could choose ignore the flag and still enable all the layers.
 I can even enable some extra feature instead. For example, I found my favorite color theme dracula is not fit for merging because major mode's syntax highlight and ediff's hunk highlight mess up in this theme. So I enable deeper-blue theme if and only if I'm merging with git mergetool.
-My ediff setup, https://github.com/redguardtoo/emacs.d/blob/master/lisp/init-ediff.el"
-59,Ediff is fantastic
-60,"One package alone is not enough. This one package could be emacs-vdiff, ediff, or any package.
+My ediff setup, https://github.com/redguardtoo/emacs.d/blob/master/lisp/init-ediff.el","Xcode is bafflingly bad at C++. It has to be either still using their pre-clang stuff for IDE functionality or doing something very wrong because autocomplete and jump-to-definition basically just don't work for C++ (the refactoring stuff doesn't even try to work, which is probably a good thing). YouCompleteMe+CTags in vim are dramatically better, and while YCM is pretty good, ctags is a very low standard.
+One of the weirder parts of writing obj-c++ in Xcode is that you can be witing c++ and getting utter nonsense out of autocomplete, but then the instant you type something that looks like it could be a message send you suddenly get surprisingly accurate autocomplete with documentation."
+43,Ediff is fantastic,"Xcode's main shortcomings compared to other IDEs are the lack of refactoring support and the somewhat limited code formatting options. This is a bit annoying given that Xcode is built on Clang (which gives us clang-format, etc), and the fact that Apple is invested in quite a bit of C++ behind the scenes (LLVM and WebKit, to name a few)."
+44,"One package alone is not enough. This one package could be emacs-vdiff, ediff, or any package.
 I just demostrated how to optimize Emacs so it could be powerful and fast.
-Peformance is the key point of my article. If it's impossible to resolve conflicts MORE efficiently in Emacs, I will keep using vimdiff."
-61,It's kind of confusing to see something that isn't magit.
-62,"For the second bullet point you list all one needs to do is to set git's merge conflict style to diff3. I agree with you about ediff being the best merge tool and having poor defaults. I've been using smerge for a couple of years but recently I took the bullet and set up emerge and for messy large conflicts (which are rare) it is way better than smerge, but for the majority of the cases it's the same as smerge but with more pleasant default key bindings.
-But going through all the trouble to setup ediff to start from the CLI w/o using emacs client seems an unnecessary complication."
-63,Okay that's good. I just wanted to mention emacs-vdiff so you could take a look at it if you weren't aware of it yet.
-64,Use magit which works well with ediff or smerge
-65,"I will have a look at emerge, emerge-files-with-ancestor seems good to integrate into git mergetool. I'm still reading ediff's code, not settled on any specific package yet.
+Peformance is the key point of my article. If it's impossible to resolve conflicts MORE efficiently in Emacs, I will keep using vimdiff.","You're right, unix is."
+45,It's kind of confusing to see something that isn't magit.,"Emacs is an IDE. 
+
+Emacs is an OS.
+FTFY."
+46,"For the second bullet point you list all one needs to do is to set git's merge conflict style to diff3. I agree with you about ediff being the best merge tool and having poor defaults. I've been using smerge for a couple of years but recently I took the bullet and set up emerge and for messy large conflicts (which are rare) it is way better than smerge, but for the majority of the cases it's the same as smerge but with more pleasant default key bindings.
+But going through all the trouble to setup ediff to start from the CLI w/o using emacs client seems an unnecessary complication.","Well, CDT is probably worse than JDT, so if you don't like JDT, I don't know if you'll like CDT. The primary value in the IDE for me is not integration with build tools (although it is nice). The primary value is just indexing and code browsing tools. In CDT I can not only go to definition, but find references, look at inheritance hiarachies, include graphs, call graphs, search my entire codebase for any type (macro, function, enum...), etc. Ultra powerful syntax highlighting (CDT makes great distinctions, like function parameters inside function bodies, different colors for const vs non-const accesses of variables) and partial build integration (build and unit test errors jump to the code, and errors are marked directly in the editor) are just substantial gravy."
+47,Okay that's good. I just wanted to mention emacs-vdiff so you could take a look at it if you weren't aware of it yet.,"I know, it's always pointed out, yet, the headline is misleading every single time. That is not to say I'm not appreciating the tremendous effort Microsoft has been putting into VS in the last couple of years, I really do."
+48,Use magit which works well with ediff or smerge,"/u/Rseding91 /u/dodheim 
+Well it doesn't on VS 2015 update 1 and probably on VS2015 (without updates), so my guess is even in update 2, there are some bugs that makes it not standard compliant.
+Guess i should update my VS anyway..."
+49,"I will have a look at emerge, emerge-files-with-ancestor seems good to integrate into git mergetool. I'm still reading ediff's code, not settled on any specific package yet.
 Currently I have good feeling about ediff because it has some dangerous black magic. like ediff-revert-buffers-then-recompute-diffs, the developer of ediff just comment this command, ;; Not bound to any key---to dangerous.  A user can do it if necessary. ;)
-Besides, there is no limitation that I can use only one package when resolving conflicts. maybe I can run some emerge or magit api inside merged buffer created by ediff."
-66,"After reading its code, I'm still not sure how emacs-vdiff can integrate into https://git-scm.com/docs/git-mergetool
-I only use cli git mergetool to resolve conflicts because cli is more efficient. I use vimdiff as the default text editor triggered by this cli because I believed vimdiff is lightweight. But now I realize Emacs+ediff could be equally lightweight if set up in the right way."
-67,I invented a generic technique to improve ediff/smerge/magit. Please read my article.
-68,I'm not sure either but after skimming your post I thought the UI might be a better option for you.
-69,"Like everything you write, your ""guidance"" tends to be incoherent, boastful,
+Besides, there is no limitation that I can use only one package when resolving conflicts. maybe I can run some emerge or magit api inside merged buffer created by ediff.","In my personal experience, xcode's main shortcomings is incredible buggy IDE with c++ projects. Xcode really struggles with syntax highlighting and code completion with c++. Not only that, it also places breakponts on the wrong line, same goes with warning and error highlighting. And this issue existed literally since version 4."
+50,"After reading its code, I'm still not sure how emacs-vdiff can integrate into https://git-scm.com/docs/git-mergetool
+I only use cli git mergetool to resolve conflicts because cli is more efficient. I use vimdiff as the default text editor triggered by this cli because I believed vimdiff is lightweight. But now I realize Emacs+ediff could be equally lightweight if set up in the right way.","Yep, we recognized that a lot of developers don't distinguish between the compiler, libraries, and code generator but weren't sure quite how to phrase it. Based on the reaction--here and elsewhere--we'll try to be even more explicit next time."
+51,I invented a generic technique to improve ediff/smerge/magit. Please read my article.,"/u/ripper37, I believe you've just illustrated a case where we fixed a bug to help MSVC become more standards compliant. There are still places where MSVC is not standards compliant--you don't have to guess. But this example you have provided should serve as evidence that Microsoft is working on becoming more standards compliant. 
+There's a recent blog post here about other work we're doing to conform to and help create the C++ standard: https://blogs.msdn.microsoft.com/vcblog/2016/02/11/compiler-improvements-in-vs-2015-update-2/"
+52,I'm not sure either but after skimming your post I thought the UI might be a better option for you.,"I don't deny that and i'm very glad you keep working on it. VC is my favorite IDE. The only problem is portability between compilers when writing code that should work on more platforms/compilers.
+I hope you keep up good work and make VC even more standard compliant. Good thing is that you allowed to use clang as compiler too, this way i won't have to maintain couple build systems just to check if my code works on other compilers. :)
+Also, i'd love some more refactoring tools if i may propose something. I know there is ReSharper, but some tools should be included in VS itself if you ask me."
+53,"Like everything you write, your ""guidance"" tends to be incoherent, boastful,
 and wordy.  Nobody wants to read it, but I do because I have very little going on in my
 life.
 tl;dr your article merely supplies the incantation to invoke ediff when
@@ -107,305 +184,153 @@ flag startup-now in your init.el is a huge non-starter for me, but also
 unnecessary because your already use -Q.
 Nothing about your setup suggests it would be faster than magit-smerge.  In
 particular, you have to run out to the shell.  Stay in magit with all your
-project files already loaded."
-70,At least you're honest.
-71,"99% of the time I use the integrated one of my Netbeans IDE. It works good: I can select left/right change and live edit the code.
-Another tool which I use is Meld"
-72,Whiskey :)
-73,Beyond Compare. You have to pay for 3-way merge though IIRC.
-74,Visual Studio Code has one build in - its quite good. Single click accept/decline HEAD or ref. I found GitKraken to be quite slow.
-75,Kdiff
-76,IIRC P4Merge is available for free. I always thought that was a pretty good tool.
-77,Yeah. HALF my team has Netbeans Licences. But I can't get them for the other half. (And it works exactly the way I'd want it to work.)
-78,Does it come with a nice IDE? ;)
-79,"It's actually really good. It's what the merge ""experience"" should be."
-80,Is it the same tool as Visual Studio's?
-81,Of course!
-82,"I said iDe, not iCe. 
-hahaha."
-83,"Disclosure: self post.
-I've been using a `sed` shell script to do this for several years and decided to make it into a standalone Vim plugin instead. I find it makes identifying and fixing merge conflicts much, much easier than with other Vim tools that try to use the default three-way diff."
-84,"Looks cool. I never really liked the three-way diff, so I'm gonna try this out. You might want to escape the quotes in the git config --global mergetool.diffconflicts.cmd 'vim -c 'DiffConflicts' $MERGED $BASE $LOCAL $REMOTE' command listed in the installation section though."
-85,"I've been using your diffconflicts script for quite some time and I really like it! Thanks for turning it into a plugin, will try it soon."
-86,"I usually end up using meld for conflicts, this looks handy though, good job"
-87,"Is this basically the same as doing the following?
+project files already loaded.","I'm glad you're liking the Clang/C2 functionality. We've been seeing more and more people using it for cross-compiler testing.
+As for refactoring tools, we've looked into it but there's nothing I can promise at the moment. For the time being using add-ins is the best option."
+54,At least you're honest.,"The worst I’ve ever used is no longer availabile or relevant: the Windows IDE for N64 development.
+Instead of a project file, it just parsed the linker file (which you had to write by hand) in order to determine which cpp files were used and where they were located. It would list those paths in a small, fixed-size GUI window. So, if your dev path was too long you couldn’t distinguish between files when you want to open one.
+On top of that, it somehow frequently failed to correctly parse these simple strings and some listing would randomly be garbage characters. That meant there were source files you simply could not open. Too bad. If you determined you needed to debug on of those, the work-around was to find some function in a different file that called into the needed file, place a breakpoint in that function then step into the needed file.
+For one release it had an off-by-one error in the variable watch window. It would display each variable reinterpret-cast as the type that was declared next after the actual type of the object. The work-around was to locate the type declaration and typecast a pointer to the object as whatever type was defined just before the actual type.
+But, hey. We had it better than the PS1 team. The same IDE for them was literally useless for anything besides launching the game on the device.  They had to log-debug exclusively."
+55,"99% of the time I use the integrated one of my Netbeans IDE. It works good: I can select left/right change and live edit the code.
+Another tool which I use is Meld","The worst I've been forced to use was Dev C++ for a computer science. It's old, unintuitive, doesn't get updates, and is buggy as hell.
+For me, the best editor will always be (Neo)Vim + some plugins."
+56,Whiskey :),"QtCreator and VisualStudio, both really high up for me. On the other hand Eclipse and XCode are the worst experiences of my professional life."
+57,Beyond Compare. You have to pay for 3-way merge though IIRC.,"Please consider “Unix as an IDE” type setups as well.
+A good terminal emulator, tmux, tiling window manager, neovim with plugins, cmake, plus clang tools make for a really powerful IDE like workflow. There’s a greater learning curve and initial effort involved, but it allows infinitely more customization and tweaking.
+I have a feeling that this setup is preferred by a large number of developers especially in the linux community. This is what I personally use. After lots of experience with Visual Studio and CLion, all the monolithic IDEs just feel very bloated.
+By excluding “Linux as an IDE” type setups from your poll you might skewing your results."
+58,Visual Studio Code has one build in - its quite good. Single click accept/decline HEAD or ref. I found GitKraken to be quite slow.,"I've got a big problem with this poll.  It seems that the result of the poll would suggest that ""this is the IDE that people like the best"".  But people will check the box of the the best IDE among those that they have actually used.  So even if all IDES were equally liked by their users, the number of checks on the most widely used IDEs would be much larger. This is probably what accounts for the fact that Visual Studio comes out near or at the top of both lists.  
+Lesson - beware of benchmarks ... and polls"
+59,Kdiff,[deleted]
+60,IIRC P4Merge is available for free. I always thought that was a pretty good tool.,"For me the worst has been eclipse cause I kept having issues with it (i.e. eclipse crashing because the indexer runs out of memory).
+I've been using qt Creator quite successfully lately, so I indicated that was my favorite, although I don't have much experience with the others. Only problem I've run into so far is that after I switched to the clang back end, it uses ungodly amounts of ram to function, and code assist is a bit slower now. The quality of the code assist is a lot better though, which is why I put up with it."
+61,Yeah. HALF my team has Netbeans Licences. But I can't get them for the other half. (And it works exactly the way I'd want it to work.),"Visual studio, for me, is by far the best. Make sure you use at least 2015 preferably 2017, these two new version are much better and handle larger projects pretty good (you need to let it build the initial intelisense database and then you're good). I use it everyday at work with a large code base and run only into minor issues."
+62,Does it come with a nice IDE? ;),I really like IDE features but at the same time I truly hate it when it feels slow and clunky.
+63,"It's actually really good. It's what the merge ""experience"" should be.","CLion with IdeaVim plugin!
+I have nothing against Visual Studio, and they have done a fantastic job since version 12 (VS2013). They only get better with each future version.
+I just like how CLion is configurable and lightweight in comparison to Visual Studio. And I feel the tools are better designed (refactoring, code generation). If you could couple Clang libtools with CLion, you'd have a serious toolkit."
+64,Is it the same tool as Visual Studio's?,"It's not the worst, but Visual Studio has for me always been a frustrating experience. It keeps freezing up on large projects and IntelliSense breaks randomly. It's not acceptable that you have to keep doing incremental builds to catch compilation errors.
+Libclang based IDEs seem far more robust"
+65,Of course!,"CLion is by far my favorite. Really nice CMake integration, great customization features and active development. Love it!"
+66,"I said iDe, not iCe. 
+hahaha.","Where is turbo c++ :D
+Should it really be at ""other""?"
+67,"Disclosure: self post.
+I've been using a `sed` shell script to do this for several years and decided to make it into a standalone Vim plugin instead. I find it makes identifying and fixing merge conflicts much, much easier than with other Vim tools that try to use the default three-way diff.","I haven't used it exentisvely, most certainly not for c++. I just get in touch with it every now and then because I work in app security, but I am certain that Xcode is the single worst IDE known to man."
+68,"Looks cool. I never really liked the three-way diff, so I'm gonna try this out. You might want to escape the quotes in the git config --global mergetool.diffconflicts.cmd 'vim -c 'DiffConflicts' $MERGED $BASE $LOCAL $REMOTE' command listed in the installation section though.","I can't adequately express how disappointing Xcode is. It's halfway there on so many fronts.
+With Eclipse, I expect it to be complete garbage, so it actually surpasses expectations."
+69,"I've been using your diffconflicts script for quite some time and I really like it! Thanks for turning it into a plugin, will try it soon.","I have 2 best IDEs for C++: QtCreator for programming, but debugging in it is unusable for larger projects ... so the second one is Visual Studio for debugging, which is unusable for programming (talking about version 2015 as there is no express version of 2017 and I cannot use 2017 community because of its license terms)."
+70,"I usually end up using meld for conflicts, this looks handy though, good job","It looks like on both polls results are similar. Both show which IDE is used more often.
+It would be better to make a poll which features people like and which one dislike."
+71,"Is this basically the same as doing the following?
 
 Run git mergetool to open a 3-way vimdiff.
 Run :%diffget LO (from the merged copy) to make the merged copy identical to LOCAL.
 Close (CTRL-w c) LOCAL and BASE, leaving a 2-way diff between the merged copy (identical to LOCAL) and REMOTE.
 Modify the merged copy as necessary, save, and quit.
 
-This is what I often do."
-88,"I used to use this for years! Glad to see it standalone! I even added perforce support, I'll see if I can clean it up and open a PR.
-However, I don't use it anymore because it doesn't work well under Windows subsystem for linux (running Ubuntu in windows). I think because it's lacking cygpath. (Worked well under cygwin.)"
-89,"Looks cool, but how if this any easier than three-way diff and diffput/diffget commands? 
-I take that your mergetool is mainly manual, so for big conflicts it would be very cumbersome to get through all the differences, right?"
-90,"is there a way to bind the keys ""2"" and ""3"" to "":diffget 2<cr>"" and "":diffget 3<cr>"" but only if you are in diff-view?"
-91,does not tell what it does :/
-92,Good call. Thanks.
-93,"That's awesome to hear! :-)  The script hasn't seen much change over the years so I don't expect the plugin will either, but hopefully this is at least easier to install."
-94,"I've been using that script too, thanks for it."
-95,"Very close! LOCAL and REMOTE don't contain the result of anything that Git was automatically able to merge which is why this plugin uses the file with conflict markers instead.
-The goal is to get the benefits of a two-way diff of LOCAL & REMOTE plus the benefits of Git's automatic merge. Sometimes both ways will produce an identical diff but not always. My example script doesn't showcase that difference; I'll think of a way to add it."
-96,"That would be cool to see if you find some time.
-Interesting about WSL. I've been testing those waters recently. It's not quite there but close. I hope they keep pushing it forward."
-97,This is a mergetool like any other -- no more or less manual than usual. And you use :diffput/:diffget in exactly the usual way. The README directly tries to address your question about why three-way merges are hard to work with.
-98,"I'm not sure if there's a more robust way to detect when Vim is in diff mode but in my vimrc I use this:
+This is what I often do.","My favourite is Qt Creator, though my 2nd favourite must be VS(2015+). I really miss it's in-line go-to definition/declaration feature. It helps a lot when you are trying to figure out how some huge project functions and constantly need to look up what certain functions do without switching from the context of the current file."
+72,"I used to use this for years! Glad to see it standalone! I even added perforce support, I'll see if I can clean it up and open a PR.
+However, I don't use it anymore because it doesn't work well under Windows subsystem for linux (running Ubuntu in windows). I think because it's lacking cygpath. (Worked well under cygwin.)",no sublime text?
+73,"Looks cool, but how if this any easier than three-way diff and diffput/diffget commands? 
+I take that your mergetool is mainly manual, so for big conflicts it would be very cumbersome to get through all the differences, right?","It's a toss up for me. I, personally, use Qt Creator and it works fine, until you need to see the internals of an object of a class, derived from Qt class: it just freezes up, no amount of waiting was enough.
+XCode was meh experience for me, I guess I would need more time with it.
+Visual Studio wasn't very usable the last time I used it extensively, unless you used Visual Assist, this might've changed since then.
+I've never used CLion, but my friend said that it was a resource hog.
+Oddly enough, NetBeans worked relatively well, but doesn't offer much functionality and might work worse on larger projects.
+Eclipse I've never managed to get working, easy choice for worst one."
+74,"is there a way to bind the keys ""2"" and ""3"" to "":diffget 2<cr>"" and "":diffget 3<cr>"" but only if you are in diff-view?","CodeBlocks works well for console applications, like for school.
+I'm sure most prefer Visual Studio for larger projects."
+75,does not tell what it does :/,"YouCompleteMe is the only vim autocompletion that works for C++ for me, but it leaves some features to be desired. YouCompleteMe needs to have tabbed insertions like Visual Studio and Xcode.
+Clang’s language server tool would be awesome to incorporate.
+Any terminal editor like vim is limited by what a terminal can do, but I can’t live without a modal text editor. The vim plugins for Visual Studio really suck. I also hate working in Windows.
+If Microsoft released Visual Studio for Linux, I would switch tomorrow. They are moving in the right direction with native support for cmake projects.
+What we need is a modern terminal standard. The idea of fusing terminal and editor is a good one. I love the LLVM infrastructure project. And I love the Unix philosophy. Modal text editors are also generally a good idea in my opinion."
+76,Good call. Thanks.,I love using VSCode. I have WSL and the integrated console is super convenient.
+77,"That's awesome to hear! :-)  The script hasn't seen much change over the years so I don't expect the plugin will either, but hopefully this is at least easier to install.","When I was in university, our ""Introduction to Programming"" was given in Oberon-2. The IDE that came with it was straight out of hell. 
+All hotkeys were Mouse button combinations, even the compilation command. The IDE would crash when dragging windows too quickly, and you could get compiler errors such as
+""Error, too many errors.""
+or
+""Not enough registers, please simplify expression.""
+If you wanted to compile a file, you had to place a ""marker"" in the file, and then click the build command.
+It was straight out of hell. It taught me how to code though."
+78,"I've been using that script too, thanks for it.","I have been fretting over this the past day, as I am currently coming over to c++ from Python.
+I have been using code::blocks, and I actually really like it. But it is also the first thing I tried. Is there any reason I should be avoiding it? E.g., will it not scale well with larger projects? Is it bad for refactoring or debugging? Is there something that is clearly just better?
+I like it partly because I work on both Windows and Linux, and it runs  nicely on both.  The interface is kind of old-fashioned but whatever I'm focused on code. It is very easy to use, not a ton of stuff going on that is confusing.
+I was going to start a thread on this topic, but thought I'd bring it up here."
+79,"Very close! LOCAL and REMOTE don't contain the result of anything that Git was automatically able to merge which is why this plugin uses the file with conflict markers instead.
+The goal is to get the benefits of a two-way diff of LOCAL & REMOTE plus the benefits of Git's automatic merge. Sometimes both ways will produce an identical diff but not always. My example script doesn't showcase that difference; I'll think of a way to add it.",What ? Title written in the past tense and no Borland C++? Heresy !
+80,"That would be cool to see if you find some time.
+Interesting about WSL. I've been testing those waters recently. It's not quite there but close. I hope they keep pushing it forward.","I'm surprised so many people don't like Xcode, I use it pretty exclusively (although I always set up my projects with CMake). Maybe I should give CLion another look."
+81,This is a mergetool like any other -- no more or less manual than usual. And you use :diffput/:diffget in exactly the usual way. The README directly tries to address your question about why three-way merges are hard to work with.,"Would really like to try Visual Studio, but I can't bring myself to work using Windows. With WSL it's somewhat bearable but after a couple days I just can't stand the many terrible systematic design mistakes. It can't work with any filesystem besides NTFS and (ex)FAT, it's stuck with weird character encodings when literally everything else is UTF-8. And then there are the little things, like having absolutely no decent terminal, weird Window placement on multiple monitors, a total mess of new and old system settings and no way to do that on the command line. At least for that you can actually read a description instead of needing screenshots and translating everything to your locale. Also choco really isn't a match for integrated package managers and knowing my Linux works in whatever CPU you have available
+That said I'm really happy with Linux, alacritty, tmux, NeoVim and YouCompleteMe. No matter if I'm coding in Python, Go, C++ or writing a letter in LaTeX it all feels the same and does exactly what I want it to do."
+82,"I'm not sure if there's a more robust way to detect when Vim is in diff mode but in my vimrc I use this:
 if ! &amp;diff
    ...stuff...
-endif"
-99,"You're right, the README could use a tl;dr. Added, thanks."
-100,/u/whiteinge
-101,\o\ |o| /o/
-102,"|   |   |
-/\  /\   /\"
-103,The Perforce merge tool (p4merge) is free and pretty solid.  I use gitextensions as my git ui and have no issues using this combo for unity
-104,I use Sourcetree it's free. I'm a total noob though and barely know how to use this stuff. I have however set it up correctly and have had other team member collaborate on the same project with it. Using BitBucket.
-105,I personally recommend diff merge. It's a very solid merge tool for windows that you came never go wrong using.
-106,"kdiff3 is the best merge/compare tool I've ever used. It's free, cross platform, has lots of keyboard shortcuts, and supports command line arguments so you can set other apps like Visual Studio to use it by default for all merges."
-107,"Ditto for source tree, merging feels like a magic trick each time we do it!
-Three devs, two on Mac and one on PC all using source tree and bit bucket."
-108,"I could never get the KDE merge tools to work according to my intuition, and instead recommend meld."
-109,"Do you tried?
-git config --global --add merge.tool kdiff3"
-110,"Meld and P4Merge are my favourites. Meld more so for things like inline editing, would be nice if could use Qt file dialog though."
-111,"kdiff3 works, I just don't know how to use it. I am used to meld."
-112,"I’m glad you were able to succinctly explain why every mergetool I’ve used has been a confusing mess. 
-I’m sad that there wasn’t even one that did it right."
-113,"Author here with a shameless self-post. I would very much like to see a more broad discussion on how to make mergetools better and more widely used. I have one opinion, detailed in the post, but I'd also love to hear other ideas.
-Almost none of my coworkers use a mergetool. I think they're usually intimidating with lots of (unnecessary) colors and buttons and features. Plus not one of them (that I know of) interfaces with Git effectively and displays all the hard work that Git puts into resolving conflicts.
-If you agree with my post or not, I hope we can all agree that our common enemy is editing conflict markers manually. ;-)"
-114,"If I understand your post, you want the image's behavior without the window on the downside? If you are looking for it, Emacs + Magit has been supporting this for a long time image  
-Edit added Image"
-115,"If you're using Vim's diff just use :diffoff and :diffthis liberally.
-I find VimDiff to be one of the best tools because it offers the clean diff that the author wants and I can choose which version I'm diffing against. The author's choice to only perform:diffoff in the merged pane and was a bit odd to me - depending on what you're merging the relevant panes to compare change. Sometimes you do want to look at LOCAL vs REMOTE but other times you might care about REMOTE vs MERGED or BASE vs MERGED."
-116,"I don't agree with removing the conflict markers. Personally I resolve conflicts by hand using these markers, all I need from the mergetool is highlighting and folding, which is why I wrote the tool vimdiff3, that you didn't mention.
-However, you have a point about mergetools showing hunks that are already resolved.
-The right place to fix this is in git mergetool itself, so that all the mergetools benefit from this. I already sent a RFC patch to the mailing list. Let's see what they say.
+endif",Pffftt idk about u casuals but notepad is the shit
+83,"You're right, the README could use a tl;dr. Added, thanks.","Honestly, the very worst is Xcode. Because for certain projects, you're sort-of forced to use Xcode and don't have a sane alternative. Like for an iOS codebase purely written for iOS (so no cross-platform stuff, no CMake etc.), set up as an Xcode project. shudder. Xcode is so bad, and you can't even easily switch to some other IDE easily to build, run and debug.
+I really don't get how an IDE of such a big company with huge resources can be so incredibly bad, both from a usability as well as a functional perspective.
+At least on any other platform you usually have a choice of using another IDE, for whatever you're doing."
+84,/u/whiteinge,"Worst: 
+Eclipse CDT"
+85,\o\ |o| /o/,"I am sure Visual Studio could be Nice, but I wonder how you guys customize it? Compared to CLion, it is absolutely horrible to customize. I found it non-intuitive how keyboard shortcuts are assigned (I find the simple json file in VScode so well suited, I would love it in VS). How do you add multiple cursor without an extension?
+If you guys could share a nice setup of VS, maybe we (other IDE developers) would take a shot at using it."
+86,"|   |   |
+/\  /\   /\",I thoroughly enjoyed Visual Studio. We used Netbeans in a college class and it was buggy. I wouldn't reccomend the later.
+87,"I could never get the KDE merge tools to work according to my intuition, and instead recommend meld.","I think, with semantic autocompletion, CTags browsing, and error highlighting, my Vim is basically an IDE at this point. 
+Visual studio is the worst due to broken licensing (i.e. the free community version wants me to sign into my microsoft account, and the sign-in feature links me around in a loop and never works), unusably slow auto-completion, and annoying defaults."
+88,"Do you tried?
+git config --global --add merge.tool kdiff3",Can we get some love for Visual Studio Code? The C/C++ extension from Microsoft does an excellent job!
+89,"Meld and P4Merge are my favourites. Meld more so for things like inline editing, would be nice if could use Qt file dialog though.","I hate VS when messes up .*proj and .designer.cs files just by changing one little thing... oh, it seems that you clicked on a button in your form... let me flip over all the lines in the designer file so that your commit is messed up... -.-"
+90,"kdiff3 works, I just don't know how to use it. I am used to meld.","I haven't seen much about C++ builder on here so..
+I've been using Embarcadero C++ Builder for about 5 years now. I have a love/hate relationship with it. 
+Pros: 
 
-mergetool: use resolved conflicts in all the views
+Build Applications easy and fast
+easy to use 
+has most things you would expect from and IDE plus some
+multi platform (I don't use this feature personally)
 
-Thanks for bringing this up.
-FWIW this is vimdiff2 with the patch above. I removed the markers to show BASE, but I could have removed the markers to leave LOCAL, which would show basically the same as diffconflicts (plus one pane)."
-117,[deleted]
-118,"just with fewer awful colors
+Cons: 
 
-Don't blame vim for your crappy config.
-But yeah, I switched to vimdiff2 early. Three way merge is just way too complicated, and for no reason."
-119,excellent writeup and explanation; thanks
-120,"Thank you for your work on this, I’ve always felt like I was the idiot for not being able to make sense of the standard mergetools.  
-The only one I’ve ever found useful is Tortoise Merge, and would be very interested in seeing your analysis of its strategy."
-121,3 way merges in merge tools are awful eyesores. I've resorted to just having git dump the >>>>> in a text file and doing it myself. Much easier.
-122,Great work. I like the trick of merging both ways and using that to find conflicts. I’m looking forward to git GUIs adding their own version of these features. I really like the realtime changes to conflict highlighting.
-123,"I've been resolving conflicts with kdiff3 for years. It's confusing at first, and actually it remains confusing for me, but once i did it a few times, then i could do it without thinking about it."
-124,"Very interesting read, thanks a million for that great article. I'll need to go into this topic, as I too find the standard tools confusing. Would that even help with rebasing? I sometimes get conflicts during rebasing for my own commits and always find it hard, as I probably think about the end result instead of the commit-by-commit cherry pick when doing rebases.
-I'd be interested in your opinion on SmartGit and maybe Fork. They are both available for mac OS. I like SmartGit a lot, their developers are great and could imagine they'd be open to improving their tool."
-125,"Thank you for this excellent write up!
-I believe vim-mergetool is based upon your diffconflicts plugin and offers some nice features."
-126,How does IntelliJ's merge compare to the others? It isn't listed.
-127,"I have just been using VSCode and delta, but as you say it's close and I still do manual stuff. I life it that way though."
-128,"I'm sorry but the author is wrong. 3 way merges FTW.
-KDiff3 the best.
-BTW Merges does not have to be easy because combining code produced by two programmers is a great responsibility so it's nothing special that it's difficult. It needs understanding the root of conflict that is why 3 way merge is superior."
-129,"I think IntelliJ has a great three way merge tool. It has that ->All<- button that pulls in the non-conflicting changes from the left and right leaving just the unresolved conflicts. I am not sure why it just doesn’t do it automatically but it isn’t too much of a bother to press the button.
-
-including conflicts that Git was able to automatically resolve
-
-Regarding that statement, if git was able to resolve a “conflict” automatically then by definition that isn’t a conflict right? What kind of “conflict” can git resolve on its own?"
-130,!remindme 1 day
-131,"I think the problem is mismatched expectations.
-For me mergetools work perfectly fine, but that's because I expect the conflict markers.
-OP seems to think that's a bug, and apparently you do too.
-It should be possible to introduce a new configuration to git mergetool so markers are automatically removed, which might be useful for beginners, but at least I wouldn't use it."
-132,Give your merge way a name lite “2x2 way merge”. Also maybe list and critique p4merge?
-133,"That was going to be my question.  How does emacs+magit stack up. I am a magit addict, and I've used ediff a lot (not with git), but not magit's merge tools"
-134,"Thanks for the image. Are the left and right panes each ""side"" of MERGED? Or are they LOCAL and REMOTE?
-I'd love to add Emacs to the post but it's a tad more involved to set up. Would you mind running this script to produce a repo with merge conflicts and screenshot the default Emacs + Magit view of that? Then I'll add it and attribute you for the help."
-135,"I agree vimdiff is the best tool of the bunch, and it's the only one I use regularly. I also agree that it's useful to switch between the different windows to compare them individually -- so useful in fact that it's worth adding mappings to easily move which windows are diffed. :D
-But that's only useful to learn the history leading up to the conflict. Because the diff is ultimately between LOCAL and REMOTE it's not helpful when resolving the conflict. The diff includes unnecessary visual noise and forces you to re-resolve conflicts that Git already resolved and placed in MERGED."
-136,"I'd argue one of two reasons for a mergetool is to avoid having to edit conflict markers by hand. But you're very right that highlighting and folding is the other big reason. Being able to identify subtle differences at a glance makes all the difference.
-How do you use vimdiff3? It isn't clear to me from reading the source.
-Thanks for starting the thread. I'll keep an eye on it."
-137,vim-mergetools is a solid tool and the author is a nice person to discuss things with. It took inspiration from diffconflicts (there's an acknowledgement in the README).
-138,"Don't blame vim for your crappy config.
-
-I used the default colors so readers can recognize it more easily. My config uses much more muted colors. :)
-vimdiff2 is better but still has the same problem as all the others. Because it diffs LOCAL against REMOTE you're left re-resolving conflicts that Git has already resolved."
-139,"Thanks for the suggestion. Added Tortoise.
-I used defaults from Git-for-Windows and TortoiseGit but I think something may be misconfigured still. (I'd love to correct the entry if so.)"
-140,"Would that even help with rebasing?
-
-Definitely!
-
-SmartGit and maybe Fork
-
-Ooh, I wasn't familiar with either one. Thanks. I added screenshots for both. You're right -- SmartGit is really, really nice. I'm very much a terminal person but graphical mergetools can do such a better job of showing a lot of complex things."
-141,Thanks. Added.
-142,kdiff3 is cool. I don't want it to go away. I want kdiff3 (and all the other mergetools too) to be even better by first splitting MERGE into halves instead of showing LOCAL and REMOTE.
-143,"I will be messaging you in 1 day on 2020-12-17 05:45:04 UTC to remind you of this link
-4 OTHERS CLICKED THIS LINK to send a PM to also be reminded and to reduce spam.
-^(Parent commenter can ) ^(delete this message to hide from others.)
-
-|^(Info)|^(Custom)|^(Your Reminders)|^(Feedback)|
-|-|-|-|-|"
-144,"None of the tools I’ve used show the markers, they just show a confusing 3 way merge where one of them is already half merged, basically exactly what the OP said."
-145,"Good suggestion! A friendly name would help to get the word out. At the risk of confusion with the Vim plugin of the same name, I think ""diffconflicts"" has a little traction already. I'll try to find a good place to add that to the post.
-Added p4merge."
-146,I don't know if this is from MERGED LOCAL or REMOTE because I have forgotten about Ediff and that way of merging (Thanks for making me check it). I am going to do a little research and answer in the coming days. I will try running the script until the end of the week and report back my findings.
-147,"Ooh, I like those mappings, thanks for suggesting them.
-I do find myself mostly looking at LOCAL and MERGED, so a default that turns off REMOTE and BASE might be handy but I find before I'm ready to commit that I always want to see a diff of each one against MERGED which is why I can't think of removing any from consideration."
-148,"I'd argue one of two reasons for a mergetool is to avoid having to edit conflict markers by hand.
-
-And I disagree. And apparently all git developers do too, since not a single mergetool removes those markers (at least from the git side).
-That's not to say that an option couldn't be introduced to do what you want (if there's enough interest), but I for one wouldn't use it. I want (need?) the markers.
-
-How do you use vimdiff3?
-
-Just like you use vimdiff2: git mergetool -t vimdiff3.
-You probably would not like it, since it's basically just MERGED (with conflict markers)."
-149,"No it doesn't.
-vimdiff2 opens LOCAL MERGED REMOTE."
-150,"One thing to note here, is that intelliJ actually has a button to merge all non-conflicting changes. It is not the same as diffing against MERGED directly, but the option is there to quickly focus on the actual conflicts"
-151,"vimdiff* shows the markers and OP didn't like that, in fact he said:
-
-Mergetools exist because nobody wants to edit conflict markers by hand.
-
-Which I don't agree with. If other tools remove the markers, they should at least give the option to show them (exactly as git presents them).
-Fortunately the vimdiff* ones do. In fact, I wrote vimdiff3, which is basically the file with the markers plus some hints."
-152,"I'm not sure diffconflicts is a name that would allow recognition. So, I'm the guy https://trunkbaseddevelopment.com. Say that and there's a good 50:50 chance the average developer with 10 years experience knows what is being referred to. Say GitHub-Flow, and there's a 90% chance the same 10-yr developer knows what is being referred to. Same for Git-Flow.  
-How about something working in ""Low"" (adjective) - ""Low Diff Conflict"", ""Low Diff Merging"" ""Low Merging"", ""LoMerge"". Or Minimal/Min instead of Low/Lo."
-153,"Found time today so I am posting it now. The image with vanilla Emacs + Magit is here. The left is the local Head, and the right is the local branch. I am not 100% sure about the last sentence so I am going to search a little bit more to understand it."
-154,"That sounds like a solid workflow and a great final step to ensure you didn't miss anything from either side.
-I think my ideal would be a two-way diff between each half of MERGED with LOCAL and REMOTE on either side of that (so four windows total) but that's a lot to fit in a terminal which is why diffconflicts opted to show the latter three in a separate tab page. I think a GUI tool could handle all that nicely though in a single window."
-155,"since not a single mergetool removes those markers (at least from the git side).
-
-My guess is that's just inertia from the default since several mergetools do remove or hide them (outside of the git invocation scripts). It'll be interesting to watch the discussion on the mailing list thread you started.
-
-You probably would not like it
-
-Thanks for the explanation. You're right; I don't like it. :)"
-156,Right. There's a screenshot of what you're describing in the comparison section. You're left with either diffing LOCAL against REMOTE and re-resolving conflicts that Git already resolved or editing conflict markers by hand. Both of which this post is aiming to avoid.
-157,"Ive never seen the markers in my vimdiff, but then I’ve never made heads or tails of the 4 way merge. Ill take a look at vimdiff3."
-158,"Perfect writeup for P4Merge.
-How about Express instead Low/Min ?"
-159,"You're very right about Git-Flow.
-Thanks for the suggestions. What mental image does ""low"" evoke? I'm not sure I see the association. Low like in ""low level"" or something else?
-How about ""split""? Perhaps ""Split Diff Conflict"" or ""Split Conflicts"" or ""Split Merging""?"
-160,Awesome! That looks exactly right. Thank you for making that screenshot; I added it to the post. I don't understand that sentence either but now I want to do some code-diving to see how they're setting this up. This is the first tool aside from mine that I've seen do this. Very cool. Thanks again.
-161,"You are not supposed to diff LOCAL against REMOTE; they are there just for reference.
-You are supposed to edit MERGED, and resolve the conflicts there. Yes, that requires editing conflict markers by hand.
-In all mergetools you are supposed to edit the conflict markers.
-In theory you could configure git mergetool to automatically remove the conflict markers, but you would need to choose which code to leave (local, remote, or base), which in my experience vary on every ""merge"".
-I prefer to choose chunk by chunk."
-162,Weird. The first image in the post shows vimdiff with the markers (bottom pane).
-163,"Examples of low that strike a mental image: ""low effort"", ""Low Fi"", ""low profile"". And yes, even ""low level"". There's a connotation of ""good"" or ""efficient"" there. I'm not sure ""split <something>"" is snappy or attractive, or alluding to good or efficient or better or quicker."
-164,"You are welcome, If this helps you, you can ask in magit's gitter and ask the guys there. They are always happy to help!"
-165,"In all mergetools you are supposed to edit the conflict markers.
-
-Nah, several of the graphical tools don't show them at all. Conflict markers are just one way to visualize differences.
-
-In theory you could configure git mergetool to automatically remove the conflict markers
-
-I did! (or as a shell script.)
-
-you would need to choose which code to leave (local, remote, or base)
-
-I leave those exactly intact because they are very useful as a reference. I instead create two new temporary files (left conflict, and right conflict) and, if the merge is successful, eventually overwrite MERGED with the result.
-
-I prefer to choose chunk by chunk.
-
-That's cool. We can still be friends."
-166,"Nah, several of the graphical tools don't show them at all.
-
-I mean the scripts in ""/usr/lib/git-core/mergetools/"". All of them pass unedited MERGED. What each tool decides to do with that afterwards is a different story.
-
-I did! (or as a shell script.)
-
-No, you created a separate tool. I mean modify git mergetool itself.
-
-I leave those exactly intact because they are very useful as a reference.
-
-Not true. I looked at your code. You have two versions of MERGED, both with markers removed.
-
-The left pane is MERGED with all markers removed, except the equivalent of the ""local"" side.
-The right pane is MERGED with all markers removed, except the equivalent of the ""remote"" side.
-
-
-That's cool. We can still be friends.
-
-Friends don't let friends remove conflict markers :p"
-167,"No, you created a separate tool. I mean modify git mergetool itself.
-
-I feel like we're splitting hairs here. The shell script changes you submitted to the mailing list are almost identical to the shell script in my original implementation, except I don't overwrite LOCAL or REMOTE. But you are right that it would be useful to do this upstream in order to influence the approach downstream mergetools take.
-
-All of them pass unedited MERGED. What each tool decides to do with that afterwards is a different story.
-[...]
-You have two versions of MERGED, both with markers removed.
-
-Look again. Neither one of my implementations modify MERGED, LOCAL, REMOTE, or BASE. They both pass all four of those files, unedited, to vimdiff. The plugin then splits MERGED as two unsaved buffers, and the shell script creates two, new temporary files.
-
-The left pane is MERGED with all markers removed, except the equivalent of the ""local"" side.
-
-Not quite. The ""left"" side of MERGED isn't the same thing as LOCAL. They're not equivalent which is the main point. LOCAL is the state of the file before the merge.
-
-Friends don't let friends remove conflict markers :p
-
-In that case think of it not as removing the conflict markers but rather displaying them in a different way. We're still friends."
-168,"The shell script changes you submitted to the mailing list are almost identical to the shell script in my original implementation, except I don't overwrite LOCAL or REMOTE.
-
-You don't use LOCAL or REMOTE.
-
-But you are right that it would be useful to do this upstream in order to influence the approach downstream mergetools take.
-
-That's the point. This way all other mergetools would benefit.
-
-They both pass all four of those files, unedited, to vimdiff.
-
-It doesn't matter if you modify the file or not; you modify the buffer, so the user is presented with a modified version of MERGED without the markers.
-
-The ""left"" side of MERGED isn't the same thing as LOCAL.
-
-I know they are not, but with my patch they are.
-Do you know how to try my patch?"
-169,"You don't use LOCAL or REMOTE.
-[...]
-Do you know how to try my patch?
-
-Yes I know how. However I do use LOCAL and REMOTE and so your patch is a worse version of what I'm already using and it would be a worse upstream mergetool for everyone.
-The blog post mentions why LOCAL and REMOTE are useful in addition to a split MERGED. The diffconflicts plugin accepts LOCAL and REMOTE as arguments in order to display them in a new tabpage on demand.
-
-with my patch [the] ""left"" side of MERGED [is] the same thing as LOCAL.
-
-That makes things worse because we already have LOCAL and we already have the left side of MERGED. We don't need two copies of the same result. It would be nice to have both a copy of the file before the merge and a copy of the file after the conflict resolution. I'm not advocating for replacing LOCAL; I'm advocating for not including it in the default diff or during the manual resolution step.
-We may be talking past each other a bit so this is probably a good place to pause. We're friends and I owe you a beer at the next non-pandemic'd Vim conference for a deep conversation and for getting a dialog going upstream.
-Cheers."
-170,"However I do use LOCAL and REMOTE
-
-Do you? Your blog post doesn't mention how to view those files.
-
-your patch is a worse version of what I'm already using and it would be a worse upstream mergetool for everyone.
-
-Name one problem.
-
-That makes things worse because we already have LOCAL and we already have the left side of MERGED.
-
-You have the left side of MERGED. The rest of the world doesn't."
-171,"Cool project (and thanks for the props)!
+Linker bugs
+Only supports full C++11 with clang based compiler
+Really slow compile times with clang compiler.  
+lack of third party library support for bcc compiler"
+91,The Perforce merge tool (p4merge) is free and pretty solid.  I use gitextensions as my git ui and have no issues using this combo for unity,"I use visual studio since in recent years it has become pretty ubiquitous for game development. UE4 and Unity both use it as a default and primary editor.
+What takes it from ""okay"" to ""good"" (but not great) for me are the addition of VsVim for general code navigation/editing and Visual Assist X (or VAX for short) which is an improved intellisense replacement.
+Lastly at my workplace increadibuild and its visual studio plugin helps to massively speed up build times.
+Here's why I say good, not great:
+For one example: With a recent task at work I've been discovering that project files and solution files have a bit of an ugly relationship. For example if you open a project in visual studio and build it, it may build differently than if you open the solution and build it because even when building individual projects the solution-wide configurations meddle with the build process.
+There's also just a number of annoying UI windows. Visual studio has a heap of them, but some have really annoying rules regarding resizing, always-on-top, or other window settings which get in the way.
+All that said, I don't think there's a better dev environment for what I do. So it's not great but it's good and the best available."
+92,I use Sourcetree it's free. I'm a total noob though and barely know how to use this stuff. I have however set it up correctly and have had other team member collaborate on the same project with it. Using BitBucket.,"visual studio should be fine, but with its shitty intellisense makes it the worst."
+93,I personally recommend diff merge. It's a very solid merge tool for windows that you came never go wrong using.,"Best: VS >= 2010
+Worst: VS <= 2008"
+94,"kdiff3 is the best merge/compare tool I've ever used. It's free, cross platform, has lots of keyboard shortcuts, and supports command line arguments so you can set other apps like Visual Studio to use it by default for all merges.",Eclipse gives me testicle ache
+95,"Ditto for source tree, merging feels like a magic trick each time we do it!
+Three devs, two on Mac and one on PC all using source tree and bit bucket.","QtCreator has been amazing for me. C++ is just a hobby for me, and Qt just feels great to use. The IDE lets you do everything by hand or use the designer tool if you're lazy or just want to have a window done quickly."
+96,"Cool project (and thanks for the props)!
 Question for you (I don't often get to talk to people who think deeply about diffing \^_\^): What is the utility of a three-way diff when resolving conflicts?
 I've always been puzzled by the popularity of those tools. I completely appreciate a three-way diff when trying to understand the history that led up to the conflict, of course -- both authors started from BASE, authorA makes changes in LOCAL, authorB makes changes in REMOTE and seeing all three versions helps to understand the individual intents that lead to the conflict. But that's very much a read-only, data collection step for me. (That's why that opt-in three-way tab in diffconflicts is read-only.) Often the resolution is that I want some combination of LOCAL and REMOTE, or occasionally only LOCAL or REMOTE, but I can't think of a time where I've wanted to disregard both and go back to BASE.
-Three-way diffing tools are certainly popular though so I often wonder if I'm the crazy one or if it's everyone else. :-D  If you made it this far past my wall o' text, I'd be interested to hear what utility you see/use that I might be missing."
-172,How would this be different from vim-fugitive as a merge-tool?
-173,"Out of curiosity, how does it compare to splice?"
-174,"Definitely a lot of configuration, and now I'm hitting an error that I can't find a resolution to:
+Three-way diffing tools are certainly popular though so I often wonder if I'm the crazy one or if it's everyone else. :-D  If you made it this far past my wall o' text, I'd be interested to hear what utility you see/use that I might be missing.","I knew what the result for ""worst IDE"" was going to be, and that it would be the ""winner"" by a long shot, even before I saw the results..."
+97,How would this be different from vim-fugitive as a merge-tool?,vim/emacs/vscode(meh).. i stopped using real IDE's long time ago
+98,"Out of curiosity, how does it compare to splice?","I wonder about that ""other""... quite popular. What is it? C++Builder? stuff for embedded? 
+Edit: wow, XCode!"
+99,"Definitely a lot of configuration, and now I'm hitting an error that I can't find a resolution to:
 ""File does not have conflict markers.""
 ... when I do indeed have conflict markers. Could my markers be misconfigured? Maybe it's a 2-way/3-way compatibility difference?
-EDIT: but FYI the readme is well formatted, informative & readable. A lot of configuration is sometimes necessary for things like this, especially when wanting it to work ""seamlessly"" in different contexts, like from git with ""git mergetool""."
-175,friendly suggestion: use gifs/video to illustrate the features.
-176,[deleted]
-177,I'll use it next time I hit a merge conflict and let you know what I think :P
-178,"mark, was just thinking to start using vim as mergetool!"
-179,What color scheme are you using in your screenshots?
-180,"Hello, ""whiteinge"". Thank you for your ""diffconflicts"" project, which I've used as an inspiration and a baseline.
+EDIT: but FYI the readme is well formatted, informative & readable. A lot of configuration is sometimes necessary for things like this, especially when wanting it to work ""seamlessly"" in different contexts, like from git with ""git mergetool"".","I'm sorry but if you use vim/emacs (even nano) you've cucked yourself.  Using your hands to hammer nails doesn't make you talented, it makes you a fool.  Use the right tool for the job ❤️"
+100,friendly suggestion: use gifs/video to illustrate the features.,"vim and visualstudio express(2015, 2017).
+vs express edition doesn't support vim feature(vsvim), so i am implementing my own editor."
+101,[deleted],What world are you people living in? Xcode is BY FAR the best.
+102,I'll use it next time I hit a merge conflict and let you know what I think :P,"What was the N64 IDE called? And are you saying the PS1 used the same IDE? I'm interested in seeing what it looked like.
+Did the N64 have an SDK or something? Or did you just write everything you needed yourself?"
+103,"mark, was just thinking to start using vim as mergetool!","Sounds like the SNSystems debugger. But that wasn’t an IDE, really.
+Unless you’re talking about the CodeWarrior IDE, though I’d be surprised if they shipped something with an off-by-one error, at the same time automated software updates weren’t a thing back then either, so I suppose it is possible.
+I never did N64 professionally, but the PS2 tools by SNSystems were still fairly Windows 3.1 looking back in 2001."
+104,What color scheme are you using in your screenshots?,Which games did you develop?
+105,"Hello, ""whiteinge"". Thank you for your ""diffconflicts"" project, which I've used as an inspiration and a baseline.
 &#x200B;
 Actually, your reasoning about value of 2-way vs 3-way diff was something that makes me stop and think about how I deal with a conflicts. Your idea clicks me - most time we're using either ""ours"" or ""theirs"" side, of mix thereof to resolve a conflict, and occasionally I need to review their common base just to get deeper insight on why two versions diverge. That's it.
 I've been using conventional 3-way diff merge tools for all my professional career, and there were some inconveniences which I had to accept in absence of alternatives.
@@ -425,8 +350,8 @@ guitool = diffmerge
 &#x200B;
 Both tools are at hand:
 $ git mergetool # launch Vim
-$ git mergetool -g # launch DiffMerge"
-181,"So, what vim-figutive does (and any similar solution):  
+$ git mergetool -g # launch DiffMerge","I have a friend that's been messing around with the N64 C SDK. The only compiler provided is ancient at this point, and super buggy. In a function, you must declare all of the variables at the beginning, before anything else, or else the compiler will throw an error."
+106,"So, what vim-figutive does (and any similar solution):  
 
 It opens 3 vertical splits, with $MERGED file in the middle, and HEAD and MERGE_HEAD revisions to the left and to the right. In Vim, when there're 3 buffers marked with "":diffthis"", it highlights all possible diffs between those files, rather than highlighting only unresolved conflict. Personally, it distracts me, as it shows all diffs between HEAD,MERGE_HEAD and MERGED file, and I want to focus on unresolved conflicts only.
 MERGED file has raw conflict markers unprocessed. If you want to see common-base, you need to parse ""||||||| base"" and ""======"" delimiters manually with your eyes. Also, in all but simple merge conflict scenarios, you would have to edit those conflict markers manually  
@@ -437,15 +362,15 @@ Pros are:
 It optimistically picks up ""ours"" side of conflict. You don't have to deal with and edit conflict markers directly.
 Conflict resolution starts where automatic ""git merge-file"" gives up. You have diffs and highlighting present only for merge conflicts, not for any possible diff between HEAD, MERGE_HEAD and MERGED file, as vim-fugitive does.  
 
-So I'd say this approach is similar to what https://github.com/whiteinge/diffconflicts does, rather than what vim-fugitive "":Gdiff"" does. This plugin was inspired by ""whiteinge/diffcoflicts"", but goes farther with extra features (see readme). And indeed, it is flexible enough to replicate either diffconflicts, vim-fugitive, or regular vimdiff, or adapt to your personal habits."
-182,"Seems that I've missed ""splice"" somehow while exploring existing solutions. Would give it a try, if I had time. Vim takes a lot of free time, BTW. It's the endless configuration loop. :-)  
+So I'd say this approach is similar to what https://github.com/whiteinge/diffconflicts does, rather than what vim-fugitive "":Gdiff"" does. This plugin was inspired by ""whiteinge/diffcoflicts"", but goes farther with extra features (see readme). And indeed, it is flexible enough to replicate either diffconflicts, vim-fugitive, or regular vimdiff, or adapt to your personal habits.",I learned c++ with DevC++! It's my pick for worst IDE as well
+107,"Seems that I've missed ""splice"" somehow while exploring existing solutions. Would give it a try, if I had time. Vim takes a lot of free time, BTW. It's the endless configuration loop. :-)  
 Quick look at the readme makes me a bit nervous though, since I'm using ""figutive"" a lot.
 &#x200B;
 
 Splice and Fugitive do not play well together. If you try to use Splice as a git mergetool while you have Fugitive installed it may segfault Vim, even if you're not using any Fugitive features.
 
-&#x200B;"
-183,"Hm, regarding configuration, that's not too many. See minimal example in readme, and maybe some key mappings, if you'd like. Plus "".gitconfig"", if you're going to run as ""git mergetool"", but that's optional.
+&#x200B;","I learned C++ with Dev C++, and back then (more than 10 years ago), it wasn't too bad."
+108,"Hm, regarding configuration, that's not too many. See minimal example in readme, and maybe some key mappings, if you'd like. Plus "".gitconfig"", if you're going to run as ""git mergetool"", but that's optional.
 let g:mergetool_layout = 'mr' 
 let g:mergetool_prefer_revision = 'local'  
 Yes, there are a lot of info/text in readme, describing different scenarios, but all that's optional, you can start with simple configuration as in the snippet above. And then adjust various options, if you need more power/customization.  
@@ -462,31 +387,34 @@ If you only have two sides of a conflict - `ours` and `theirs`, make configure G
 [merge]
 conflictStyle = diff3
 If that's not the case, and your conflict markers looks right, could you please share a sample file? I would check from my side. Maybe something wrong with my regular expressions.
-&#x200B;"
-184,"Yeah, thanks, good point. ""Monosnap"" screenshot tool I'm using can record videos/gifs, but I don't like it. Need to find some alternative or maybe use screencast recording app. Will give it a try next time."
-185,"Seems that you want something like this: http://take.ms/WBIz7  
+&#x200B;","Same here, luckily the professor let us change it as he knew how shitty it ~~was~~ is"
+109,"Yeah, thanks, good point. ""Monosnap"" screenshot tool I'm using can record videos/gifs, but I don't like it. Need to find some alternative or maybe use screencast recording app. Will give it a try next time.",I also like to use terminator to have multiple displays and I use htop to monitor how the program runs
+110,"Seems that you want something like this: http://take.ms/WBIz7  
 It's not supported out of the box right now, but it's possible to implement. For now, just navigate to `base` split, and run. Don't use "":diffoff"", so options like ""scrollbind"" and ""cursorbind"" are not reset.  
 set nodiff  
 If you have syntax highlighting off by default for diffs, you can turn it on:
-set syntax=on"
-186,"https://draculatheme.com/vim/ with some minor adjustments.  
+set syntax=on","Really? Xcode is rock solid for C, and VS is complete garbage to me, it doesn't even suggest variables as you type...
+like it'll show you but it just gets in the way and idk it's VERY irritatng."
+111,"https://draculatheme.com/vim/ with some minor adjustments.  
 Plus, I have ""set syntax = off"" to disable normal syntax highlighting when window is in diff mode.  
 Also, I changed styles for highlight groups for DiffText and DiffChange. 
 "" Do not highlight changed line, highlight only changed text within a line
 hi! DiffText term=NONE ctermfg=215 ctermbg=233 cterm=NONE guifg=#FFB86C guibg=#14141a gui=NONE
 hi! link DiffChange NONE
 hi! clear DiffChange
-&#x200B;"
-187,Thanks for typing up your thoughts. :-)
-188,"I'm using following regexps.
+&#x200B;","what I dont get with people that use vim or similars is how do you guys refactor your code on large projects. I'm sure multi-cursor edit is simple enough to implement and there's probably plugins for it. But when it comes to renaming an interface in a large project, I would be kind of scared of doing a simple string search/replace without any compiler help or without being able to pick and choose which of my ""hits"" I actually want to replace and which I want to leave out. It's easy enough on Intellij and maybe other more bloated IDEs, but I dont know how vim/emacs guys deal with this. Also, moving something from one package to the other is a piece of cake with Intellij, since it re does your imports for you anywhere you were importing and using your class."
+112,Thanks for typing up your thoughts. :-),"Very true.  I'm a KDE developer so by all rights I should use KDevelop or QtCreator exclusively.  But those weren't available when I started so even now I'm still a ""Linux as the IDE"" developer, with Vim, a Konsole with a gazillion open shells, and a good web browser."
+113,"I'm using following regexps.
 let s:markers = { 
 \ 'ours': '^&lt;&lt;&lt;&lt;&lt;&lt;&lt; ', 
 \ 'theirs': '^&gt;&gt;&gt;&gt;&gt;&gt;&gt; ', 
 \ 'base': '^||||||| ', 
 \ 'delimiter': '^=======\r\?$' }  
 And here's the function performing a check.
-https://github.com/samoshkin/vim-mergetool/blob/e5433357577d6292e886b9952cabac91213a07ca/autoload/mergetool.vim#L284-L290"
-189,"Ok, yes, I've got a MWE for you:
+https://github.com/samoshkin/vim-mergetool/blob/e5433357577d6292e886b9952cabac91213a07ca/autoload/mergetool.vim#L284-L290","I use Unix as an IDE (mostly) but can't say I love it or anything. I waste so much fucking time playing the why isn't neovim working properly game that it drives me insane. 
+Also, I fucking LOVE autocompletion. The better the autocompletion the happier I am. I view it as documentation-while-you-type more than save-you-key-strokes as I frequently work on libraries/languages/projects that I'm not quite familiar with and so those little bubbles of docstrings and extra potential functions/methods I could call are educational while I work.
+That being said, YouCompleteMe is probably the worst completion system amongst Xcode/Atom/VSCode/VisualStudio/Clion."
+114,"Ok, yes, I've got a MWE for you:
 Here is a very important base.
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
@@ -515,10 +443,12 @@ As someone who definitely wants to try out your plugin, I already bring pre-exis
 I love that you included all that you did, including the key-binding, but the entry-point is just too side-winding if any issue is encountered, as I have. 
 The lowest hanging fruit to make better use of all the documentation work you put in, in my humble opinion, would be to put a simpler section with the ""this is how it should work for 99% of the users"" before getting into edge cases & optimizations, and then have an ASCII-CAST of that simple workflow.
 I've been interested anyways in better leveraging vim for viewing & resolving merge-conflicts, so I'll eventually figure out the issue, and look forwards to digesting the detailed considerations you've had. But I would imagine most people will give up at first error, even without looking to resolve it, let alone having to dig or talk to the maintainer to resolve it.
-Cheers :)"
-190,"@tlitd, I've covered your use case, and implemented this feature. Thank for interesting idea, I like it.
-See details on how to use https://github.com/samoshkin/vim-mergetool#advanced-layout-customization"
-191,"Thank for your response. I agree that readme has a lot of info, so I will move some sort of ""minimal working example"" section to the top of the readme.   
+Cheers :)","people will check the box of the the best IDE among those that they have actually used.
+
+This problem is unique to software developers. Everyone else will happily vote for something they've never seen."
+115,"@tlitd, I've covered your use case, and implemented this feature. Thank for interesting idea, I like it.
+See details on how to use https://github.com/samoshkin/vim-mergetool#advanced-layout-customization",V C P K G
+116,"Thank for your response. I agree that readme has a lot of info, so I will move some sort of ""minimal working example"" section to the top of the readme.   
 Regarding your example, I tried that, and it works fine on my local machine. 
 &#x200B;
 I would ask you to create an issue on github, and attach or share a link to file verbatim as is. I think it might be due to line endings, and when I copy-paste the snippet from reddit comment, I lose them. Please also tell what kind of Vim you are using (terminal, GUI vim) and what are your OS?  
@@ -533,6 +463,378 @@ let g:mergetool_layout = 'mr'
 let g:mergetool_prefer_revision = 'local'  
 Run vim as:
 vim -u &lt;path_to_vimrc&gt; -N  
-Let's continue this discussion inside Github issue."
-192,"@Redstonefreedom
-I've refactored readme. Moved TL;DR section to the top. And introduced separate error message when file includes conflict markers, but not in diff3 style."
+Let's continue this discussion inside Github issue.",Eclipse based IDEs get much better if you have lots of RAM and you make an effort to go in and edit the launch files.
+117,"@Redstonefreedom
+I've refactored readme. Moved TL;DR section to the top. And introduced separate error message when file includes conflict markers, but not in diff3 style.","The OOM issues are solved by editing eclipse.ini and giving a couple GB's of memory. Before switching to visual studio code, I used Eclipse CDT to work on the chromium codebase (several gb's of code) without issues.
+If you want to give Eclipse CDT another try you can check this https://chromium.googlesource.com/chromium/src/+/lkcr/docs/linux_eclipse_dev.md#Setup"
+118,[deleted],Do you use any addons like Visual Assist X or Resharper++? I have always wondered how a big flagship product like Visual Studio can be so bad at code surfing.
+119,kdiff3 is pretty good and it runs on windows and linux.,"Have you done lot of customization to your key shortcuts? For me they are horribly inefficient, hard to use and unintuitive. I never bother to spend multiple hours just changing shortcuts. And have they finally made mouse back&forward keys working?
+I prefer QtCreator"
+120,"The best merge tool I have used is Araxis Merge (http://araxis.com/merge/). It is not free, but it is a pretty amazing. I have not seen anything come close to matching it.",I second your decision but are you not looking over the times when Intellisense just stops working?
+121,any way to make emacs do this?,I'd recommend Visual Studio Code with the C/C++ extension. The extension will reach 1.0 some time in March or April
+122,Ha! You should try Kompare.,CLion lightweight? It feels much slower to me
+123,"So far though, it looks like there's only one method of diffing. The world needs, not 10,000 guis wrapped around the diff command-line utility, but more ways to diff. 
+(more general-purpose background on diff algorithms: one two.","IntelliSense is just dumb at times. Recently I discovered that in large header files IS would underline every function as ""not implemented in cpp file"". Turns out, if there are any classes/structs/enums defined inside of a class they need to be defined AFTER the constructor and the destructor. Now I do that, and IMO it is terrible, but it is better than IS not working.
+To be fair I haven't had the opportunity to try VS2017 yet, this happens in VS2015. Maybe IS is better now."
+124,"Yeah, meld's a nice piece of kit. Great to see a new release - I thought this project had fizzled.","Yeah, visual studio is by far the best but also the worst at the same time..."
+125,I really like vsdiff that comes with SlickEdit.,"I don't like VS for multiple reasosns
+
+pushing a lot of non-standard features (why the fuck precompiled headers are from #include ""stdafx.h""? Other compilers just use commands) (Warning 4996 - some standard functions are marked as deprecated even though they are not)
+bloated, installs and launches long (Eclipse was faster)
+no good themes - seriously - I have browsed most of the market and almost all themes still leave 50% of the code white. Eclipse has >30 colors, including setting different colors for overloaded and non-overloaded operators, parameters vs members
+gitignore for VS has over 100 lines
+Windows only"
+126,"For those using Windows, I highly recommend WinMerge.
+http://winmerge.org/downloads/index.php",What do you mean by these incremental builds?
+127,"I like Meld but there is one feature that WinMerge has that I haven’t been able to reproduce in Meld. WinMerge has keyboard shortcuts for everything, so you do something like alt-down, alt left (can’t recall the exact commands) and that will go to the next diff and replace the right file with the left file. In Meld you have (or at least as far as I know) to do the same but with the mouse which makes it slower.","Once you break Xcode’s code parsing there’s no coming back. Xcode absolutely grinds to a halt on large codebases on my 2017 MacBook Pro.
+Xcode is clearly designed more for iOS app development. Xcode punishes you for wanting to write C++."
+128,"I have not seen anything so far to beat vim -D, especially if you also use folding and diff motion commands.","Man, I'm glad it's not just me. Took forever to figure out XCode, has to be the most unfriendly user interface I've used."
+129,"Neat approach to deprecating old functionality (like XPath):
+""With jQuery 1.2, as with the jQuery 1.1 release, a backwards compatibility plugin will be provided. Thus, if you wish to continue using these particular techniques, you’ll be able to use that plugin and continue doing so.""","Sublime is awesome, but it's really more of a text editor than an IDE."
+130,"In particular, the diff view looks very much like FileMerge's main view.","it just freezes up, no amount of waiting was enough.
+
+Encountered this strange issue as well, though it doesn't freeze up for me, just the debugger inspect view becomes non-interactive until I move to the next instruction."
+131,"I haven't tried Meld (I guess that should be a hint to me to shut up, but...) but from the screenshots it looks very similar to FileMerge.app which I use and love.
+In fact, it's the only reason I fire up svnX (OS X gui svn client), since svnX will pop both sides of the svn diff into FileMerge.app for me.","All hotkeys were Mouse button combinations
+
+oh good lord that sounds horrible."
+132,"FileMerge is very nice indeed.  It's also available as the command 'opendiff'.  
+I often use it with the darcs, as in ""darcs diff --diff-command 'opendiff %1 %2'"", so much so that I wonder why I don't just set a global default for it...","Is it bad for refactoring or debugging?
+
+From a good IDE, you should expect the ability to confidently rename variables, and maybe generate getters/setters. Beyond that is up to you, really.
+
+Is there something that is clearly just better?
+
+As far as CodeBlocks alternatives go, I'm hearing good things about CodeLite. Haven't tried either one myself though, I use QtCreator."
+133,+1 for FileMerge.app. Just about as sexy as such a tool could  possibly be. :P,"I honestly don't know how someone feels this way about JetBrains products. They are by far the best IDEs I have ever used. They are very customizable and literally every action is key-bindable. It's like vim, if you use it once, you get mad because you can't figure out how to quit and you tell everyone it sucks, but if you actually figure out how to use it is light years ahead of the competition.
+With that said, CLion is a bit limited because it only supports CMake, at least the last time I tried it, so that may be a deal breaker for some."
+134,"I went to figure out how to use FileMerge with Git, and happily discovered that the Mac distribution of Git already has it built-in, just type ""git mergetool"". Yay for built-in tools.","I couldnt disagree more about JetBrains products, they offer a quality that many others only can dream about, it has every i need and more, it is well integrated and if something is lacking you can develop a plugin
+It uses more resources than others ide but it is nothing critical, is responsive as any other Ide on the market, so what? I dont really care about the extra ram and if you want to use less CPU you can activate the power save mode
+Even Google noticed tha high quality and switched from eclipse to IntelliJ for Android"
+135,Thank you.  Didn't know it existed.,"Nice to know someone shares my feelings for JetBrains stuff. And for Java, now VSCode has proper Maven support with the Red Hat plugin ill never have to touch IntelliJ again... I hope..."
+136,How is it better than meld?,I like and use CLion on my machine at work on all my projects. It can be slow and needs stout hardware to be useful. For other OS projects I use codeblocks on my slower systems.
+137,"Yea.. can it do visual diff for git auto magically?
+http://blog.sarathonline.com/2009/02/use-meld-as-git-diff-gui-viewer.html",I think people don’t like Xcode since it’s not a clone of Visual Studio. It just takes some time to get used to.
+138,"Not as prettily, but Ediff, which has been built into Emacs as long as I can remember, has all of the functionality.","Pffft, real men pipe shell echoes to source files."
+139,"fwiw I'm an Emacs newbie and I don't care for ediff. It seems somewhat arcane to me, and I usually like odd software. stick with meld... unless you love doing everything in Emacs.","Xcode project files can be built from command line. You can use whatever IDE you wish with them, as long as you either import the Xcode project file or make a plugin to expose the file structure of the project to the IDE. In most IDEs, it’s not super hard to do."
+140,If I only didn't detest KDE so much...,"I use visual studio code: it is multiplatform, has a debugger, understands c++ enough to make good predictions, has a pretty decent project manager, there is not much else lacking. Furthermore, I can use the same IDE for typescript or python with best results."
+141,"Well, it seems it has exactly the same features as meld, just with a different UI toolkit.
+Care to elaborate?
+BTW, it's not strictly a visual diff tool, but I just love SCM and it has mostly replaced meld for me. It's the only Java program I have found worth using (apart from Eclipse - which has pretty good visual diff tools too).
+Oh... I just noticed it's not available because of those BitKeeper dumbasses. Fuck them.","u/tjgrant is right. It was SNSystems. Was it an IDE is a semantic argument. I used it to edit and debug code. That’s good enough for me.
+The N64 had an SDK. But, it only did the most basic stuff. The most important feature was the RSP (GPU) microcode from Super Mario 64. You were able to write your own custom microcode to customize how graphics were rendered at a very low level.  But, SM64’s was good enough for many games. So, many games shipped with it unchanged."
+142,Can WinMerge do intra-line diff highlighting?,"For all intents and purposes, the software no longer exists.  For PS4 development everything is integrated with Visual Studio.  Thank God."
+143,"With DirDiff Plugin, it can.",SNSystems have got soo much better so then.
+144,"...and the comparison reminds you just how ugly GTK is.  It's amazing, after so many years, how much it still looks like ""my first GUI"" with antialiased fonts.","That was the story of working on Paperboy for the N64.  It was my first game right out of school. After that, I moved to engine/content pipeline work. You can read more stories from that experience here."
+145,"If you'd like to fire up FileMerge to view a diff without the need to run svnX, take a look at http://www.friday.com/bbum/2005/08/01/using-filemerge-with-subversion/.","Yep.  That's classic C.  All C was like that back then.   And, C++ was considered too slow and complicated for gamedev at that point.  Fortunately, the lead engineer where I worked had a compiler background.  So, he got a C++ compiler working for the PS1 even though Sony would not provide one.  I don't recall if Nintendo provided the C++ compiler we used, or if our lead brought up that one too."
+146,That will be fixed in KDE 4.,"In a function, you must declare all of the variables at the beginning, before anything else, or else the compiler will throw an error.
+
+That's all the language allowed for prior to 1999."
+147,"I use Kompare all the time and I when I tried Meld last month I thought it seemed very unfinished. I like how Kompare uses kioslaves so I can diff a file in svn with a file on a remote server just as easily as I can diff two local files.
+It runs fine on Gnome.","Renaming an interface is indeed a bit messy. There are plugins for that, but I had a better experience with Visual Studios built in rename. On the other hand most of my interfaces are only used in 2-5 files, so even without a plugin renaming is quite fast.
+Other refactorings, like changing function arguments, are a lot easier to do for me in vim. Change the function, hit compile and your at the first compilation error, make your changes, jump to next by either recompiling if the change produces a lot of errors (like templates) or by jumping to the next item in the error list. You can navigate the error list in Visual Studio, but it is a lot more work as compiling doesn't automatically jump to the first error. Is there a better way to do that in Visual Studio, where you need manual work for the changed argument?"
+148,"It can!  It's a pretty nice product, I have been using it for about 3 years now and it makes publishing web updates and synching folders and such so simple.  It's also open-source.","With proper semantic code search this isn't hard in Vim. I can jump to the definition of whatever's under my cursor with two key presses. I can pull up a list of all references to a symbol similarly. Moving back and forth through the list is a single key press.
+With my particular keybindings, to rename an interface, I'd populate a list of references with &lt;space&gt;v, rename the first one with cwNewName&lt;esc&gt;, then F2 to jump to the next reference. If I want to change that one, . will do it. Otherwise F2 again to jump to the next one. Repeat until I've reviewed all the spots.
+This all did take a bunch of setup, but I'm pretty sure it's faster and easier than Intellij once set up."
+149,"Or you could netedit two directories in two vertical windows, and do a :windo diffthis command. Presto!","We use tools like rtags: https://github.com/Andersbakken/rtags
+Literally everything you like about your IDE can be done in a good Emacs/vim setup."
+150,"It's an old GTK theme. Personally, I find the modern GTK themes kinder on the eye than Aqua, if not as sexy.
+Meld's a great app that goes a bit further than just file compare. It's got enough VCS integration to review changes in a directory tree and selectively commit files. It also has syntax highlighting, if you desire. I've found it perfect for code reviews.","Vim unfortunately doesn’t even come close to leveraging all the functionally made possible by LLVM clang-tools and related programs and libraries.
+Because it’s running in terminal with ncurses there are some limitations, but you can still do some really powerful things with clang-tools.
+Clang language server has the potential to make the ultimate auto completion engine.
+I wrote a small neovim plugin that controls lldb and allows me to set breakpoints in vim directly.
+I envision a modern terminal standard that allows more than just grid based text and curses style graphics. Imagine if you build a modal editor that combines that with all the functionally that the llvm libraries expose, but that’s the classic problem of
+Better IDE -> better editor -> better terminal emulator"
+151,Ah thank you for that link; that is exactly what I want to do.,"sed & awk. I can't say I'm in love with the solution, but it works."
+152,"A classic joke, but still funny.","There are plugins (such as vim-refactor), but one of the best tools is eclim. It lets you use Eclipse features in Vim. It's not as smooth as using something like Eclipse directly, but it's a small price to pay for the increased efficiency that Vim gives you."
+153,Unlikely,"I like cscope. Vim can read its tags and so you can jump from any variable name to its definition; from types to their class definitions; from function names to their definitions… you can do symbol usage lookups, all kinds of different things. I wouldn't try to refactor a complex C++ codebase without cscope and in fact I usually set up a post-checkout git hook to rebuild my cscope tags in the background. Makes Vim really feel like an IDE to me, more so than pretty much any other plugin. Although a Vim-integrated debugger would blow my mind."
+154,"It shouldn't be hard.
+Simply the GUI a lot (i.e., remove all that clutter).
+Make windows remember their position and and size (hello Konqueror, it's 2007!).
+Include a non-ugly theme (Plastik's windows look great, but the rest is awful; I don't want everything sticking in my face; it looks like a Mac with all those bubbles, only much much more ugly).","If you're using neovim, you should be using deoplete along with LanguageClient-neovim and clangd. It's significantly easier to set up than YouCompleteMe and works much better in my experience."
+155,"""Old"" hardly excuses the really obvious ugliness, e.g. inadequate space between text and ""X"" buttons.  But the functionality sounds sweet (almost as much as Emacs's ediff).  I assumed it was just ""diff with an ugly gui.""","I didn't mean to suggest that was my only problem with it, I just wanted to give an example of some of the problems I had. Sorry if that wasn't clear on my initial post.
+Some of the other problems I had: problems with certain c++ language features (c++11,14 features), autocomplete not working on certain types, go to header sometimes going to the wrong file etc. Some of these had fixes, some did not. At some point I had enough and decided to try a new editor (qt Creator) which didn't have most of these issues. 
+Note that this was back in the eclipse Luna days. I hope they've fixed some or all of these issues by now."
+156,"""Old"" hardly excuses the really obvious ugliness, e.g. inadequate space between text and ""X"" buttons.
+
+You realize there are dozens of GTK themes right? This one happens to suck, but someones obviously still likes it. You don't, neither do I. Oh well, that's why there's a choice.
+http://blue.bikeshed.com/","I suspect Microsoft may have some sort of deal with the developers of famous plugins like Visual Assist (Whole Tomato Software) this is why the code refactoring stuff sucks so much with VS compared to other IDEs, so that everyone buys plugins."
+157,"I’m glad you were able to succinctly explain why every mergetool I’ve used has been a confusing mess. 
+I’m sad that there wasn’t even one that did it right.","No I don't, a few other colleagues do though along with another plugin called ""FastFind"". Visual Studio 2017 comes with a whole new suite of improved search features, better filtering and more filtering options in intellisense which make it much easier to browse code. 
+EDIT: I have tried Visual Assist X but on a large scale project it just eats up loads of memory and boot times are really slow."
+158,"Author here with a shameless self-post. I would very much like to see a more broad discussion on how to make mergetools better and more widely used. I have one opinion, detailed in the post, but I'd also love to hear other ideas.
+Almost none of my coworkers use a mergetool. I think they're usually intimidating with lots of (unnecessary) colors and buttons and features. Plus not one of them (that I know of) interfaces with Git effectively and displays all the hard work that Git puts into resolving conflicts.
+If you agree with my post or not, I hope we can all agree that our common enemy is editing conflict markers manually. ;-)","I haven't found VAX necessary since VS 2015 (and 2017 was even better), before that it was a must-have though."
+159,"If I understand your post, you want the image's behavior without the window on the downside? If you are looking for it, Emacs + Magit has been supporting this for a long time image  
+Edit added Image","Not really, it depends on how you like to work. Here's a sum of what I use frequently:
+CTRL + F - find in current file
+CTRL + SHIFT + F - Find in entire solution/project (can use regex here)
+CTRL+TAB/CTRL+SHIFT+TAB - Switch between tabs
+CTRL+Shift+V - Cycle paste history
+Ctrl+; - Highlights solution file find (very handy)
+F12 - Go to definition
+Worth noting and something I thought was integrated into Visual Studio but I actually use this plugin: https://marketplace.visualstudio.com/items?itemName=SamHarwell.MouseNavigation
+It allows you to go back and forwards from where you were previously editing/searching (it's a different shortcut for ctrl++ ctrl+-)"
+160,"If you're using Vim's diff just use :diffoff and :diffthis liberally.
+I find VimDiff to be one of the best tools because it offers the clean diff that the author wants and I can choose which version I'm diffing against. The author's choice to only perform:diffoff in the merged pane and was a bit odd to me - depending on what you're merging the relevant panes to compare change. Sometimes you do want to look at LOCAL vs REMOTE but other times you might care about REMOTE vs MERGED or BASE vs MERGED.",Oh god that's my fetish. I religiously sync my dotfiles and maintain custom key bindings for everything. I'm one of those people whose computer is unusable by others because the keys do the opposite of what you expect.
+161,"I don't agree with removing the conflict markers. Personally I resolve conflicts by hand using these markers, all I need from the mergetool is highlighting and folding, which is why I wrote the tool vimdiff3, that you didn't mention.
+However, you have a point about mergetools showing hunks that are already resolved.
+The right place to fix this is in git mergetool itself, so that all the mergetools benefit from this. I already sent a RFC patch to the mailing list. Let's see what they say.
+
+mergetool: use resolved conflicts in all the views
+
+Thanks for bringing this up.
+FWIW this is vimdiff2 with the patch above. I removed the markers to show BASE, but I could have removed the markers to leave LOCAL, which would show basically the same as diffconflicts (plus one pane).","For me it feels like that, because you can comfortably work in CLion with just one window with code and line numbers, while in VS you always distracted by unnecessary functions to the point where even keybindings configuration becomes impossible."
+162,[deleted],Maybe startup by a few seconds but the actions and manuevering is quicker for large projects
+163,"just with fewer awful colors
+
+Don't blame vim for your crappy config.
+But yeah, I switched to vimdiff2 early. Three way merge is just way too complicated, and for no reason.","Turns out, if there are any classes/structs/enums defined inside of a class they need to be defined AFTER the constructor and the destructor.
+
+This is a great tip, as I've run into this problem as well (I tend to put the enums at the top)! Thanks."
+164,excellent writeup and explanation; thanks,Well it's the trade off I guess. Should be fixed nonetheless
+165,"Thank you for your work on this, I’ve always felt like I was the idiot for not being able to make sense of the standard mergetools.  
+The only one I’ve ever found useful is Tortoise Merge, and would be very interested in seeing your analysis of its strategy.","bloated, installs and launches long (Eclipse was faster)
+
+Have you tried since they introduced the new install experience? Ever since that first installation and launch have been at least 5x faster for me.
+
+gitignore for VS has over 100 lines
+
+Wouldn't you have all the platform-specific build files such as the solution in a separate directory such as ""build"" anyway?"
+166,3 way merges in merge tools are awful eyesores. I've resorted to just having git dump the >>>>> in a text file and doing it myself. Much easier.,Hitting Build regularly during editing to see if the changes made compiles.
+167,Great work. I like the trick of merging both ways and using that to find conflicts. I’m looking forward to git GUIs adding their own version of these features. I really like the realtime changes to conflict highlighting.,"one could say the same for vim and emacs, but they are in :)
+and vim, emacs and sublime all can get quite close to a full blown IDE with the right plugins"
+168,"I've been resolving conflicts with kdiff3 for years. It's confusing at first, and actually it remains confusing for me, but once i did it a few times, then i could do it without thinking about it.","Most likely because the debug symbols for Wt aren’t there, and likely the sources aren’t either."
+169,"Very interesting read, thanks a million for that great article. I'll need to go into this topic, as I too find the standard tools confusing. Would that even help with rebasing? I sometimes get conflicts during rebasing for my own commits and always find it hard, as I probably think about the end result instead of the commit-by-commit cherry pick when doing rebases.
+I'd be interested in your opinion on SmartGit and maybe Fork. They are both available for mac OS. I like SmartGit a lot, their developers are great and could imagine they'd be open to improving their tool.","Thanks for your thoughts here. I have code::blocks up, and it works, and I think I will just keep using that until I am good enough to appreciate the difference. :)"
+170,"Thank you for this excellent write up!
+I believe vim-mergetool is based upon your diffconflicts plugin and offers some nice features.","I don't have any strong issues with JB IDEs regarding the usability/combustibility, but god they feel painfully slow/laggy! Doesn't matter whether I'm on a mid-range i5 laptop with 6GB of RAM or on 4GHz quad core Haswell Desktop with 16GB of RAM, the delay (in typing, completion, highlighting, etc.) is still noticeable. And they are pretty resource-hungry to boot."
+171,How does IntelliJ's merge compare to the others? It isn't listed.,JB products are just so damn confusing. I haven't found any feature of a JB app that would make me want to use it over vim.
+172,"I have just been using VSCode and delta, but as you say it's close and I still do manual stuff. I life it that way though.","Wow really? I love JetBrains, especially CLion, I feel like most C++ IDE's are extremely convoluted and hard to manage/work with;
+Setting up toolchains etc. in CLion is just so easy, that's the main thing for me.
+I have to admit though, it's slow as fuck and JB should give up on building/using their own parser."
+173,"I'm sorry but the author is wrong. 3 way merges FTW.
+KDiff3 the best.
+BTW Merges does not have to be easy because combining code produced by two programmers is a great responsibility so it's nothing special that it's difficult. It needs understanding the root of conflict that is why 3 way merge is superior.","I think it must be something like this. IMO Xcode's UI has always been better than VS and some of the most significant improvements in VS for me have been because they introduced features from Xcode, such as single clicking to view files and the ability to usefully break windows out of the main VS window."
+174,"I think IntelliJ has a great three way merge tool. It has that ->All<- button that pulls in the non-conflicting changes from the left and right leaving just the unresolved conflicts. I am not sure why it just doesn’t do it automatically but it isn’t too much of a bother to press the button.
+
+including conflicts that Git was able to automatically resolve
+
+Regarding that statement, if git was able to resolve a “conflict” automatically then by definition that isn’t a conflict right? What kind of “conflict” can git resolve on its own?","That doesn't really help, unless I am misunderstanding. I think what you mean is: I can use whatever text editor to write the code - but I have to build with Xcode on the command-line. If the build errors, the errors will not show up in my editor/IDE. I will have to read the command-line and manually go to the file's location in the IDE. This is cumbersome, idiotic, and unnecessary manual work.
+And what about debugging - after I've built the iOS app on the command-line, can I run it on the phone using the debugger in, let's say CLion? And stuff like breakpoints in the IDE and variable watch window will work flawlessly?
+And for sure I am not going to write a plugin to make this work. I have to work on my work project's code, not spend time on developing some IDE plugins. This is why there are IDE developers - they are supposed to give me, the user of a IDE, a good IDE that makes me productive in my day job."
+175,!remindme 1 day,"you can also do something like so.
+vim `grep -iRl ""thing2Change"" ./directory/to/search`
+
+And then in vim itself do the following:
+:bufdo %s/thing2change/thing2changeItTo/gci | update"
+176,"I think the problem is mismatched expectations.
+For me mergetools work perfectly fine, but that's because I expect the conflict markers.
+OP seems to think that's a bug, and apparently you do too.
+It should be possible to introduce a new configuration to git mergetool so markers are automatically removed, which might be useful for beginners, but at least I wouldn't use it.",It does sound doable but i still dont think its easier than intellij where you can review all your changes and just click on the ones you want to keep. But maybe i just need to see someone with a workflow like yours in action. Personally i have to pair at work so the company kind of enforces an IDE and its easier to get everyone up to speed with intelliJ than it would be with an advanced vim setup (when the configuration is actually so personal from my experiences so far). Nevertheless its interesting to know how others work and ive definitely attempted to get proficient with vim.
+177,Give your merge way a name lite “2x2 way merge”. Also maybe list and critique p4merge?,"I’ve never seen someone make this assertion who has actually mastered an IDE. Sure most people have tried them but if you haven’t used one on a massive code base while leveraging advanced approaches like conditional debugging or structural refactoring, you’re just not making a fair comparison. 
+Conversely I’ve used vi and vim (yes both) for 25 years and as a test of my own biases refused to allow myself to use IntelliJ to write some Go recently. I easily sunk 30 hours of messing with configs and plugins including  the excellent vim-go and rtags. After weeks in that setup, it wasn’t close to IntelliJ. Not by a country mile. So no, “literally” everything can not be done in a good vim setup and you’re misusing the term “literally”."
+178,"That was going to be my question.  How does emacs+magit stack up. I am a magit addict, and I've used ediff a lot (not with git), but not magit's merge tools",Rtags is great! All the power of IDEs but without the bloat
+179,"Thanks for the image. Are the left and right panes each ""side"" of MERGED? Or are they LOCAL and REMOTE?
+I'd love to add Emacs to the post but it's a tad more involved to set up. Would you mind running this script to produce a repo with merge conflicts and screenshot the default Emacs + Magit view of that? Then I'll add it and attribute you for the help.",rtags is so weak compared to what a real IDE provides that it's not even funny
+180,"I agree vimdiff is the best tool of the bunch, and it's the only one I use regularly. I also agree that it's useful to switch between the different windows to compare them individually -- so useful in fact that it's worth adding mappings to easily move which windows are diffed. :D
+But that's only useful to learn the history leading up to the conflict. Because the diff is ultimately between LOCAL and REMOTE it's not helpful when resolving the conflict. The diff includes unnecessary visual noise and forces you to re-resolve conflicts that Git already resolved and placed in MERGED.",":h terminal-debug
+Pretty new feature. I only played for 5-10 minutes with it. Looks good though."
+181,"I'd argue one of two reasons for a mergetool is to avoid having to edit conflict markers by hand. But you're very right that highlighting and folding is the other big reason. Being able to identify subtle differences at a glance makes all the difference.
+How do you use vimdiff3? It isn't clear to me from reading the source.
+Thanks for starting the thread. I'll keep an eye on it.",Last time I checked out the development status of clangd it was still missing some important features. Thanks for the reminder. I’m gonna take a look at it again.
+182,vim-mergetools is a solid tool and the author is a nice person to discuss things with. It took inspiration from diffconflicts (there's an acknowledgement in the README).,"It has huge problems with file includes over network.
+
+File includes over network? Why would you ever do that? :) 
+But on the subject, I think Resharper takes a long time to index your code. It can be pretty tiresome. But once it is done, Resharper is the best choice for me."
+183,"Don't blame vim for your crappy config.
+
+I used the default colors so readers can recognize it more easily. My config uses much more muted colors. :)
+vimdiff2 is better but still has the same problem as all the others. Because it diffs LOCAL against REMOTE you're left re-resolving conflicts that Git has already resolved.",In 2015 and 2017 they started integrating a lot of the tools offered by these plugins.
+184,"Thanks for the suggestion. Added Tortoise.
+I used defaults from Git-for-Windows and TortoiseGit but I think something may be misconfigured still. (I'd love to correct the entry if so.)","Wouldn't you have all the platform-specific build files such as the solution in a separate directory such as ""build"" anyway?
+
+Yep, my gitignore for VS is just:
+/_build*
+
+Works for UNIX too!"
+185,"Would that even help with rebasing?
+
+Definitely!
+
+SmartGit and maybe Fork
+
+Ooh, I wasn't familiar with either one. Thanks. I added screenshots for both. You're right -- SmartGit is really, really nice. I'm very much a terminal person but graphical mergetools can do such a better job of showing a lot of complex things.","Maybe managers in the team were bad with it. I would say yes, they commited dlls and other binary stuff."
+186,Thanks. Added.,"Ah, you mean, VS intellisense is bad compared to some other IDEs? Yes, true.
+Don't hit build, hit Compile though :-)"
+187,kdiff3 is cool. I don't want it to go away. I want kdiff3 (and all the other mergetools too) to be even better by first splitting MERGE into halves instead of showing LOCAL and REMOTE.,"Suppose you're right, didn't think a lot of people actually used sublime as an IDE"
+188,"I will be messaging you in 1 day on 2020-12-17 05:45:04 UTC to remind you of this link
+4 OTHERS CLICKED THIS LINK to send a PM to also be reminded and to reduce spam.
+^(Parent commenter can ) ^(delete this message to hide from others.)
+
+|^(Info)|^(Custom)|^(Your Reminders)|^(Feedback)|
+|-|-|-|-|","Are you on ssd or spinning disk? I've experienced no delays since I mostly use ssd everywhere and I've used jetbrains ide of some sort daily for the last 5 years. But one laptop at work had spinning disk and idea was insanely slow to start, like 20 minutes on that one.
+Although I have to say clion is slower than idea/pycharm and was even slower a year ago. Seems to be getting better though"
+189,"None of the tools I’ve used show the markers, they just show a confusing 3 way merge where one of them is already half merged, basically exactly what the OP said.","CLion has great design, but it becomes very veeeeery painfully slow with a project with a few hundred thousand LoC."
+190,"Good suggestion! A friendly name would help to get the word out. At the risk of confusion with the Vim plugin of the same name, I think ""diffconflicts"" has a little traction already. I'll try to find a good place to add that to the post.
+Added p4merge.","After trying about a dozen C++ IDEs and having no clue how anyone can stand most of them (especially Eclipse and NetBeans, which, IMO, are terrible), I decided to shell out for CLion, because for me, it's easily the best."
+191,I don't know if this is from MERGED LOCAL or REMOTE because I have forgotten about Ediff and that way of merging (Thanks for making me check it). I am going to do a little research and answer in the coming days. I will try running the script until the end of the week and report back my findings.,"You can build with Xcode on the command line, yes, and the errors from the compiler should be understood by any programmer's editor worth their salt. You basically fire off the build command via the editor's ""command"" facility, the editor then displays the output and links errors to source files and makes them clickable. Nobody expects you to do it manually - that's why good programmer's editors integrate with error message outputs, and this is very much a solved problem.
+Xcode is a decent IDE - if you don't like it, you've made a choice to invest in something else..."
+192,"Ooh, I like those mappings, thanks for suggesting them.
+I do find myself mostly looking at LOCAL and MERGED, so a default that turns off REMOTE and BASE might be handy but I find before I'm ready to commit that I always want to see a diff of each one against MERGED which is why I can't think of removing any from consideration.","The question was about c++, not go. I have yet to see a feature in a c++ ide that I can’t do the same for in Emacs. But you’re right, I’m only dealing with 10-100k loc codebases, not millions, so maybe things are different at that scale. I’d love to know what I’m missing though so I can implement it."
+193,"I'd argue one of two reasons for a mergetool is to avoid having to edit conflict markers by hand.
+
+And I disagree. And apparently all git developers do too, since not a single mergetool removes those markers (at least from the git side).
+That's not to say that an option couldn't be introduced to do what you want (if there's enough interest), but I for one wouldn't use it. I want (need?) the markers.
+
+How do you use vimdiff3?
+
+Just like you use vimdiff2: git mergetool -t vimdiff3.
+You probably would not like it, since it's basically just MERGED (with conflict markers).","No one I've heard make this assertion had actually mastered vim/emacs++ setup.
+If you need an IDE to refactor your code without error you should really revaluate your career choices. And visual debuggers are nice, but if that's what's holding your productivity back, your coworkers are reevaluating theirs.
+Put another way, you spend the vast majority of your professional time reading and editing code; to optimize productivity your tools should accommodate this. Massive renames are a corner case, and are probably worth going through extra review. If they're not, you're definitely doing your job wrong."
+194,"No it doesn't.
+vimdiff2 opens LOCAL MERGED REMOTE.","File includes over network? Why would you ever do that? :)
+
+Someone's never used Clearcase Dynamic Views for version control..."
+195,"One thing to note here, is that intelliJ actually has a button to merge all non-conflicting changes. It is not the same as diffing against MERGED directly, but the option is there to quickly focus on the actual conflicts","File includes over network? Why would you ever do that? :)
+
+IT and Engineering were in different cost centers so cheap NFS servers that add six hours to the build time meant big bonuses for IT!"
+196,"vimdiff* shows the markers and OP didn't like that, in fact he said:
+
+Mergetools exist because nobody wants to edit conflict markers by hand.
+
+Which I don't agree with. If other tools remove the markers, they should at least give the option to show them (exactly as git presents them).
+Fortunately the vimdiff* ones do. In fact, I wrote vimdiff3, which is basically the file with the markers plus some hints.",I don't think you should really blame the IDE for incompetent people being unable to follow a simple process. Of course it passing a code review before being committed is even worse.
+197,"I'm not sure diffconflicts is a name that would allow recognition. So, I'm the guy https://trunkbaseddevelopment.com. Say that and there's a good 50:50 chance the average developer with 10 years experience knows what is being referred to. Say GitHub-Flow, and there's a 90% chance the same 10-yr developer knows what is being referred to. Same for Git-Flow.  
+How about something working in ""Low"" (adjective) - ""Low Diff Conflict"", ""Low Diff Merging"" ""Low Merging"", ""LoMerge"". Or Minimal/Min instead of Low/Lo.",There's so many packages for sublime that you can turn it into an IDE
+198,"Found time today so I am posting it now. The image with vanilla Emacs + Magit is here. The left is the local Head, and the right is the local branch. I am not 100% sure about the last sentence so I am going to search a little bit more to understand it.","SSD on desktop, SSHD on a laptop. Helps with start up/indexing, not much with general latency."
+199,"That sounds like a solid workflow and a great final step to ensure you didn't miss anything from either side.
+I think my ideal would be a two-way diff between each half of MERGED with LOCAL and REMOTE on either side of that (so four windows total) but that's a lot to fit in a terminal which is why diffconflicts opted to show the latter three in a separate tab page. I think a GUI tool could handle all that nicely though in a single window.",Wtf are people writing this much code for? I've never had a project larger than like 5000 lines. These are for APIs with 10-20 models and controls with helper functions. Not counting 3rd party dependencies
+200,"since not a single mergetool removes those markers (at least from the git side).
+
+My guess is that's just inertia from the default since several mergetools do remove or hide them (outside of the git invocation scripts). It'll be interesting to watch the discussion on the mailing list thread you started.
+
+You probably would not like it
+
+Thanks for the explanation. You're right; I don't like it. :)","Ooh okay, yea that's right! That's a good motivation to try a couple of other things on Mac and see whether it works decently, thank you very much! :-)
+I am definitely spoiled by Visual Studio (with CMake, not VS build), nothing comes close to it in terms of productivity and debugging tools."
+201,Right. There's a screenshot of what you're describing in the comparison section. You're left with either diffing LOCAL against REMOTE and re-resolving conflicts that Git already resolved or editing conflict markers by hand. Both of which this post is aiming to avoid.,"Does vim support a clang-based code model? If not, then it won’t be able to do a lot of things trivial in IDEs with a full C++ parser (e.g. those using clang). C++ parsing is anything but trivial."
+202,"Ive never seen the markers in my vimdiff, but then I’ve never made heads or tails of the 4 way merge. Ill take a look at vimdiff3.","Not who you're replying to but, in my experience, it isn't that I need an IDE to refactor my code for me. I just want it to do it for me so I can get back to coding. Same for the visual debugger. I work faster with it than without it.
+As with most jobs, you should be using the right tools for the right job. For many, that is an IDE provided by someone else as opposed to a custom environment with vim/emacs/whatever.
+You probably shouldn't so quickly dismiss someone's opinion and imply, because they disagree with you, that they're terrible at their job. Maybe they'd be terrible at your job or in your work environment but so what? Their experience is going to be different from yours and that doesn't make it demonstrably right or wrong. Just different."
+203,"Perfect writeup for P4Merge.
+How about Express instead Low/Min ?",Doesn't sound appealing...
+204,"You're very right about Git-Flow.
+Thanks for the suggestions. What mental image does ""low"" evoke? I'm not sure I see the association. Low like in ""low level"" or something else?
+How about ""split""? Perhaps ""Split Diff Conflict"" or ""Split Conflicts"" or ""Split Merging""?","Urgh! Theres an unpleasant flashback. I used CodeWright and Clearcase Dynamic Views at my first place of work. A horrible combination of trouble and problems. Just don't do it, folks"
+205,Awesome! That looks exactly right. Thank you for making that screenshot; I added it to the post. I don't understand that sentence either but now I want to do some code-diving to see how they're setting this up. This is the first tool aside from mine that I've seen do this. Very cool. Thanks again.,There was very abnormal review (people who did it cared much more about indent and whitespace instead of what the code was actually doing). The most sad part was that there were no restrictions when compiling. Several thousand lines of warnings every time you compile.
+206,"You are not supposed to diff LOCAL against REMOTE; they are there just for reference.
+You are supposed to edit MERGED, and resolve the conflicts there. Yes, that requires editing conflict markers by hand.
+In all mergetools you are supposed to edit the conflict markers.
+In theory you could configure git mergetool to automatically remove the conflict markers, but you would need to choose which code to leave (local, remote, or base), which in my experience vary on every ""merge"".
+I prefer to choose chunk by chunk.","It may depend how many new C++ features are being used. VS is by far my favorite IDE, but there are generally a few features that I know they haven't yet fully implemented, both in terms of compilation and Intellisense. The development experience goes best if the code evolves along with the ongoing dev/debugging experience, whereas if people aren't exercising IDE features throughout development (e.g. if the code was written in a text editor, or different compiler was used) sometimes certain things just aren't recognized (although I don't know the situation over the past few years - I was last using it heavily around 2014). I've also had to 'correct' a project by reorganizing the include file strategy for a project that did fancy things in its makefile - otherwise, lots of things weren't working. That isn't unexpected, but it can happen.
+Edit: I'd rather see more complaints about my post along with the downvotes. I'm surely not the only one who worked on projects that used SFINAE, constexpr, Barbados templates, etc.. which initially only worked with other compilers (it's common to use VS for embedded or game development even when Windows isn't a production target - because it's that good) and then were sometimes supported by the compiler before Intellisense. So certain features were either avoided entirely or used sparingly for a better development experience."
+207,Weird. The first image in the post shows vimdiff with the markers (bottom pane).,My current projects have a third party code base of close to a million LOC. Thanks AUTOSAR.
+208,"Examples of low that strike a mental image: ""low effort"", ""Low Fi"", ""low profile"". And yes, even ""low level"". There's a connotation of ""good"" or ""efficient"" there. I'm not sure ""split <something>"" is snappy or attractive, or alluding to good or efficient or better or quicker.","5000 lines is the size of some functions in some projects, I work with. No, your functions shouldn't be that long, but sometimes code grows organically with age and requirements. 5000 lines is something I would consider a small project (although line count is not the best measurement for complexity)."
+209,"You are welcome, If this helps you, you can ask in magit's gitter and ask the guys there. They are always happy to help!","Writing just 'hello world' with some modern graphics APIs is going to get you over 5000 LoC. Anything where performance is critical tends to have pretty big code bases in my experience. For a game engine honestly 50-100k LoC probably is what you would hit for a small custom made engine, just to have all the necessary features implemented reasonably."
+210,"In all mergetools you are supposed to edit the conflict markers.
+
+Nah, several of the graphical tools don't show them at all. Conflict markers are just one way to visualize differences.
+
+In theory you could configure git mergetool to automatically remove the conflict markers
+
+I did! (or as a shell script.)
+
+you would need to choose which code to leave (local, remote, or base)
+
+I leave those exactly intact because they are very useful as a reference. I instead create two new temporary files (left conflict, and right conflict) and, if the merge is successful, eventually overwrite MERGED with the result.
+
+I prefer to choose chunk by chunk.
+
+That's cool. We can still be friends.",There is VS for Mac! I’m not talking about VS Code.
+211,"Nah, several of the graphical tools don't show them at all.
+
+I mean the scripts in ""/usr/lib/git-core/mergetools/"". All of them pass unedited MERGED. What each tool decides to do with that afterwards is a different story.
+
+I did! (or as a shell script.)
+
+No, you created a separate tool. I mean modify git mergetool itself.
+
+I leave those exactly intact because they are very useful as a reference.
+
+Not true. I looked at your code. You have two versions of MERGED, both with markers removed.
+
+The left pane is MERGED with all markers removed, except the equivalent of the ""local"" side.
+The right pane is MERGED with all markers removed, except the equivalent of the ""remote"" side.
+
+
+That's cool. We can still be friends.
+
+Friends don't let friends remove conflict markers :p",Vim and emacs have extremely good clang integration. Which shouldn't be a surprise because all of clangs tools are accessible on the command line.
+212,"No, you created a separate tool. I mean modify git mergetool itself.
+
+I feel like we're splitting hairs here. The shell script changes you submitted to the mailing list are almost identical to the shell script in my original implementation, except I don't overwrite LOCAL or REMOTE. But you are right that it would be useful to do this upstream in order to influence the approach downstream mergetools take.
+
+All of them pass unedited MERGED. What each tool decides to do with that afterwards is a different story.
+[...]
+You have two versions of MERGED, both with markers removed.
+
+Look again. Neither one of my implementations modify MERGED, LOCAL, REMOTE, or BASE. They both pass all four of those files, unedited, to vimdiff. The plugin then splits MERGED as two unsaved buffers, and the shell script creates two, new temporary files.
+
+The left pane is MERGED with all markers removed, except the equivalent of the ""local"" side.
+
+Not quite. The ""left"" side of MERGED isn't the same thing as LOCAL. They're not equivalent which is the main point. LOCAL is the state of the file before the merge.
+
+Friends don't let friends remove conflict markers :p
+
+In that case think of it not as removing the conflict markers but rather displaying them in a different way. We're still friends.","Yes there are clang-based plugins for both that do completion and/or semantic editing. For example with rtags I can do your standard find definition, find references etc as well as proper semantic refactoring across an entire project. There are also lsp-based plugins so you can use things like cquery."
+213,"The shell script changes you submitted to the mailing list are almost identical to the shell script in my original implementation, except I don't overwrite LOCAL or REMOTE.
+
+You don't use LOCAL or REMOTE.
+
+But you are right that it would be useful to do this upstream in order to influence the approach downstream mergetools take.
+
+That's the point. This way all other mergetools would benefit.
+
+They both pass all four of those files, unedited, to vimdiff.
+
+It doesn't matter if you modify the file or not; you modify the buffer, so the user is presented with a modified version of MERGED without the markers.
+
+The ""left"" side of MERGED isn't the same thing as LOCAL.
+
+I know they are not, but with my patch they are.
+Do you know how to try my patch?","You missed the point: why do you even need to rename things across a million lines?
+a) Failure of Encapsulation: local changes should have local effects; why is one change cascading over millions of lines?
+b) Failure of Planning: your global API had the wrong name or signature. This should be an extreme corner case -- how often do you fail to account for something used a million times?
+c) Failure to show Restraint: a global change for cosmetic reasons; maybe your time is better spent not changing ""Init"" to ""Initialize"" or vice versa.
+Every time I've needed to do a large refactor it was:
+d) Language or Library change: IDEs don't necessarily do this for you, and if they do there's probably a clang tool you can use from the command line.
+I can write a sed or other script to rename global API, or change NULL to nullptr, and admittedly that probably takes a couple minutes more some menu item, but the entire point is that such an exceptional case it adds up to maybe a couple hours of work per year? You're optimizing the wrong path. I spend almost all my time finding and making small changes, and an light, scriptable editor optimizes that case very well.
+You may not like the implied condescension in what I said, but notice the first sentence of my post was the same as the parents. I didn't come here to tell people IDEs are bad, but I replied to someone who came to tell people unix editor++ was (because he spent 30 hours trying, as if you could ""master"" an IDE in 30 hours). If you want to put other people's tools down, be prepared for a defense.
+If you want to talk about visual debuggers, or how IDEs hide things from you that you should probably know, I'm game for that discussion too.
+Edit: we can also discuss how people who use vim report higher wages than other IDEs empirically, or anecdotally the most talented developers prefer custom low level tools to IDEs."
+214,"You don't use LOCAL or REMOTE.
+[...]
+Do you know how to try my patch?
+
+Yes I know how. However I do use LOCAL and REMOTE and so your patch is a worse version of what I'm already using and it would be a worse upstream mergetool for everyone.
+The blog post mentions why LOCAL and REMOTE are useful in addition to a split MERGED. The diffconflicts plugin accepts LOCAL and REMOTE as arguments in order to display them in a new tabpage on demand.
+
+with my patch [the] ""left"" side of MERGED [is] the same thing as LOCAL.
+
+That makes things worse because we already have LOCAL and we already have the left side of MERGED. We don't need two copies of the same result. It would be nice to have both a copy of the file before the merge and a copy of the file after the conflict resolution. I'm not advocating for replacing LOCAL; I'm advocating for not including it in the default diff or during the manual resolution step.
+We may be talking past each other a bit so this is probably a good place to pause. We're friends and I owe you a beer at the next non-pandemic'd Vim conference for a deep conversation and for getting a dialog going upstream.
+Cheers.","Those are some really sucky APIs then. It takes well under 5k lines to implement a hello world running on top of raw OpenGL ES, with state-of-the-art shader-based font rendering, where shader draws splines and fills them. With a toolkit, similar functionality may fit in a couple of lines. Literally."
+215,"However I do use LOCAL and REMOTE
+
+Do you? Your blog post doesn't mention how to view those files.
+
+your patch is a worse version of what I'm already using and it would be a worse upstream mergetool for everyone.
+
+Name one problem.
+
+That makes things worse because we already have LOCAL and we already have the left side of MERGED.
+
+You have the left side of MERGED. The rest of the world doesn't.","Unless I missed something, ""VS for Mac"" doesn't even have C++ support. It's a very, very light edition, completely different from Windows VS.
+Or did I miss something in the last half year?"

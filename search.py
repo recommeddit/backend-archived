@@ -21,7 +21,11 @@ def returnlinks(searchstring):
     result = resource.list(q="best " + searchstring + " reddit", cx=cx_key).execute()
     linkarray = []
     for item in result["items"]:
-        domain = item["displayLink"]
-        if domain.endswith("reddit.com"):
-            linkarray.append(item["link"])
+        url = item[
+            "link"
+        ]  # link is url (e.g., https://www.reddit.com/r/fountainpens/comments/13isgr/guide_to_getting_your_first_fountain_pen)
+        domain = item["displayLink"]  # displayLink is domain (e.g., www.reddit.com)
+        if domain.endswith("reddit.com") and "comments" in url:
+            print(url)
+            linkarray.append(url)
     return linkarray
