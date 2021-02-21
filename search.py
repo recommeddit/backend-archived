@@ -26,6 +26,5 @@ def returnlinks(searchstring):
         ]  # link is url (e.g., https://www.reddit.com/r/fountainpens/comments/13isgr/guide_to_getting_your_first_fountain_pen)
         domain = item["displayLink"]  # displayLink is domain (e.g., www.reddit.com)
         if domain.endswith("reddit.com") and "comments" in url:
-            print(url)
             linkarray.append(url)
     return linkarray
