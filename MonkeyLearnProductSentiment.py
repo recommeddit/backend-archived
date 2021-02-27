@@ -88,7 +88,9 @@ def keyword_extractor_total(data):
     # total is the extractions
     for analyzed_comment in result.body:
         for keyword in analyzed_comment["extractions"]:
-            total[keyword["parsed_value"]] += float(keyword["relevance"])
+            total[keyword["parsed_value"]] += (
+                float(keyword["relevance"]) * keyword["count"]
+            )
 
     return dict(total)
 
