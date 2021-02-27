@@ -1,15 +1,15 @@
 # imports
-import json
 from monkeylearn import MonkeyLearn
 import requests
 
 # API Stuff
 import os
 from dotenv import load_dotenv
-load_dotenv('.env')
-my_api_key = os.getenv('URL_SCRAPE_API_KEY')
-url_model_id = 'ex_owGiMc4z'
-html_model_id = 'ex_RK5ApHnN'
+
+load_dotenv(".env")
+my_api_key = os.getenv("URL_SCRAPE_API_KEY")
+url_model_id = "ex_owGiMc4z"
+html_model_id = "ex_RK5ApHnN"
 ##############################################################
 
 # return url from comment#
