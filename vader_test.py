@@ -33,7 +33,7 @@ def sentiment_scores(sentence):
 
 
 print("\n1st statement :") 
-sentence = "Vim is cool, productive, but large source trees just got irritating (even with NERDTree) and search tools..." 
+sentence = "VSCode is pretty good. It can also be kind of bad." 
 sentiment_scores(sentence) 
 
 print("\n2nd Statement :") 
