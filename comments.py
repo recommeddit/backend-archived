@@ -2,6 +2,7 @@ import praw
 import logging
 import os
 from dotenv import load_dotenv
+from functional import seq
 
 load_dotenv(".env")
 CLIENT_ID = os.getenv("CLIENT_ID")
@@ -46,7 +47,7 @@ def connect() -> praw.Reddit:
     return reddit
 
 
-def get_comments(reddit, url: str) -> dict:
+def get_comments(reddit, url: str) -> list:
     """
     Get all comments from a particular URL.
     Currently added by BFS order.
@@ -57,13 +58,12 @@ def get_comments(reddit, url: str) -> dict:
         limit=None
     )  # removes limit=x amount of MoreComments
 
-    comments = {}
-
-    # builtin BFS
-    for comment in submission.comments.list():
-        # print(comment.score)
-        # comments.append(comment.body)
-        comments[comment.body] = comment.score
+    kept_keys = ["comment", "score", "permalink"]
+    comments = seq(
+        submission.comments.list().map(
+            lambda comment: {key: comment[key] for key in kept_keys}
+        )
+    )
 
     return comments
 
@@ -73,10 +73,12 @@ def get_post(reddit, url: str):
     Get post content and votes
     :param reddit:
     :param url:
-    :return: list: post, upvotes
+    :return: list: post, upvotes, url
     """
     submission = reddit.submission(url=url)
-    return submission.selftext, submission.score
+    kept_keys = ["selftext", "score", "url"]
+    return {key: submission[key] for key in kept_keys}
+
 
 # enable_praw_log()
 # reddit = connect()
