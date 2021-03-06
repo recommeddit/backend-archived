@@ -18,6 +18,7 @@ def get_recommendations(query):
     all_comments = (
         seq(reddit_urls)
         .flat_map(lambda reddit_url: comments.get_comments(reddit, reddit_url))
+        .map(lambda comment: comment.comment)
         .map(html.unescape)
         .map(markdown_to_plaintext.unmark)
     )

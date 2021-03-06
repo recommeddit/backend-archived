@@ -1,5 +1,6 @@
 from collections import defaultdict
 from monkeylearn import MonkeyLearn
+from functional import seq
 
 # hide api
 import os
@@ -79,20 +80,41 @@ def keyword_extractor(data):
     return array_of_keywords
 
 
-def keyword_extractor_total(data):
+def keyword_extractor_total(data, list_of_comment_bounds):
     model_id = "ex_YCya9nrn"
-    result = ml.extractors.extract(model_id, data)
+    results = ml.extractors.extract(model_id, data).body
 
-    total = defaultdict(int)
+    analyzed_comments = []
+    for result in results:
+        extracted_keywords = result.extractions
+        chunked_comment = result.text
 
-    # total is the extractions
-    for analyzed_comment in result.body:
-        for keyword in analyzed_comment["extractions"]:
-            total[keyword["parsed_value"]] += (
-                float(keyword["relevance"]) * keyword["count"]
+        upper_bound = len(chunked_comment)
+        for comment_bounds in list_of_comment_bounds:
+            if comment_bounds[1] > upper_bound:
+                break
+            analyzed_comments.append(
+                {
+                    "comment": chunked_comment[comment_bounds[0] : comment_bounds[1]],
+                    "lower_bound": comment_bounds[0],
+                    "upper_bound": comment_bounds[1],
+                    "keywords": set(),
+                }
             )
 
-    return dict(total)
+        for keyword in extracted_keywords:
+            for position in keyword["positions_in_text"]:
+                comment_containing_keyword = seq(analyzed_comments).find(
+                    lambda comment: comment.lower_bound
+                    <= position
+                    <= comment.upper_bound
+                )
+                comment_containing_keyword["keywords"].add(keyword)
+
+    for comment in analyzed_comments:
+        comment.keywords = list(comment.keywords)
+
+    return analyzed_comments
 
 
 # print(keyword_extractor(['This error is caused because we try to convert “7.4: to an integer.']))

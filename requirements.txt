@@ -1,27 +1,14 @@
-<<<<<<< HEAD
-matplotlib==3.3.4
-nltk==3.5
 truecase==0.0.12
-spacy==2.3.5
-~umpy==1.20.0
-requests==2.25.1
-pandas==1.2.2
 praw==7.1.0
-monkeylearn==3.5.2
-Markdown==3.3.3
-=======
 Markdown==3.3.3
 monkeylearn==3.5.2
+requests==2.25.1
 en_core_web_md==2.3.1
-praw==7.1.0
 spacy==2.3.5
-pandas==1.2.2
-requests==2.25.1
 nltk==3.5
-truecase==0.0.12
+pandas==1.2.2
 pyfunctional==1.4.3
->>>>>>> f7935129e96aa152199ad9c3c936e3c3edb0bf28
-google_api_python_client==1.12.8
-numpy==1.20.1
+google_api_python_client==2.0.2
 python-dotenv==0.15.0
 vaderSentiment==3.3.2
+YelpAPI==2.4.0
