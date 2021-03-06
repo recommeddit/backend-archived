@@ -1,4 +1,3 @@
-from collections import defaultdict
 from monkeylearn import MonkeyLearn
 from functional import seq
 
@@ -104,12 +103,16 @@ def keyword_extractor_total(data, list_of_comment_bounds):
 
         for keyword in extracted_keywords:
             for position in keyword["positions_in_text"]:
-                comment_containing_keyword = seq(analyzed_comments).find(
-                    lambda comment: comment.lower_bound
-                    <= position
-                    <= comment.upper_bound
+                comment_with_keyword = next(
+                    (
+                        comment
+                        for comment in analyzed_comments
+                        if comment.lower_bound <= position <= comment.upper_bound
+                    ),
+                    None,
                 )
-                comment_containing_keyword["keywords"].add(keyword)
+                if comment_with_keyword is not None:
+                    comment_with_keyword["keywords"].add(keyword)
 
     for comment in analyzed_comments:
         comment.keywords = list(comment.keywords)
