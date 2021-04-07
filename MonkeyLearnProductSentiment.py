@@ -114,6 +114,7 @@ def keyword_extractor_total(data, list_of_comment_bounds):
                 if comment_with_keyword is not None:
                     comment_with_keyword["keywords"].add(keyword)
 
+    # convert keywords back to a set (they were sets in the first place to dedupe)
     for comment in analyzed_comments:
         comment.keywords = list(comment.keywords)
 
