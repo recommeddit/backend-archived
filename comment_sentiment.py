@@ -1,56 +1,59 @@
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer 
 from nltk.tokenize import TweetTokenizer, sent_tokenize
+import nltk
 
 def getCommentSentiment(comment, keywords, upvotes):
-	chunks, keywordSentiments = commentChunk(comment), []
-	pos, neg, score = 0.0, 0.0, 0.0
-	for ind in range(0, len(chunks)):
-		if (ind % 2) == 0:
-			pos, neg = sentiment_scores(chunks[ind+1])
-			score = (pos*upvotes) - (neg*upvotes)
-			keywordSentiments += (chunks[ind], score)
-
-def commentChunk(comment, keywords):
 	tokenizer_words = TweetTokenizer()
 	tokens_sentences = [tokenizer_words.tokenize(t) for t in nltk.sent_tokenize(comment)]
-	keywordChunks = []
-	prevKey, currKey, currChunk, sentence = '', '', '', ''
-	keywordDetected, runNum = False, 0
+	sentence = ""
+	sentenceStruct, sentenceScores, sentimentScores = [], [], []
+	sentenceScore = 0
+	keywordDetected = False
 	for ind in range(0, len(tokens_sentences)):
 		keywordDetected = False
-		sentence = tokens_sentences[ind]
-		for ell in range(0, len(sentence)):
-			currWord = sentence[ell]
-			for word in keywords:
-				if word == currWord:
-					runNum += 1
-					keywordDetected = True
-					currKey = word
-				if keywordDetected == True:
-					if runNum == 1:
-						prevKey = currKey
-						currChunk = currChunk + ' ' + sentence
-					else if currKey == prevKey: 
-						currChunk = currChunk + ' ' + sentence
-					else if currKey != prevKey:
-						keywordChunks += (currKey, currChunk)
-						prevKey = currKey
-						currChunk = ''
-					break
-			if keywordDetected == True:
-				break
+		sentenceStruct = tokens_sentences[ind]
+		sentence = " ".join(sentenceStruct)
+		sentenceScore = sentiment_scores(sentence, upvotes)
+		for word in sentenceStruct:
+			for keyword in keywords:
+				if keywordDetected == False:
+					if keyword == word:
+						sentenceScores += (keyword, sentenceScore)
+						keywordDetected = True
+		if keywordDetected == False:
+			sentenceScores += ('sentence', sentenceScore)
+
+	finalScores = []
+	currKey = 'placeholder'
+	currScore = 0.0
+	counter = 0
+	for ind in range(0, len(sentenceScores)):
+		if (type(sentenceScores[ind]) is str) & (sentenceScores[ind] != 'sentence'):
+			if currKey == 'placeholder':
+				currKey = sentenceScores[ind]
+				currScore += sentenceScores[ind+1]
+				counter += 1
+			elif sentenceScores[ind] != currKey:
+				finalScores += (currKey, currScore/counter)
+				currKey = sentenceScores[ind]
+				currScore = 0.0
+				currScore += sentenceScores[ind+1]
+				counter = 1
 			else:
-				currChunk = currChunk + ' ' + sentence
-				break
+				currScore += sentenceScores[ind+1]
+				counter += 1
+		elif sentenceScores[ind] == 'sentence':
+			currScore += sentenceScores[ind+1]
+			counter += 1
+	finalScores += (currKey, currScore/counter)
 
-	keywordChunks += (currKey, currChunk)
+	return finalScores
 
-	return keywordChunks
-
-def sentiment_scores(sentence): 
+def sentiment_scores(sentence, upvotes): 
 	sid_obj = SentimentIntensityAnalyzer() 
 	sentiment_dict = sid_obj.polarity_scores(sentence)
-	positivity = sentiment_dict['pos']
-	negativity = sentiment_dict['neg']
-	return positivity, negativity
-
+	pos = sentiment_dict['pos']
+	neu = sentiment_dict['neu']
+	neg = sentiment_dict['neg']
+	score = (2*pos*upvotes) + (neu*upvotes) - (neg*upvotes)
+	return score
