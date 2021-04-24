@@ -23,6 +23,9 @@ def get_recommendations(query):
         .map(markdown_to_plaintext.unmark)
     )
 
+    print(reddit_urls)
+    print(all_comments.to_list())
+
     chunked_all_comments = []
     for comment in all_comments:
         if not chunked_all_comments:
@@ -34,12 +37,8 @@ def get_recommendations(query):
             else:
                 chunked_all_comments[-1] += newline_and_comment
 
-    results = dict(
-        sorted(
-            MonkeyLearnProductSentiment.keyword_extractor_total(
-                chunked_all_comments
-            ).items(),
-            key=lambda item: item[1],
-        )
+    results = MonkeyLearnProductSentiment.keyword_extractor_total(
+        chunked_all_comments, []
     )
+
     return results

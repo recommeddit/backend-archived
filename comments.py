@@ -47,6 +47,14 @@ def connect() -> praw.Reddit:
     return reddit
 
 
+def comment_to_dict(comment):
+    return {
+        "text": comment.body,
+        "score": comment.score,
+        "url": "https://www.reddit.com" + comment.permalink,
+    }
+
+
 def get_comments(reddit, url: str) -> list:
     """
     Get all comments from a particular URL.
@@ -58,14 +66,17 @@ def get_comments(reddit, url: str) -> list:
         limit=None
     )  # removes limit=x amount of MoreComments
 
-    kept_keys = ["comment", "score", "permalink"]
-    comments = seq(
-        submission.comments.list().map(
-            lambda comment: {key: comment[key] for key in kept_keys}
-        )
-    )
+    comments = seq(submission.comments.list()).map(comment_to_dict)
 
     return comments
+
+
+def post_to_dict(post):
+    return {
+        "text": post.selftext,
+        "score": post.score,
+        "url": post.url,
+    }
 
 
 def get_post(reddit, url: str):
@@ -76,8 +87,7 @@ def get_post(reddit, url: str):
     :return: list: post, upvotes, url
     """
     submission = reddit.submission(url=url)
-    kept_keys = ["selftext", "score", "url"]
-    return {key: submission[key] for key in kept_keys}
+    return post_to_dict(submission)
 
 
 # enable_praw_log()
