@@ -73,7 +73,7 @@ def getCommentSentiment(comment, keywords, upvotes):
 			if scoreAdded is False:
 				finalScores += (currKey, currScore/counter)
 
-	return midScores, coveredWords, finalScores
+	return finalScores
 
 def sentiment_scores(sentence, upvotes): 
 	sid_obj = SentimentIntensityAnalyzer() 
