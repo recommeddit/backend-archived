@@ -73,7 +73,7 @@ def getCommentSentiment(comment, keywords, upvotes):
 			if scoreAdded is False:
 				finalScores += (currKey, currScore/counter)
 
-	return midScores, coveredWords, finalScores
+	return finalScores
 
 def sentiment_scores(sentence, upvotes): 
 	sid_obj = SentimentIntensityAnalyzer() 
@@ -81,5 +81,5 @@ def sentiment_scores(sentence, upvotes):
 	pos = sentiment_dict['pos']
 	neu = sentiment_dict['neu']
 	neg = sentiment_dict['neg']
-	score = (2*pos*upvotes) + (neu*upvotes) - (neg*upvotes)
+	score = (2*neu*upvotes) + (pos*upvotes) - (neg*upvotes)
 	return score

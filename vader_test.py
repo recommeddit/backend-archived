@@ -14,7 +14,7 @@ def sentiment_scores(sentence):
 	# which contains pos, neg, neu, and compound scores. 
 	sentiment_dict = sid_obj.polarity_scores(sentence) 
 	
-	print("Overall sentiment dictionary is : ", sentiment_dict) 
+	print("\nOverall sentiment dictionary is : ", sentiment_dict) 
 	print("sentence was rated as ", sentiment_dict['neg']*100, "% Negative") 
 	print("sentence was rated as ", sentiment_dict['neu']*100, "% Neutral") 
 	print("sentence was rated as ", sentiment_dict['pos']*100, "% Positive") 
@@ -31,7 +31,7 @@ def sentiment_scores(sentence):
 	else : 
 		print("Neutral") 
 
-
-print("\n1st statement :") 
-sentence = "Also, it has colorful themes and source control" 
+ 
+sentence = "At this pace of product development, community growth, extensions growth, I can't imagine other editors like Sublime and Atom can keep it up." 
+print(sentence)
 sentiment_scores(sentence) 
