@@ -36,10 +36,17 @@ def getNGrams(wordlist, n): #wordlist is split words, n is the n in n-gram
 cv = CountVectorizer(ngram_range = (2,2))
 corpus = ['this is a sentence is', 'this is another sentence',
     'this is the third sentence']
-X = cv.fit(corpus)
-X = cv.transform(corpus)
-print(X.shape)
-print(X)
-print(X.toarray())
-df = pd.DataFrame(X.toarray(),columns = cv.get_feature_names())
-print(df)
+# X = cv.fit(corpus)
+# X = cv.transform(corpus)
+# print(X.shape)
+# print(X)
+# print(X.toarray())
+# df = pd.DataFrame(X.toarray(),columns = cv.get_feature_names())
+# print(df)
+def run(datasample): #datasample = array of strings
+    data = datasample
+    cv2 = CountVectorizer(ngram_range = (2,2))
+    X = cv2.fit_transform(data)
+    print(X.shape)
+    df = pd.DataFrame(X.toarray(),columns = cv2.get_feature_names())
+    df.head(10)
