@@ -44,8 +44,9 @@ dictionary = gensim.corpora.Dictionary(data)
 #         break
 
 #work on COUNT of most common words 
-print(dictionary[0])
-bow_corpus = [dictionary.doc2bow(doc) for doc in dictionary]
+#print(dictionary.doc2bow(dictionary[1]))
+print(dictionary.iteritems())
+bow_corpus = [dictionary.doc2bow(dictionary.iteritems()[1])]
 document_num = 20
 bow_doc_x = bow_corpus[document_num]
 for i in range(len(bow_doc_x)):
