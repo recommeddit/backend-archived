@@ -25,11 +25,21 @@ def split(inputstring):
     return wordlist
 def getNGrams(wordlist, n): #wordlist is split words, n is the n in n-gram
     ngrams = []
-    for i in range(len(wordlist) - (n-1)):
-        ngrams.append(wordlist[i:i+n])
+    letters = list(wordlist)
+    for i in range(len(letters) - (n-1)):
+        ngrams.append(letters[i:i+n])
     return ngrams
 
-teststring = 'hello it is a very nice day'
-#print(getNGrams(teststring.split(),3))
+#teststring = 'hello it is a very nice day'
+#print(getNGrams(list(teststring.split()),3))
 
-vect = CountVectorizer()
+cv = CountVectorizer(ngram_range = (2,2))
+corpus = ['this is a sentence is', 'this is another sentence',
+    'this is the third sentence']
+X = cv.fit(corpus)
+X = cv.transform(corpus)
+print(X.shape)
+print(X)
+print(X.toarray())
+df = pd.DataFrame(X.toarray(),columns = cv.get_feature_names())
+print(df)
