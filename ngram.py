@@ -50,7 +50,8 @@ def run(datasample): #datasample = array of strings
     data = datasample
     cv2 = CountVectorizer(ngram_range = (2,2))
     X = cv2.fit_transform(data)
-    print(X.shape)
+    #print(X.toarray())
     df = pd.DataFrame(X.toarray(),columns = cv2.get_feature_names())
     df.head(10)
-run(data)
+    return df
+run(corpus)
