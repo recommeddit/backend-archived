@@ -1,4 +1,4 @@
-import numpy as numpy
+import numpy as np
 import pandas as pd
 import sklearn
 from sklearn.feature_extraction.text import CountVectorizer
@@ -43,6 +43,9 @@ corpus = ['this is a sentence is', 'this is another sentence',
 # print(X.toarray())
 # df = pd.DataFrame(X.toarray(),columns = cv.get_feature_names())
 # print(df)
+with open('sample.txt', 'r') as file:
+    data = file.read()
+data = [data]
 def run(datasample): #datasample = array of strings
     data = datasample
     cv2 = CountVectorizer(ngram_range = (2,2))
@@ -50,3 +53,4 @@ def run(datasample): #datasample = array of strings
     print(X.shape)
     df = pd.DataFrame(X.toarray(),columns = cv2.get_feature_names())
     df.head(10)
+run(data)
