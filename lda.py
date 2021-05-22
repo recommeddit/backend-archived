@@ -47,12 +47,13 @@ dictionary = gensim.corpora.Dictionary(data)
 
 
 bow_corpus = dictionary.doc2bow(dictionary.values())
-document_num = 1
+document_num = 20
 bow_doc_x = bow_corpus[document_num]
 print(bow_doc_x)
-for i in range(len(bow_doc_x)):
+print(bow_corpus)
+for i in range(len(bow_corpus)):
     print("Word {} (\"{}\") appears {} time.".format(
-        bow_doc_x[0][i], dictionary[bow_doc_x[i][0]], bow_doc_x[1][i]
+        bow_corpus[i][0], dictionary[bow_corpus[i][0]], bow_corpus[i][1]
     ))
 
 lda_model = gensim.models.LdaMulticore(bow_corpus, num_topics = 2,
