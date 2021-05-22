@@ -44,14 +44,15 @@ dictionary = gensim.corpora.Dictionary(data)
 #         break
 
 #work on COUNT of most common words 
-#print(dictionary.doc2bow(dictionary[1]))
-print(dictionary.iteritems())
-bow_corpus = [dictionary.doc2bow(dictionary.iteritems()[1])]
-document_num = 20
+
+
+bow_corpus = dictionary.doc2bow(dictionary.values())
+document_num = 1
 bow_doc_x = bow_corpus[document_num]
+print(bow_doc_x)
 for i in range(len(bow_doc_x)):
     print("Word {} (\"{}\") appears {} time.".format(
-        bow_doc_x[i][0], dictionary[bow_doc_x[i][0]], bow_doc_x[i][1]
+        bow_doc_x[0][i], dictionary[bow_doc_x[i][0]], bow_doc_x[1][i]
     ))
 
 lda_model = gensim.models.LdaMulticore(bow_corpus, num_topics = 2,
