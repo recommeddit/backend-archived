@@ -1,0 +1,6 @@
+Markdown==3.3.4
+monkeylearn==3.5.2
+praw==7.1.0
+pyfunctional==1.4.3
+google_api_python_client==2.5.0
+python-dotenv==0.17.1

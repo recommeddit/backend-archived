@@ -1,7 +1,18 @@
 #!/usr/bin/python
 
 import sys
+
 import recommendations
+
+
+def search(request):
+    if request.args and 'query' in request.args:
+        query = request.args.get('query')
+    else:
+        query = ""
+    results = recommendations.get_recommendations(query)
+
+    return results
 
 
 def main():
