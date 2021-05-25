@@ -1,5 +1,4 @@
 import html
-from collections import defaultdict
 
 from functional import seq
 
@@ -31,5 +30,6 @@ def get_recommendations(query):
     )
 
     results = MonkeyLearnProductSentiment.keyword_extractor_total(all_comments)
+    recommendations = seq(results.items()).map(lambda keyword, score: {"keyword": keyword, "score": score})
 
-    return {"error_message": "", "success": True, "recommendations": results}
+    return {"error_message": "", "success": True, "recommendations": recommendations}
