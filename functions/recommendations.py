@@ -30,6 +30,6 @@ def get_recommendations(query):
     )
 
     results = MonkeyLearnProductSentiment.keyword_extractor_total(all_comments)
-    recommendations = seq(results.items()).map(lambda keyword, score: {"keyword": keyword, "score": score})
+    recommendations = seq(results.items()).smap(lambda keyword, score: {"keyword": keyword, "score": score})
 
     return {"error_message": "", "success": True, "recommendations": recommendations}

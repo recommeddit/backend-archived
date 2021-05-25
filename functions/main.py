@@ -16,6 +16,7 @@ def search(request):
 # def main():
 #     # assume first argument is query. Default query is 'C++ IDE'
 #     try:
+#         import sys
 #         query = sys.argv[1]
 #     except IndexError:
 #         query = "best C++ IDE"
