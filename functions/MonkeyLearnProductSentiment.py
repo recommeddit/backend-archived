@@ -106,6 +106,34 @@ def keyword_extractor_total(comments):
 
     return results
 
+
+def keyword_extractor_chunked(chunked_comments):
+    model_id = "ex_YCya9nrn"
+    data = seq(chunked_comments).map(lambda chunk: str(chunk)).to_list()
+    results = ml.extractors.extract(model_id, data).body
+
+    # for i, chunked_result in enumerate(results):
+    #     for extraction in chunked_result["extractions"]:
+
+    # for chunked_comment, result in zip(chunked_comments, results):
+    #     chunked_comment["extractions"] = result["extractions"]
+
+    recommendations = defaultdict(int)
+
+    for chunked_result in results:
+        for keyword in chunked_result["extractions"]:
+            recommendations[keyword["parsed_value"]] += float(keyword["relevance"]) * keyword["count"]
+
+    results = dict(
+        sorted(
+            recommendations.items(),
+            key=lambda item: item[1],
+            reverse=True
+        )
+    )
+
+    return results
+
 # print(keyword_extractor(['This error is caused because we try to convert “7.4: to an integer.']))
 # test = [
 #     "Elon Musk has shared a photo of the spacesuit designed by SpaceX. This is the second image shared of the new design and the first to feature the spacesuit",

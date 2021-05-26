@@ -12,7 +12,6 @@ def search(request):
 
     return results, 200, {'Access-Control-Allow-Origin': '*'}
 
-
 # def main():
 #     # assume first argument is query. Default query is 'C++ IDE'
 #     try:
