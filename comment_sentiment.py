@@ -2,14 +2,16 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from nltk.tokenize import TweetTokenizer, sent_tokenize
 import nltk
 import random as rd
+#import time
 
 def get_comment_sentiment(comment, keywords, upvotes):
 	tokenizer_words = TweetTokenizer()
 	tokens_sentences = [tokenizer_words.tokenize(t) for t in nltk.sent_tokenize(comment)]
 	sentence = ""
-	sentenceStruct, rawScores, sentimentScores = [], [], []
+	sentenceStruct, rawScores= [], []
 	sentenceScore = 0
 	keywordDetected = False
+	#start_time = time.time()
 	for ind in range(0, len(tokens_sentences)):
 		keywordDetected = False
 		sentenceStruct = tokens_sentences[ind]
@@ -23,11 +25,13 @@ def get_comment_sentiment(comment, keywords, upvotes):
 						keywordDetected = True
 		if keywordDetected == False:
 			rawScores += ('sentence', sentenceScore)
+	#print(time.time()-start_time)
 
 	midScores = []
 	currKey = 'placeholder'
 	currScore = 0.0
 	counter = 0
+	#start_time = time.time()
 	for ind in range(0, len(rawScores)):
 		if (type(rawScores[ind]) is str) & (rawScores[ind] != 'sentence'):
 			if currKey == 'placeholder':
@@ -47,12 +51,14 @@ def get_comment_sentiment(comment, keywords, upvotes):
 			currScore += rawScores[ind+1]
 			counter += 1
 	midScores += (currKey, currScore/counter)
+	#print(time.time()-start_time)
 
 	finalScores, coveredWords = [], []
 	currKey = midScores[0]
 	currScore = midScores[1]
 	counter = 1
 	scoreAdded = False
+	#start_time = time.time()
 	for ind in range(0, len(midScores)):
 		if (type(midScores[ind]) is str) & (midScores[ind] not in coveredWords):
 			coveredWords += [midScores[ind]]
@@ -73,7 +79,7 @@ def get_comment_sentiment(comment, keywords, upvotes):
 						break
 			if scoreAdded is False:
 				finalScores += (currKey, currScore/counter)
-
+	#print(time.time()-start_time)
 	return finalScores
 
 def sentiment_scores(sentence, upvotes): 
