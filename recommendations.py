@@ -1,26 +1,30 @@
 import html
+
 from functional import seq
-import search
+
+import MonkeyLearnProductSentiment
 import comments
 import markdown_to_plaintext
-import MonkeyLearnProductSentiment
-
+import search
 
 MAX_CHARS = 42000
 
 
 def get_recommendations(query):
-    # search google for "best <query name> reddit"
-    reddit_urls = search.returnlinks(query)
+    if not query:
+        return {"error_message": "No query", "success": False, "recommendations": []}
+
+    # search google for "<query name> reddit"
+    reddit_urls = search.return_links(query)
 
     # resolve reddit URLs to comments and remove HTML/markdown syntax
     reddit = comments.connect()
     all_comments = (
         seq(reddit_urls)
-        .flat_map(lambda reddit_url: comments.get_comments(reddit, reddit_url))
-        .map(lambda comment: comment.comment)
-        .map(html.unescape)
-        .map(markdown_to_plaintext.unmark)
+            .flat_map(lambda reddit_url: comments.get_comments(reddit, reddit_url))
+            .map(lambda comment: comment["text"])
+            .map(html.unescape)
+            .map(markdown_to_plaintext.unmark)
     )
 
     chunked_all_comments = []
@@ -34,12 +38,8 @@ def get_recommendations(query):
             else:
                 chunked_all_comments[-1] += newline_and_comment
 
-    results = dict(
-        sorted(
-            MonkeyLearnProductSentiment.keyword_extractor_total(
-                chunked_all_comments
-            ).items(),
-            key=lambda item: item[1],
-        )
+    results = MonkeyLearnProductSentiment.keyword_extractor_total(
+        chunked_all_comments, []
     )
-    return results
+
+    return {"error_message": "", "success": True, "recommendations": results}
