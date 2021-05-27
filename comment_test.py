@@ -1,9 +1,9 @@
 import comment_sentiment as c_s
-from nltk.tokenize import TweetTokenizer, sent_tokenize
-import nltk
+import time
 
 def runCommentSentiment():
-	exampleComment = "I’ve always thought about this as well. Infinity War definitely has a more serious tone and you literally never have a break to process anything. It’s action after action after action. And every time Thanos is on screen, it feels truly terrifying seeing how he’s not a goofy villain. And of course I love how the avengers lose at the end and genuinely feel defeated. With Endgame, it’s definitely more comedic and less serious like Infinity War was. And that’s really weird for me because the way they advertised Endgame was to where it was such a depressing and sad movie. Instead, we overall had a pretty happy movie with many funny moments and the whole time travel aspect being a nostalgic trip for fans. Then of course the ending was cool with every single character we’ve seen all together to battle Thanos and his army. But yeah I agree with you."
+	start_time = time.time()
+	exampleComment = "I'd say Infinity War is a better structured movie. It's pacing is perfect, the tone is consistent, and it flows through good. However, I find Endgame a bit better because of everything that happens in it. It's more messy pacing allows for more fanservice and more 'Thor arrives in Wakanda' moments. Most of the characters had satisfying endings and the movie all around was enjoyable. I'll probably never experience another cinematic event like this due to audience reactions and shock value."
 
 	keywords = ['Infinity War', 'Endgame']
 
@@ -11,5 +11,6 @@ def runCommentSentiment():
 	print("Comment: ", exampleComment)
 	print("Reddit Upvotes: 602")
 	print(c_s.get_scores(keywords, exampleComment, 602))
+	print(time.time()-start_time)
 
 runCommentSentiment()

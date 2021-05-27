@@ -2,7 +2,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from nltk.tokenize import TweetTokenizer, sent_tokenize
 import nltk
 import random as rd
-#import time
+import time
 
 def get_comment_sentiment(comment, keywords, upvotes):
 	tokenizer_words = TweetTokenizer()
@@ -11,7 +11,7 @@ def get_comment_sentiment(comment, keywords, upvotes):
 	sentenceStruct, rawScores= [], []
 	sentenceScore = 0
 	keywordDetected = False
-	#start_time = time.time()
+	start_time = time.time()
 	for ind in range(0, len(tokens_sentences)):
 		keywordDetected = False
 		sentenceStruct = tokens_sentences[ind]
@@ -79,7 +79,7 @@ def get_comment_sentiment(comment, keywords, upvotes):
 						break
 			if scoreAdded is False:
 				finalScores += (currKey, currScore/counter)
-	#print(time.time()-start_time)
+	print(time.time()-start_time)
 	return finalScores
 
 def sentiment_scores(sentence, upvotes): 
@@ -96,6 +96,7 @@ def simplify_title(titles):
 	titleReferences = []
 	simplified = False
 	commonWords = 'The the This this Is is A a Of of Into into For for But but And and So so There there Through through As as Like like He he She she They they Them them It it'
+	start_time = time.time()
 	for ind in range(0, len(titles)):
 		simplified = False
 		title = titles[ind].split()
@@ -105,16 +106,19 @@ def simplify_title(titles):
 				simplified = True
 				keywords += [keyword]
 		titleReferences += (titles[ind], keyword)
+	print(time.time()-start_time)
 	return keywords,titleReferences
 
 def get_scores(titles, comment, upvotes):
 	keys,titleRefs = simplify_title(titles)
 	scores = get_comment_sentiment(comment, keys, upvotes)
 	rankings = []
+	start_time = time.time()
 	for ind in range(0, len(scores)):
 		if(type(scores[ind]) is str):
 			if(scores[ind] == titleRefs[ind+1]):
 				rankings += (titleRefs[ind], scores[ind+1])
+	print(time.time()-start_time)
 	return rankings
 		
 
