@@ -1,6 +1,9 @@
-import praw
+import json
 import logging
 import os
+
+import praw
+import requests
 from dotenv import load_dotenv
 from functional import seq
 
@@ -9,6 +12,8 @@ CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 REDIRECT_URI = os.getenv("REDIRECT_URI")
 USER_AGENT = os.getenv("USER_AGENT")
+
+ID_LENGTH = 6
 
 
 # from praw.models import MoreComments
@@ -49,24 +54,41 @@ def connect() -> praw.Reddit:
 
 def comment_to_dict(comment):
     return {
-        "text": comment.body,
-        "score": comment.score,
-        "url": "https://www.reddit.com" + comment.permalink,
+        "text": comment.get("body", ""),
+        "score": comment.get("score", ""),
+        "url": "https://www.reddit.com" + comment.get("permalink", ""),
     }
 
 
-def get_comments(reddit, url: str) -> list:
+# def get_comments(reddit, url: str) -> list:
+#     """
+#     Get all comments from a particular URL.
+#     Currently added by BFS order.
+#     :param url:
+#     """
+#     submission = reddit.submission(url=url)
+#     submission.comments.replace_more(
+#         limit=None
+#     )  # removes limit=x amount of MoreComments
+#
+#     comments = seq(submission.comments.list()).map(comment_to_dict)
+#
+#     return comments
+
+
+def get_comments(url: str) -> list:
     """
     Get all comments from a particular URL.
     Currently added by BFS order.
     :param url:
     """
-    submission = reddit.submission(url=url)
-    submission.comments.replace_more(
-        limit=None
-    )  # removes limit=x amount of MoreComments
+    i = url.find("/comments/") + len("/comments/")
+    submission_id = url[i:i + ID_LENGTH]
+    pushshift_url = f"https://api.pushshift.io/reddit/comment/search/?link_id={submission_id}&limit=1000"
+    submission = requests.get(pushshift_url)
+    submission_results = json.loads(submission.content)['data']
 
-    comments = seq(submission.comments.list()).map(comment_to_dict)
+    comments = seq(submission_results).map(comment_to_dict)
 
     return comments
 
@@ -88,7 +110,6 @@ def get_post(reddit, url: str):
     """
     submission = reddit.submission(url=url)
     return post_to_dict(submission)
-
 
 # enable_praw_log()
 # reddit = connect()

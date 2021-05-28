@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 from functional import seq
 from monkeylearn import MonkeyLearn
 
+from imdb_query import cross_reference_imdb
+
 load_dotenv(".env")
 api_key = os.getenv("URL_SCRAPE_API_KEY")
 ################################################################
@@ -124,13 +126,50 @@ def keyword_extractor_chunked(chunked_comments):
         for keyword in chunked_result["extractions"]:
             recommendations[keyword["parsed_value"]] += float(keyword["relevance"]) * keyword["count"]
 
-    results = dict(
+    results = seq(dict(
+        sorted(
+            recommendations.items(),
+            key=lambda item: item[1],
+            reverse=True
+        )
+    ).items()).filter(cross_reference_imdb)
+
+    return results
+
+
+def movie_extractor_chunked(chunked_comments):
+    model_id = "ex_8vwmUB7s"
+    data = seq(chunked_comments).map(lambda chunk: str(chunk)).to_list()
+    results = ml.extractors.extract(model_id, data).body
+
+    # for i, chunked_result in enumerate(results):
+    #     for extraction in chunked_result["extractions"]:
+
+    # for chunked_comment, result in zip(chunked_comments, results):
+    #     chunked_comment["extractions"] = result["extractions"]
+
+    recommendations = defaultdict(int)
+
+    for chunked_result in results:
+        for keyword in chunked_result["extractions"]:
+            recommendations[keyword["parsed_value"]] += 1
+
+    unfiltered_results = dict(
         sorted(
             recommendations.items(),
             key=lambda item: item[1],
             reverse=True
         )
     )
+
+    count = 0
+    results = []
+    for entry in unfiltered_results.items():
+        if count == 10:
+            break
+        if cross_reference_imdb(entry):
+            count += 1
+            results.append(entry)
 
     return results
 

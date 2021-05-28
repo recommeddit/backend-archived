@@ -1,17 +1,17 @@
 import html
 
 from functional import seq
+from unidecode import unidecode
 
 import MonkeyLearnProductSentiment
 import comments
-import dump_comments
 import markdown_to_plaintext
 import search
 from comment import Comment, CommentList
 
 
 def clean_comment(comment):
-    comment["text"] = markdown_to_plaintext.unmark(html.unescape(comment["text"]))
+    comment["text"] = unidecode(markdown_to_plaintext.unmark(html.unescape(comment["text"])))
     return comment
 
 
@@ -24,9 +24,9 @@ def get_recommendations(query):
 
     # resolve reddit URLs to comments and remove HTML/markdown syntax
     # comments are dictionaries of string text, number score, and string url.
-    reddit = comments.connect()
+    # reddit = comments.connect()
 
-    all_comments = dump_comments.load_comments("dump.json")
+    # all_comments = dump_comments.load_comments("dump_movies.dumps")
 
     # chunked_comments = CommentList(
     #     seq(all_comments)
@@ -36,13 +36,13 @@ def get_recommendations(query):
 
     chunked_comments = CommentList(
         seq(reddit_urls)
-            .flat_map(lambda reddit_url: comments.get_comments(reddit, reddit_url))
+            .flat_map(lambda reddit_url: comments.get_comments(reddit_url))
             .map(clean_comment)
             .map(Comment.from_dict)
             .to_list()
     ).chunk()
 
-    results = MonkeyLearnProductSentiment.keyword_extractor_chunked(chunked_comments)
-    recommendations = seq(results.items()).smap(lambda keyword, score: {"keyword": keyword, "score": score})
+    results = MonkeyLearnProductSentiment.movie_extractor_chunked(chunked_comments)
+    recommendations = seq(results).smap(lambda text, score: {"keyword": text, "score": score}).to_list()
 
     return {"error_message": "", "success": True, "recommendations": recommendations}

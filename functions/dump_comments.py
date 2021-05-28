@@ -7,7 +7,7 @@ import recommendations
 import search
 
 
-def dump_comments(query="best C++ IDE", filename="dump.json"):
+def dump_comments(query="best C++ IDE", filename="dump.dumps"):
     # search google for "<query name> reddit"
     reddit_urls = search.return_links(query)
 
@@ -25,7 +25,7 @@ def dump_comments(query="best C++ IDE", filename="dump.json"):
     return {"error_message": "", "success": True, "recommendations": all_comments}
 
 
-def load_comments(filename="dump.json"):
+def load_comments(filename="dump.dumps"):
     with open(filename, 'r') as filehandle:
         all_comments = json.load(filehandle)
     return all_comments
