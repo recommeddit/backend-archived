@@ -55,7 +55,7 @@ def connect() -> praw.Reddit:
 def comment_to_dict(comment):
     return {
         "text": comment.get("body", ""),
-        "score": comment.get("score", ""),
+        "score": comment.get("score", 0),
         "url": "https://www.reddit.com" + comment.get("permalink", ""),
     }
 
